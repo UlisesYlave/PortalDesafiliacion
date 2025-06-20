@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://ws.pdm.pucp.edu.pe/" targetNamespace="http://ws.pdm.pucp.edu.pe/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="eliminarPlantilla" type="tns:eliminarPlantilla" />
+  <xs:element name="eliminarPlantillaResponse" type="tns:eliminarPlantillaResponse" />
+  <xs:element name="insertarPlantilla" type="tns:insertarPlantilla" />
+  <xs:element name="insertarPlantillaResponse" type="tns:insertarPlantillaResponse" />
+  <xs:element name="listarPlantillasOfertas" type="tns:listarPlantillasOfertas" />
+  <xs:element name="listarPlantillasOfertasResponse" type="tns:listarPlantillasOfertasResponse" />
+  <xs:element name="modificarPlantilla" type="tns:modificarPlantilla" />
+  <xs:element name="modificarPlantillaResponse" type="tns:modificarPlantillaResponse" />
+  <xs:complexType name="eliminarPlantilla">
+    <xs:sequence>
+      <xs:element name="idPlantilla" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarPlantillaResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarPlantilla">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="plantilla" type="tns:plantillaOferta" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="plantillaOferta">
+    <xs:sequence>
+      <xs:element name="activa" type="xs:boolean" />
+      <xs:element minOccurs="0" name="formula" type="xs:string" />
+      <xs:element name="idPlantilla" type="xs:int" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="modalidades" nillable="true" type="tns:modalidad" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element minOccurs="0" name="periodoValidez" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="prioridad" type="tns:prioridad" />
+      <xs:element name="tipoServicio" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modalidad">
+    <xs:sequence>
+      <xs:element name="idModalidad" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="prioridad">
+    <xs:sequence>
+      <xs:element name="cantidadOfertas" type="xs:int" />
+      <xs:element name="idPrioridad" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarPlantillaResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="insertarPlantilla">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="plantilla" type="tns:plantillaOferta" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="insertarPlantillaResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarPlantillasOfertas">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listarPlantillasOfertasResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:plantillaOferta" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

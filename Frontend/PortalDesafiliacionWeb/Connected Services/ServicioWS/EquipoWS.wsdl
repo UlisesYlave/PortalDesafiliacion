@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://ws.pdm.pucp.edu.pe/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" name="EquipoWS" targetNamespace="http://ws.pdm.pucp.edu.pe/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8080/PortalWS/EquipoWS?xsd=1" namespace="http://ws.pdm.pucp.edu.pe/" />
+    </xsd:schema>
+  </types>
+  <message name="listarEquipos">
+    <part name="parameters" element="tns:listarEquipos" />
+  </message>
+  <message name="listarEquiposResponse">
+    <part name="parameters" element="tns:listarEquiposResponse" />
+  </message>
+  <message name="insertarEquipo">
+    <part name="parameters" element="tns:insertarEquipo" />
+  </message>
+  <message name="insertarEquipoResponse">
+    <part name="parameters" element="tns:insertarEquipoResponse" />
+  </message>
+  <portType name="EquipoWS">
+    <operation name="listarEquipos">
+      <input wsam:Action="http://ws.pdm.pucp.edu.pe/EquipoWS/listarEquiposRequest" message="tns:listarEquipos" />
+      <output wsam:Action="http://ws.pdm.pucp.edu.pe/EquipoWS/listarEquiposResponse" message="tns:listarEquiposResponse" />
+    </operation>
+    <operation name="insertarEquipo">
+      <input wsam:Action="http://ws.pdm.pucp.edu.pe/EquipoWS/insertarEquipoRequest" message="tns:insertarEquipo" />
+      <output wsam:Action="http://ws.pdm.pucp.edu.pe/EquipoWS/insertarEquipoResponse" message="tns:insertarEquipoResponse" />
+    </operation>
+  </portType>
+  <binding name="EquipoWSPortBinding" type="tns:EquipoWS">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="listarEquipos">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="insertarEquipo">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="EquipoWS">
+    <port name="EquipoWSPort" binding="tns:EquipoWSPortBinding">
+      <soap:address location="http://localhost:8080/PortalWS/EquipoWS" />
+    </port>
+  </service>
+</definitions>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://services.softprog.pucp.edu.pe/" targetNamespace="http://services.softprog.pucp.edu.pe/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="IOException" type="tns:IOException" />
+  <xs:element name="actualizarResultadoDesafiliacion" type="tns:actualizarResultadoDesafiliacion" />
+  <xs:element name="actualizarResultadoDesafiliacionResponse" type="tns:actualizarResultadoDesafiliacionResponse" />
+  <xs:element name="eliminarSolicitud" type="tns:eliminarSolicitud" />
+  <xs:element name="eliminarSolicitudResponse" type="tns:eliminarSolicitudResponse" />
+  <xs:element name="enviarCodigoSMS" type="tns:enviarCodigoSMS" />
+  <xs:element name="enviarCodigoSMSResponse" type="tns:enviarCodigoSMSResponse" />
+  <xs:element name="exportToCsvPorCliente" type="tns:exportToCsvPorCliente" />
+  <xs:element name="exportToCsvPorClienteResponse" type="tns:exportToCsvPorClienteResponse" />
+  <xs:element name="exportToExcelPorCliente" type="tns:exportToExcelPorCliente" />
+  <xs:element name="exportToExcelPorClienteResponse" type="tns:exportToExcelPorClienteResponse" />
+  <xs:element name="insertarSolicitud" type="tns:insertarSolicitud" />
+  <xs:element name="insertarSolicitudResponse" type="tns:insertarSolicitudResponse" />
+  <xs:element name="listarSolicitudes" type="tns:listarSolicitudes" />
+  <xs:element name="listarSolicitudesPorCliente" type="tns:listarSolicitudesPorCliente" />
+  <xs:element name="listarSolicitudesPorClienteResponse" type="tns:listarSolicitudesPorClienteResponse" />
+  <xs:element name="listarSolicitudesResponse" type="tns:listarSolicitudesResponse" />
+  <xs:element name="modificarSolicitud" type="tns:modificarSolicitud" />
+  <xs:element name="modificarSolicitudResponse" type="tns:modificarSolicitudResponse" />
+  <xs:element name="obtenerSolicitud" type="tns:obtenerSolicitud" />
+  <xs:element name="obtenerSolicitudResponse" type="tns:obtenerSolicitudResponse" />
+  <xs:element name="validarCodigoSMS" type="tns:validarCodigoSMS" />
+  <xs:element name="validarCodigoSMSResponse" type="tns:validarCodigoSMSResponse" />
+  <xs:complexType name="insertarSolicitud">
+    <xs:sequence>
+      <xs:element name="idLinea" type="xs:int" />
+      <xs:element name="idCliente" type="xs:int" />
+      <xs:element minOccurs="0" name="fechaSolicitud" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="resultado" type="tns:resultado" />
+      <xs:element minOccurs="0" name="observacionAgente" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="insertarSolicitudResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerSolicitud">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerSolicitudResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:solicitudDesafiliacion" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="solicitudDesafiliacion">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="encuesta" type="tns:encuesta" />
+      <xs:element minOccurs="0" name="fechaSolicitud" type="xs:dateTime" />
+      <xs:element name="idCliente" type="xs:int" />
+      <xs:element name="idLinea" type="xs:int" />
+      <xs:element minOccurs="0" name="idOferta" type="xs:int" />
+      <xs:element name="idSolicitud" type="xs:int" />
+      <xs:element minOccurs="0" name="observacionAgente" type="xs:string" />
+      <xs:element minOccurs="0" name="resultado" type="tns:resultado" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="encuesta">
+    <xs:sequence>
+      <xs:element name="calificacion" type="xs:int" />
+      <xs:element minOccurs="0" name="fechaEncuesta" type="xs:dateTime" />
+      <xs:element name="idEncuesta" type="xs:int" />
+      <xs:element minOccurs="0" name="motivo" type="tns:tipoMotivo" />
+      <xs:element minOccurs="0" name="opinion" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="tipoMotivo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="descripcion" type="xs:string" />
+      <xs:element name="idMotivo" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarSolicitud">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarSolicitudResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="exportToCsvPorCliente">
+    <xs:sequence>
+      <xs:element name="idCliente" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="exportToCsvPorClienteResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="IOException">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="message" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="exportToExcelPorCliente">
+    <xs:sequence>
+      <xs:element name="idCliente" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="exportToExcelPorClienteResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="enviarCodigoSMS">
+    <xs:sequence>
+      <xs:element name="idLinea" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="enviarCodigoSMSResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarSolicitudesPorCliente">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarSolicitudesPorClienteResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:solicitudDesafiliacion" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="actualizarResultadoDesafiliacion">
+    <xs:sequence>
+      <xs:element name="idLinea" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="actualizarResultadoDesafiliacionResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarSolicitudes">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listarSolicitudesResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:solicitudDesafiliacion" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="validarCodigoSMS">
+    <xs:sequence>
+      <xs:element name="idLinea" type="xs:int" />
+      <xs:element minOccurs="0" name="codigoIngresado" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="validarCodigoSMSResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarSolicitud">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="tns:solicitudDesafiliacion" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarSolicitudResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:simpleType name="resultado">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="DESAFILIADO" />
+      <xs:enumeration value="NO_DESAFILIADO" />
+      <xs:enumeration value="OFERTA_ACEPTADA" />
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

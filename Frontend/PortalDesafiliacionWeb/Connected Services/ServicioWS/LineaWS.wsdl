@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://ws.pdm.pucp.edu.pe/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" name="LineaWS" targetNamespace="http://ws.pdm.pucp.edu.pe/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8080/PortalWS/LineaWS?xsd=1" namespace="http://ws.pdm.pucp.edu.pe/" />
+    </xsd:schema>
+  </types>
+  <message name="listarLineasPorCliente">
+    <part name="parameters" element="tns:listarLineasPorCliente" />
+  </message>
+  <message name="listarLineasPorClienteResponse">
+    <part name="parameters" element="tns:listarLineasPorClienteResponse" />
+  </message>
+  <message name="desafiliarLinea">
+    <part name="parameters" element="tns:desafiliarLinea" />
+  </message>
+  <message name="desafiliarLineaResponse">
+    <part name="parameters" element="tns:desafiliarLineaResponse" />
+  </message>
+  <portType name="LineaWS">
+    <operation name="listarLineasPorCliente">
+      <input wsam:Action="http://ws.pdm.pucp.edu.pe/LineaWS/listarLineasPorClienteRequest" message="tns:listarLineasPorCliente" />
+      <output wsam:Action="http://ws.pdm.pucp.edu.pe/LineaWS/listarLineasPorClienteResponse" message="tns:listarLineasPorClienteResponse" />
+    </operation>
+    <operation name="desafiliarLinea">
+      <input wsam:Action="http://ws.pdm.pucp.edu.pe/LineaWS/desafiliarLineaRequest" message="tns:desafiliarLinea" />
+      <output wsam:Action="http://ws.pdm.pucp.edu.pe/LineaWS/desafiliarLineaResponse" message="tns:desafiliarLineaResponse" />
+    </operation>
+  </portType>
+  <binding name="LineaWSPortBinding" type="tns:LineaWS">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="listarLineasPorCliente">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="desafiliarLinea">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="LineaWS">
+    <port name="LineaWSPort" binding="tns:LineaWSPortBinding">
+      <soap:address location="http://localhost:8080/PortalWS/LineaWS" />
+    </port>
+  </service>
+</definitions>

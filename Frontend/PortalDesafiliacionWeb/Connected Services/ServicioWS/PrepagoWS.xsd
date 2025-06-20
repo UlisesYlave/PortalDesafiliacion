@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://ws.pdm.pucp.edu.pe/" targetNamespace="http://ws.pdm.pucp.edu.pe/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="eliminarPrepago" type="tns:eliminarPrepago" />
+  <xs:element name="eliminarPrepagoResponse" type="tns:eliminarPrepagoResponse" />
+  <xs:element name="migracionPrepagoAPostpago" type="tns:migracionPrepagoAPostpago" />
+  <xs:element name="migracionPrepagoAPostpagoResponse" type="tns:migracionPrepagoAPostpagoResponse" />
+  <xs:complexType name="eliminarPrepago">
+    <xs:sequence>
+      <xs:element name="idLinea" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarPrepagoResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="migracionPrepagoAPostpago">
+    <xs:sequence>
+      <xs:element name="idLinea" type="xs:int" />
+      <xs:element name="idPlan" type="xs:int" />
+      <xs:element name="diaCicloFacturacion" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="migracionPrepagoAPostpagoResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

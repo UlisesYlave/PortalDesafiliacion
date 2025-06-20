@@ -1,0 +1,10 @@
+pe\edu\pucp\pdm\portalws\JakartaRestConfiguration.class
+pe\edu\pucp\pdm\ws\PostpagoWS.class
+pe\edu\pucp\pdm\ws\SolicitudDesafiliacionWS.class
+pe\edu\pucp\pdm\ws\EquipoWS.class
+pe\edu\pucp\pdm\ws\LineaWS.class
+pe\edu\pucp\pdm\ws\UsuarioWS.class
+pe\edu\pucp\pdm\ws\ClienteWS.class
+pe\edu\pucp\pdm\ws\PrepagoWS.class
+pe\edu\pucp\pdm\portalws\resources\JakartaEE10Resource.class
+pe\edu\pucp\pdm\ws\PlantillaOfertaWS.class

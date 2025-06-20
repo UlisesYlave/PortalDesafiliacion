@@ -1,0 +1,18 @@
+<discovery xmlns="http://schemas.xmlsoap.org/disco/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" >
+ <contractRef xmlns="http://schemas.xmlsoap.org/disco/scl/"
+ref="http://localhost:8080/PortalWS/UsuarioWS?WSDL"/>
+ <contractRef xmlns="http://schemas.xmlsoap.org/disco/scl/"
+ref="http://localhost:8080/PortalWS/ClienteWS?WSDL"/>
+<contractRef xmlns="http://schemas.xmlsoap.org/disco/scl/"
+ref="http://localhost:8080/PortalWS/LineaWS?WSDL"/>
+<contractRef xmlns="http://schemas.xmlsoap.org/disco/scl/"
+ref="http://localhost:8080/PortalWS/PostpagoWS?WSDL"/>
+<contractRef xmlns="http://schemas.xmlsoap.org/disco/scl/"
+ref="http://localhost:8080/PortalWS/PrepagoWS?WSDL"/>
+<contractRef xmlns="http://schemas.xmlsoap.org/disco/scl/"
+ref="http://localhost:8080/PortalWS/SolicitudDesafiliacionWS?WSDL"/>
+<contractRef xmlns="http://schemas.xmlsoap.org/disco/scl/"
+ref="http://localhost:8080/PortalWS/PlantillaOfertaWS?WSDL"/>
+<contractRef xmlns="http://schemas.xmlsoap.org/disco/scl/"
+ref="http://localhost:8080/PortalWS/EquipoWS?WSDL"/>
+</discovery>

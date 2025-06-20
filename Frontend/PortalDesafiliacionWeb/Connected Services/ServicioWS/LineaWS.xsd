@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://ws.pdm.pucp.edu.pe/" targetNamespace="http://ws.pdm.pucp.edu.pe/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="desafiliarLinea" type="tns:desafiliarLinea" />
+  <xs:element name="desafiliarLineaResponse" type="tns:desafiliarLineaResponse" />
+  <xs:element name="listarLineasPorCliente" type="tns:listarLineasPorCliente" />
+  <xs:element name="listarLineasPorClienteResponse" type="tns:listarLineasPorClienteResponse" />
+  <xs:complexType name="listarLineasPorCliente">
+    <xs:sequence>
+      <xs:element name="idCliente" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarLineasPorClienteResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:linea" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="linea">
+    <xs:sequence>
+      <xs:element name="activa" type="xs:boolean" />
+      <xs:element minOccurs="0" name="fechaActivacion" type="xs:dateTime" />
+      <xs:element name="idCliente" type="xs:int" />
+      <xs:element name="idLinea" type="xs:int" />
+      <xs:element minOccurs="0" name="numeroTelefono" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ofertas" nillable="true" type="tns:oferta" />
+      <xs:element minOccurs="0" name="tipoLinea" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="oferta">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:plantillaOferta">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="descripcion" type="xs:string" />
+          <xs:element name="descuento" type="xs:double" />
+          <xs:element minOccurs="0" name="equipo" type="tns:equipo" />
+          <xs:element minOccurs="0" name="estado" type="xs:string" />
+          <xs:element minOccurs="0" name="fechaCreacion" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="fechaFin" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="fechaInicio" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="idLinea" type="xs:int" />
+          <xs:element name="idOferta" type="xs:int" />
+          <xs:element minOccurs="0" name="modalidad" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="plantillaOferta">
+    <xs:sequence>
+      <xs:element name="activa" type="xs:boolean" />
+      <xs:element minOccurs="0" name="formula" type="xs:string" />
+      <xs:element name="idPlantilla" type="xs:int" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="modalidades" nillable="true" type="tns:modalidad" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element minOccurs="0" name="periodoValidez" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="prioridad" type="tns:prioridad" />
+      <xs:element name="tipoServicio" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="equipo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="categoria" type="tns:categoria" />
+      <xs:element minOccurs="0" name="estado" type="xs:string" />
+      <xs:element minOccurs="0" name="marca" type="xs:string" />
+      <xs:element minOccurs="0" name="modelo" type="xs:string" />
+      <xs:element name="precio" type="xs:double" />
+      <xs:element name="stock" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modalidad">
+    <xs:sequence>
+      <xs:element name="idModalidad" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="prioridad">
+    <xs:sequence>
+      <xs:element name="cantidadOfertas" type="xs:int" />
+      <xs:element name="idPrioridad" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="desafiliarLinea">
+    <xs:sequence>
+      <xs:element name="idLinea" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="desafiliarLineaResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:simpleType name="categoria">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="ALTA" />
+      <xs:enumeration value="MEDIA" />
+      <xs:enumeration value="BAJA" />
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://ws.pdm.pucp.edu.pe/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" name="PlantillaOfertaWS" targetNamespace="http://ws.pdm.pucp.edu.pe/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8080/PortalWS/PlantillaOfertaWS?xsd=1" namespace="http://ws.pdm.pucp.edu.pe/" />
+    </xsd:schema>
+  </types>
+  <message name="listarPlantillasOfertas">
+    <part name="parameters" element="tns:listarPlantillasOfertas" />
+  </message>
+  <message name="listarPlantillasOfertasResponse">
+    <part name="parameters" element="tns:listarPlantillasOfertasResponse" />
+  </message>
+  <message name="modificarPlantilla">
+    <part name="parameters" element="tns:modificarPlantilla" />
+  </message>
+  <message name="modificarPlantillaResponse">
+    <part name="parameters" element="tns:modificarPlantillaResponse" />
+  </message>
+  <message name="insertarPlantilla">
+    <part name="parameters" element="tns:insertarPlantilla" />
+  </message>
+  <message name="insertarPlantillaResponse">
+    <part name="parameters" element="tns:insertarPlantillaResponse" />
+  </message>
+  <message name="eliminarPlantilla">
+    <part name="parameters" element="tns:eliminarPlantilla" />
+  </message>
+  <message name="eliminarPlantillaResponse">
+    <part name="parameters" element="tns:eliminarPlantillaResponse" />
+  </message>
+  <portType name="PlantillaOfertaWS">
+    <operation name="listarPlantillasOfertas">
+      <input wsam:Action="http://ws.pdm.pucp.edu.pe/PlantillaOfertaWS/listarPlantillasOfertasRequest" message="tns:listarPlantillasOfertas" />
+      <output wsam:Action="http://ws.pdm.pucp.edu.pe/PlantillaOfertaWS/listarPlantillasOfertasResponse" message="tns:listarPlantillasOfertasResponse" />
+    </operation>
+    <operation name="modificarPlantilla">
+      <input wsam:Action="http://ws.pdm.pucp.edu.pe/PlantillaOfertaWS/modificarPlantillaRequest" message="tns:modificarPlantilla" />
+      <output wsam:Action="http://ws.pdm.pucp.edu.pe/PlantillaOfertaWS/modificarPlantillaResponse" message="tns:modificarPlantillaResponse" />
+    </operation>
+    <operation name="insertarPlantilla">
+      <input wsam:Action="http://ws.pdm.pucp.edu.pe/PlantillaOfertaWS/insertarPlantillaRequest" message="tns:insertarPlantilla" />
+      <output wsam:Action="http://ws.pdm.pucp.edu.pe/PlantillaOfertaWS/insertarPlantillaResponse" message="tns:insertarPlantillaResponse" />
+    </operation>
+    <operation name="eliminarPlantilla">
+      <input wsam:Action="http://ws.pdm.pucp.edu.pe/PlantillaOfertaWS/eliminarPlantillaRequest" message="tns:eliminarPlantilla" />
+      <output wsam:Action="http://ws.pdm.pucp.edu.pe/PlantillaOfertaWS/eliminarPlantillaResponse" message="tns:eliminarPlantillaResponse" />
+    </operation>
+  </portType>
+  <binding name="PlantillaOfertaWSPortBinding" type="tns:PlantillaOfertaWS">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="listarPlantillasOfertas">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="modificarPlantilla">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="insertarPlantilla">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="eliminarPlantilla">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="PlantillaOfertaWS">
+    <port name="PlantillaOfertaWSPort" binding="tns:PlantillaOfertaWSPortBinding">
+      <soap:address location="http://localhost:8080/PortalWS/PlantillaOfertaWS" />
+    </port>
+  </service>
+</definitions>

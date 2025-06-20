@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://services.softprog.pucp.edu.pe/" targetNamespace="http://services.softprog.pucp.edu.pe/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="eliminarPostpago" type="tns:eliminarPostpago" />
+  <xs:element name="eliminarPostpagoResponse" type="tns:eliminarPostpagoResponse" />
+  <xs:element name="obtenerDeudaPendiente" type="tns:obtenerDeudaPendiente" />
+  <xs:element name="obtenerDeudaPendienteResponse" type="tns:obtenerDeudaPendienteResponse" />
+  <xs:complexType name="obtenerDeudaPendiente">
+    <xs:sequence>
+      <xs:element name="idLinea" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerDeudaPendienteResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarPostpago">
+    <xs:sequence>
+      <xs:element name="idLinea" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarPostpagoResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

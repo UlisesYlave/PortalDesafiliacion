@@ -1,0 +1,16 @@
+pe\edu\pucp\pdm\portaldbtests\servicio\PortalDBTestPlan.class
+pe\edu\pucp\pdm\portaldbtests\oferta\PortalDBTestModalidad.class
+pe\edu\pucp\pdm\portaldbtests\servicio\PortalDBTestPostpago.class
+pe\edu\pucp\pdm\portaldbtests\usuario\PortalDBTestTipoMotivo.class
+pe\edu\pucp\pdm\portaldbtests\oferta\PortalDBTestOferta.class
+pe\edu\pucp\pdm\portaldbtests\usuario\PortalDBTestAdministrador.class
+pe\edu\pucp\pdm\portaldbtests\servicio\PortalDBTestSolicitudDesafiliacion.class
+pe\edu\pucp\pdm\portaldbtests\usuario\PortalDBTestCliente.class
+pe\edu\pucp\pdm\portaldbtests\oferta\PortalDBTestEquipo.class
+pe\edu\pucp\pdm\portaldbtests\oferta\PortalDBTestParametro.class
+pe\edu\pucp\pdm\portaldbtests\usuario\PortalDBTestRegion.class
+pe\edu\pucp\pdm\portaldbtests\oferta\PortalDBTestPlantillaOferta.class
+pe\edu\pucp\pdm\portaldbtests\servicio\PortalDBTestPrepago.class
+pe\edu\pucp\pdm\portaldbtests\servicio\PortalDBTestPaquete.class
+pe\edu\pucp\pdm\portaldbtests\usuario\PortalDBTestPrioridad.class
+pe\edu\pucp\pdm\portaldbtests\usuario\PortalDBTestEncuesta.class
