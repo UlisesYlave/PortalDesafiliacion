@@ -19,7 +19,7 @@ public class PortalDBTestPlantillaOferta {
         PrioridadDAOImpl prioridadDao = new PrioridadDAOImpl();
         Prioridad prioridad = prioridadDao.buscar(3);
         
-        PlantillaOferta plantilla = new PlantillaOferta("Descuento familiar","Hola {nombre}, esta ofera es para ti", 
+        PlantillaOferta plantilla = new PlantillaOferta("Descuento celular","Hola {nombre}, tenemos este {equipo} para ti.", 
                                                                                        1,prioridad, formato.parse("09/06/2025"));
         int idP = plantillaDao.insertar(plantilla);
         plantilla.setIdPlantilla(idP);
@@ -33,7 +33,10 @@ public class PortalDBTestPlantillaOferta {
         // buscar
         int idB = 1;
         plantilla = plantillaDao.buscar(idB);
-        if (idB==plantilla.getIdPlantilla()) System.out.println("La Plantilla con id: " + idP + " ha sido encontrada");
+        if (idB==plantilla.getIdPlantilla()) {
+            System.out.println("La Plantilla con id: " + idP + " ha sido encontrada");
+            System.out.println("Prioidad: "+ plantilla.getPrioridad().getIdPrioridad() + " nombre: " + plantilla.getPrioridad().getNombre());
+        }
         // listar
         List<PlantillaOferta> plantillas = plantillaDao.listar();
         System.out.println("Todos las plantillas de ofertas:");

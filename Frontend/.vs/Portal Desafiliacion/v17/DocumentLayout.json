@@ -3,15 +3,27 @@
   "WorkspaceRootPath": "C:\\Users\\BRAULIO\\Desktop\\PUCP\\CICLO 9\\PROGRAMACION 3\\PortalDeDesafiliacionWeb\\Entrega_7\\Frontend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A8997050-7E08-41E7-B168-828D11EFED73}|PortalDesafiliacionWeb\\PortalDesafiliacionWeb.csproj|C:\\Users\\BRAULIO\\Desktop\\PUCP\\CICLO 9\\PROGRAMACION 3\\PortalDeDesafiliacionWeb\\Entrega_7\\Frontend\\portaldesafiliacionweb\\administrador\\plantilla.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{A8997050-7E08-41E7-B168-828D11EFED73}|PortalDesafiliacionWeb\\PortalDesafiliacionWeb.csproj|solutionrelative:portaldesafiliacionweb\\administrador\\plantilla.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A8997050-7E08-41E7-B168-828D11EFED73}|PortalDesafiliacionWeb\\PortalDesafiliacionWeb.csproj|C:\\Users\\BRAULIO\\Desktop\\PUCP\\CICLO 9\\PROGRAMACION 3\\PortalDeDesafiliacionWeb\\Entrega_7\\Frontend\\portaldesafiliacionweb\\administrador\\plantilla.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A8997050-7E08-41E7-B168-828D11EFED73}|PortalDesafiliacionWeb\\PortalDesafiliacionWeb.csproj|solutionrelative:portaldesafiliacionweb\\administrador\\plantilla.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A8997050-7E08-41E7-B168-828D11EFED73}|PortalDesafiliacionWeb\\PortalDesafiliacionWeb.csproj|c:\\users\\braulio\\desktop\\pucp\\ciclo 9\\programacion 3\\portaldedesafiliacionweb\\entrega_7\\frontend\\portaldesafiliacionweb\\desafiliaciones\\ofertaprimera.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A8997050-7E08-41E7-B168-828D11EFED73}|PortalDesafiliacionWeb\\PortalDesafiliacionWeb.csproj|c:\\users\\braulio\\desktop\\pucp\\ciclo 9\\programacion 3\\portaldedesafiliacionweb\\entrega_7\\frontend\\portaldesafiliacionweb\\administrador\\plantilla.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{A8997050-7E08-41E7-B168-828D11EFED73}|PortalDesafiliacionWeb\\PortalDesafiliacionWeb.csproj|solutionrelative:portaldesafiliacionweb\\administrador\\plantilla.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8997050-7E08-41E7-B168-828D11EFED73}|PortalDesafiliacionWeb\\PortalDesafiliacionWeb.csproj|C:\\Users\\BRAULIO\\Desktop\\PUCP\\CICLO 9\\PROGRAMACION 3\\PortalDeDesafiliacionWeb\\Entrega_7\\Frontend\\portaldesafiliacionweb\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{A8997050-7E08-41E7-B168-828D11EFED73}|PortalDesafiliacionWeb\\PortalDesafiliacionWeb.csproj|solutionrelative:portaldesafiliacionweb\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8997050-7E08-41E7-B168-828D11EFED73}|PortalDesafiliacionWeb\\PortalDesafiliacionWeb.csproj|C:\\Users\\BRAULIO\\Desktop\\PUCP\\CICLO 9\\PROGRAMACION 3\\PortalDeDesafiliacionWeb\\Entrega_7\\Frontend\\portaldesafiliacionweb\\administrador\\reporte.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{A8997050-7E08-41E7-B168-828D11EFED73}|PortalDesafiliacionWeb\\PortalDesafiliacionWeb.csproj|solutionrelative:portaldesafiliacionweb\\administrador\\reporte.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8997050-7E08-41E7-B168-828D11EFED73}|PortalDesafiliacionWeb\\PortalDesafiliacionWeb.csproj|C:\\Users\\BRAULIO\\Desktop\\PUCP\\CICLO 9\\PROGRAMACION 3\\PortalDeDesafiliacionWeb\\Entrega_7\\Frontend\\portaldesafiliacionweb\\administrador\\equipos.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{A8997050-7E08-41E7-B168-828D11EFED73}|PortalDesafiliacionWeb\\PortalDesafiliacionWeb.csproj|solutionrelative:portaldesafiliacionweb\\administrador\\equipos.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8997050-7E08-41E7-B168-828D11EFED73}|PortalDesafiliacionWeb\\PortalDesafiliacionWeb.csproj|C:\\Users\\BRAULIO\\Desktop\\PUCP\\CICLO 9\\PROGRAMACION 3\\PortalDeDesafiliacionWeb\\Entrega_7\\Frontend\\portaldesafiliacionweb\\desafiliaciones\\ofertaprimera.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A8997050-7E08-41E7-B168-828D11EFED73}|PortalDesafiliacionWeb\\PortalDesafiliacionWeb.csproj|solutionrelative:portaldesafiliacionweb\\desafiliaciones\\ofertaprimera.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -67,16 +79,8 @@
       "RelativeMoniker": "D:0:0:{A8997050-7E08-41E7-B168-828D11EFED73}|PortalDesafiliacionWeb\\PortalDesafiliacionWeb.csproj|solutionrelative:portaldesafiliacionweb\\administrador\\admin.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A8997050-7E08-41E7-B168-828D11EFED73}|PortalDesafiliacionWeb\\PortalDesafiliacionWeb.csproj|C:\\Users\\BRAULIO\\Desktop\\PUCP\\CICLO 9\\PROGRAMACION 3\\PortalDeDesafiliacionWeb\\Entrega_7\\Frontend\\portaldesafiliacionweb\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{A8997050-7E08-41E7-B168-828D11EFED73}|PortalDesafiliacionWeb\\PortalDesafiliacionWeb.csproj|solutionrelative:portaldesafiliacionweb\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A8997050-7E08-41E7-B168-828D11EFED73}|PortalDesafiliacionWeb\\PortalDesafiliacionWeb.csproj|C:\\Users\\BRAULIO\\Desktop\\PUCP\\CICLO 9\\PROGRAMACION 3\\PortalDeDesafiliacionWeb\\Entrega_7\\Frontend\\portaldesafiliacionweb\\desafiliaciones\\ofertasegunda.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A8997050-7E08-41E7-B168-828D11EFED73}|PortalDesafiliacionWeb\\PortalDesafiliacionWeb.csproj|solutionrelative:portaldesafiliacionweb\\desafiliaciones\\ofertasegunda.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A8997050-7E08-41E7-B168-828D11EFED73}|PortalDesafiliacionWeb\\PortalDesafiliacionWeb.csproj|C:\\Users\\BRAULIO\\Desktop\\PUCP\\CICLO 9\\PROGRAMACION 3\\PortalDeDesafiliacionWeb\\Entrega_7\\Frontend\\portaldesafiliacionweb\\administrador\\equipos.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{A8997050-7E08-41E7-B168-828D11EFED73}|PortalDesafiliacionWeb\\PortalDesafiliacionWeb.csproj|solutionrelative:portaldesafiliacionweb\\administrador\\equipos.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A8997050-7E08-41E7-B168-828D11EFED73}|PortalDesafiliacionWeb\\PortalDesafiliacionWeb.csproj|C:\\Users\\BRAULIO\\Desktop\\PUCP\\CICLO 9\\PROGRAMACION 3\\PortalDeDesafiliacionWeb\\Entrega_7\\Frontend\\portaldesafiliacionweb\\cliente\\lineas.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
@@ -163,10 +167,6 @@
       "RelativeMoniker": "D:0:0:{A8997050-7E08-41E7-B168-828D11EFED73}|PortalDesafiliacionWeb\\PortalDesafiliacionWeb.csproj|solutionrelative:portaldesafiliacionweb\\administrador\\reporte.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A8997050-7E08-41E7-B168-828D11EFED73}|PortalDesafiliacionWeb\\PortalDesafiliacionWeb.csproj|C:\\Users\\BRAULIO\\Desktop\\PUCP\\CICLO 9\\PROGRAMACION 3\\PortalDeDesafiliacionWeb\\Entrega_7\\Frontend\\portaldesafiliacionweb\\administrador\\reporte.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{A8997050-7E08-41E7-B168-828D11EFED73}|PortalDesafiliacionWeb\\PortalDesafiliacionWeb.csproj|solutionrelative:portaldesafiliacionweb\\administrador\\reporte.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A8997050-7E08-41E7-B168-828D11EFED73}|PortalDesafiliacionWeb\\PortalDesafiliacionWeb.csproj|C:\\Users\\BRAULIO\\Desktop\\PUCP\\CICLO 9\\PROGRAMACION 3\\PortalDeDesafiliacionWeb\\Entrega_7\\Frontend\\portaldesafiliacionweb\\desafiliaciones\\ofertasegunda.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A8997050-7E08-41E7-B168-828D11EFED73}|PortalDesafiliacionWeb\\PortalDesafiliacionWeb.csproj|solutionrelative:portaldesafiliacionweb\\desafiliaciones\\ofertasegunda.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -204,7 +204,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 22,
+          "SelectedChildIndex": 42,
           "Children": [
             {
               "$type": "Bookmark",
@@ -212,7 +212,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 16,
               "Title": "Lineas.aspx.cs",
               "DocumentMoniker": "C:\\Users\\BRAULIO\\Desktop\\PUCP\\CICLO 9\\PROGRAMACION 3\\PortalDeDesafiliacionWeb\\Entrega_7\\Frontend\\PortalDesafiliacionWeb\\Cliente\\Lineas.aspx.cs",
               "RelativeDocumentMoniker": "PortalDesafiliacionWeb\\Cliente\\Lineas.aspx.cs",
@@ -220,11 +220,12 @@
               "RelativeToolTip": "PortalDesafiliacionWeb\\Cliente\\Lineas.aspx.cs",
               "ViewState": "AgIAAIAAAAAAAAAAAAAswJQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-06T22:21:40.838Z"
+              "WhenOpened": "2025-06-06T22:21:40.838Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 2,
               "Title": "Login.aspx",
               "DocumentMoniker": "C:\\Users\\BRAULIO\\Desktop\\PUCP\\CICLO 9\\PROGRAMACION 3\\PortalDeDesafiliacionWeb\\Entrega_7\\Frontend\\PortalDesafiliacionWeb\\Login.aspx",
               "RelativeDocumentMoniker": "PortalDesafiliacionWeb\\Login.aspx",
@@ -232,11 +233,12 @@
               "RelativeToolTip": "PortalDesafiliacionWeb\\Login.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-06-01T16:12:21.475Z"
+              "WhenOpened": "2025-06-01T16:12:21.475Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "Motivo.aspx.cs",
               "DocumentMoniker": "C:\\Users\\BRAULIO\\Desktop\\PUCP\\CICLO 9\\PROGRAMACION 3\\PortalDeDesafiliacionWeb\\Entrega_7\\Frontend\\PortalDesafiliacionWeb\\Desafiliaciones\\Motivo.aspx.cs",
               "RelativeDocumentMoniker": "PortalDesafiliacionWeb\\Desafiliaciones\\Motivo.aspx.cs",
@@ -244,11 +246,12 @@
               "RelativeToolTip": "PortalDesafiliacionWeb\\Desafiliaciones\\Motivo.aspx.cs",
               "ViewState": "AgIAAB0AAAAAAAAAAAAwwDUAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-01T19:47:37.547Z"
+              "WhenOpened": "2025-06-01T19:47:37.547Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "OfertaResultado.aspx.cs",
               "DocumentMoniker": "C:\\Users\\BRAULIO\\Desktop\\PUCP\\CICLO 9\\PROGRAMACION 3\\PortalDeDesafiliacionWeb\\Entrega_7\\Frontend\\PortalDesafiliacionWeb\\Desafiliaciones\\OfertaResultado.aspx.cs",
               "RelativeDocumentMoniker": "PortalDesafiliacionWeb\\Desafiliaciones\\OfertaResultado.aspx.cs",
@@ -256,11 +259,12 @@
               "RelativeToolTip": "PortalDesafiliacionWeb\\Desafiliaciones\\OfertaResultado.aspx.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAIcAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T01:40:56.057Z"
+              "WhenOpened": "2025-06-02T01:40:56.057Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "Equipos.aspx.cs",
               "DocumentMoniker": "C:\\Users\\BRAULIO\\Desktop\\PUCP\\CICLO 9\\PROGRAMACION 3\\PortalDeDesafiliacionWeb\\Entrega_7\\Frontend\\PortalDesafiliacionWeb\\Administrador\\Equipos.aspx.cs",
               "RelativeDocumentMoniker": "PortalDesafiliacionWeb\\Administrador\\Equipos.aspx.cs",
@@ -268,11 +272,12 @@
               "RelativeToolTip": "PortalDesafiliacionWeb\\Administrador\\Equipos.aspx.cs",
               "ViewState": "AgIAACsAAAAAAAAAAAAIwDYAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T05:16:58.651Z"
+              "WhenOpened": "2025-06-03T05:16:58.651Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "InicioCli.aspx.cs",
               "DocumentMoniker": "C:\\Users\\BRAULIO\\Desktop\\PUCP\\CICLO 9\\PROGRAMACION 3\\PortalDeDesafiliacionWeb\\Entrega_7\\Frontend\\PortalDesafiliacionWeb\\Cliente\\InicioCli.aspx.cs",
               "RelativeDocumentMoniker": "PortalDesafiliacionWeb\\Cliente\\InicioCli.aspx.cs",
@@ -280,11 +285,12 @@
               "RelativeToolTip": "PortalDesafiliacionWeb\\Cliente\\InicioCli.aspx.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-06T22:20:34.826Z"
+              "WhenOpened": "2025-06-06T22:20:34.826Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 17,
               "Title": "InicioCli.aspx",
               "DocumentMoniker": "C:\\Users\\BRAULIO\\Desktop\\PUCP\\CICLO 9\\PROGRAMACION 3\\PortalDeDesafiliacionWeb\\Entrega_7\\Frontend\\PortalDesafiliacionWeb\\Cliente\\InicioCli.aspx",
               "RelativeDocumentMoniker": "PortalDesafiliacionWeb\\Cliente\\InicioCli.aspx",
@@ -292,11 +298,12 @@
               "RelativeToolTip": "PortalDesafiliacionWeb\\Cliente\\InicioCli.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-06-06T22:20:31.67Z"
+              "WhenOpened": "2025-06-06T22:20:31.67Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "Login.aspx.cs",
               "DocumentMoniker": "C:\\Users\\BRAULIO\\Desktop\\PUCP\\CICLO 9\\PROGRAMACION 3\\PortalDeDesafiliacionWeb\\Entrega_7\\Frontend\\PortalDesafiliacionWeb\\Login.aspx.cs",
               "RelativeDocumentMoniker": "PortalDesafiliacionWeb\\Login.aspx.cs",
@@ -304,11 +311,12 @@
               "RelativeToolTip": "PortalDesafiliacionWeb\\Login.aspx.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-01T16:12:28.482Z"
+              "WhenOpened": "2025-06-01T16:12:28.482Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 18,
               "Title": "Admin.Master.cs",
               "DocumentMoniker": "C:\\Users\\BRAULIO\\Desktop\\PUCP\\CICLO 9\\PROGRAMACION 3\\PortalDeDesafiliacionWeb\\Entrega_7\\Frontend\\PortalDesafiliacionWeb\\Administrador\\Admin.Master.cs",
               "RelativeDocumentMoniker": "PortalDesafiliacionWeb\\Administrador\\Admin.Master.cs",
@@ -316,11 +324,12 @@
               "RelativeToolTip": "PortalDesafiliacionWeb\\Administrador\\Admin.Master.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T04:50:51.438Z"
+              "WhenOpened": "2025-06-03T04:50:51.438Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "OfertaSegunda.aspx",
               "DocumentMoniker": "C:\\Users\\BRAULIO\\Desktop\\PUCP\\CICLO 9\\PROGRAMACION 3\\PortalDeDesafiliacionWeb\\Entrega_7\\Frontend\\PortalDesafiliacionWeb\\Desafiliaciones\\OfertaSegunda.aspx",
               "RelativeDocumentMoniker": "PortalDesafiliacionWeb\\Desafiliaciones\\OfertaSegunda.aspx",
@@ -328,11 +337,12 @@
               "RelativeToolTip": "PortalDesafiliacionWeb\\Desafiliaciones\\OfertaSegunda.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-06-02T00:35:12.051Z"
+              "WhenOpened": "2025-06-02T00:35:12.051Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "OfertaResultado.aspx",
               "DocumentMoniker": "C:\\Users\\BRAULIO\\Desktop\\PUCP\\CICLO 9\\PROGRAMACION 3\\PortalDeDesafiliacionWeb\\Entrega_7\\Frontend\\PortalDesafiliacionWeb\\Desafiliaciones\\OfertaResultado.aspx",
               "RelativeDocumentMoniker": "PortalDesafiliacionWeb\\Desafiliaciones\\OfertaResultado.aspx",
@@ -340,7 +350,8 @@
               "RelativeToolTip": "PortalDesafiliacionWeb\\Desafiliaciones\\OfertaResultado.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-06-18T07:58:41.474Z"
+              "WhenOpened": "2025-06-18T07:58:41.474Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -388,7 +399,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "OfertaSegunda.aspx.cs",
               "DocumentMoniker": "C:\\Users\\BRAULIO\\Desktop\\PUCP\\CICLO 9\\PROGRAMACION 3\\PortalDeDesafiliacionWeb\\Entrega_7\\Frontend\\PortalDesafiliacionWeb\\Desafiliaciones\\OfertaSegunda.aspx.cs",
               "RelativeDocumentMoniker": "PortalDesafiliacionWeb\\Desafiliaciones\\OfertaSegunda.aspx.cs",
@@ -396,7 +407,8 @@
               "RelativeToolTip": "PortalDesafiliacionWeb\\Desafiliaciones\\OfertaSegunda.aspx.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAgwDUAAABNAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T00:35:18.235Z"
+              "WhenOpened": "2025-06-02T00:35:18.235Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -411,7 +423,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 4,
               "Title": "Equipos.aspx",
               "DocumentMoniker": "C:\\Users\\BRAULIO\\Desktop\\PUCP\\CICLO 9\\PROGRAMACION 3\\PortalDeDesafiliacionWeb\\Entrega_7\\Frontend\\PortalDesafiliacionWeb\\Administrador\\Equipos.aspx",
               "RelativeDocumentMoniker": "PortalDesafiliacionWeb\\Administrador\\Equipos.aspx",
@@ -419,7 +431,8 @@
               "RelativeToolTip": "PortalDesafiliacionWeb\\Administrador\\Equipos.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-06-03T04:56:27.177Z"
+              "WhenOpened": "2025-06-03T04:56:27.177Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -434,7 +447,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "Web.config",
               "DocumentMoniker": "C:\\Users\\BRAULIO\\Desktop\\PUCP\\CICLO 9\\PROGRAMACION 3\\PortalDeDesafiliacionWeb\\Entrega_7\\Frontend\\PortalDesafiliacionWeb\\Web.config",
               "RelativeDocumentMoniker": "PortalDesafiliacionWeb\\Web.config",
@@ -447,7 +460,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "Admin.Master",
               "DocumentMoniker": "C:\\Users\\BRAULIO\\Desktop\\PUCP\\CICLO 9\\PROGRAMACION 3\\PortalDeDesafiliacionWeb\\Entrega_7\\Frontend\\PortalDesafiliacionWeb\\Administrador\\Admin.Master",
               "RelativeDocumentMoniker": "PortalDesafiliacionWeb\\Administrador\\Admin.Master",
@@ -460,7 +473,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Plantilla.aspx",
               "DocumentMoniker": "C:\\Users\\BRAULIO\\Desktop\\PUCP\\CICLO 9\\PROGRAMACION 3\\PortalDeDesafiliacionWeb\\Entrega_7\\Frontend\\PortalDesafiliacionWeb\\Administrador\\Plantilla.aspx",
               "RelativeDocumentMoniker": "PortalDesafiliacionWeb\\Administrador\\Plantilla.aspx",
@@ -473,7 +486,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "InicioAD.aspx",
               "DocumentMoniker": "C:\\Users\\BRAULIO\\Desktop\\PUCP\\CICLO 9\\PROGRAMACION 3\\PortalDeDesafiliacionWeb\\Entrega_7\\Frontend\\PortalDesafiliacionWeb\\Administrador\\InicioAD.aspx",
               "RelativeDocumentMoniker": "PortalDesafiliacionWeb\\Administrador\\InicioAD.aspx",
@@ -481,11 +494,12 @@
               "RelativeToolTip": "PortalDesafiliacionWeb\\Administrador\\InicioAD.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-06-03T04:52:00.899Z"
+              "WhenOpened": "2025-06-03T04:52:00.899Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "Lineas.aspx",
               "DocumentMoniker": "C:\\Users\\BRAULIO\\Desktop\\PUCP\\CICLO 9\\PROGRAMACION 3\\PortalDeDesafiliacionWeb\\Entrega_7\\Frontend\\PortalDesafiliacionWeb\\Cliente\\Lineas.aspx",
               "RelativeDocumentMoniker": "PortalDesafiliacionWeb\\Cliente\\Lineas.aspx",
@@ -493,11 +507,12 @@
               "RelativeToolTip": "PortalDesafiliacionWeb\\Cliente\\Lineas.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-06-06T22:25:02.763Z"
+              "WhenOpened": "2025-06-06T22:25:02.763Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "OfertaPrimera.aspx.designer.cs",
               "DocumentMoniker": "C:\\Users\\BRAULIO\\Desktop\\PUCP\\CICLO 9\\PROGRAMACION 3\\PortalDeDesafiliacionWeb\\Entrega_7\\Frontend\\PortalDesafiliacionWeb\\Desafiliaciones\\OfertaPrimera.aspx.designer.cs",
               "RelativeDocumentMoniker": "PortalDesafiliacionWeb\\Desafiliaciones\\OfertaPrimera.aspx.designer.cs",
@@ -505,11 +520,12 @@
               "RelativeToolTip": "PortalDesafiliacionWeb\\Desafiliaciones\\OfertaPrimera.aspx.designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-07T04:13:28.854Z"
+              "WhenOpened": "2025-06-07T04:13:28.854Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "OfertaResultado.aspx.designer.cs",
               "DocumentMoniker": "C:\\Users\\BRAULIO\\Desktop\\PUCP\\CICLO 9\\PROGRAMACION 3\\PortalDeDesafiliacionWeb\\Entrega_7\\Frontend\\PortalDesafiliacionWeb\\Desafiliaciones\\OfertaResultado.aspx.designer.cs",
               "RelativeDocumentMoniker": "PortalDesafiliacionWeb\\Desafiliaciones\\OfertaResultado.aspx.designer.cs",
@@ -517,11 +533,12 @@
               "RelativeToolTip": "PortalDesafiliacionWeb\\Desafiliaciones\\OfertaResultado.aspx.designer.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T22:59:05.372Z"
+              "WhenOpened": "2025-06-02T22:59:05.372Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "OfertaPrimera.aspx.cs",
               "DocumentMoniker": "C:\\Users\\BRAULIO\\Desktop\\PUCP\\CICLO 9\\PROGRAMACION 3\\PortalDeDesafiliacionWeb\\Entrega_7\\Frontend\\PortalDesafiliacionWeb\\Desafiliaciones\\OfertaPrimera.aspx.cs",
               "RelativeDocumentMoniker": "PortalDesafiliacionWeb\\Desafiliaciones\\OfertaPrimera.aspx.cs",
@@ -534,7 +551,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "Motivo.aspx",
               "DocumentMoniker": "C:\\Users\\BRAULIO\\Desktop\\PUCP\\CICLO 9\\PROGRAMACION 3\\PortalDeDesafiliacionWeb\\Entrega_7\\Frontend\\PortalDesafiliacionWeb\\Desafiliaciones\\Motivo.aspx",
               "RelativeDocumentMoniker": "PortalDesafiliacionWeb\\Desafiliaciones\\Motivo.aspx",
@@ -542,11 +559,12 @@
               "RelativeToolTip": "PortalDesafiliacionWeb\\Desafiliaciones\\Motivo.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-06-01T19:46:48.683Z"
+              "WhenOpened": "2025-06-01T19:46:48.683Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "OfertaPrimera.aspx",
               "DocumentMoniker": "C:\\Users\\BRAULIO\\Desktop\\PUCP\\CICLO 9\\PROGRAMACION 3\\PortalDeDesafiliacionWeb\\Entrega_7\\Frontend\\PortalDesafiliacionWeb\\Desafiliaciones\\OfertaPrimera.aspx",
               "RelativeDocumentMoniker": "PortalDesafiliacionWeb\\Desafiliaciones\\OfertaPrimera.aspx",
@@ -554,11 +572,12 @@
               "RelativeToolTip": "PortalDesafiliacionWeb\\Desafiliaciones\\OfertaPrimera.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-06-02T00:05:17.362Z"
+              "WhenOpened": "2025-06-02T00:05:17.362Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "Solicitudes.aspx.cs",
               "DocumentMoniker": "C:\\Users\\BRAULIO\\Desktop\\PUCP\\CICLO 9\\PROGRAMACION 3\\PortalDeDesafiliacionWeb\\Entrega_7\\Frontend\\PortalDesafiliacionWeb\\Cliente\\Solicitudes.aspx.cs",
               "RelativeDocumentMoniker": "PortalDesafiliacionWeb\\Cliente\\Solicitudes.aspx.cs",
@@ -566,11 +585,12 @@
               "RelativeToolTip": "PortalDesafiliacionWeb\\Cliente\\Solicitudes.aspx.cs",
               "ViewState": "AgIAAEsAAAAAAAAAAAApwIcAAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-06T22:22:08.306Z"
+              "WhenOpened": "2025-06-06T22:22:08.306Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "Solicitudes.aspx.designer.cs",
               "DocumentMoniker": "C:\\Users\\BRAULIO\\Desktop\\PUCP\\CICLO 9\\PROGRAMACION 3\\PortalDeDesafiliacionWeb\\Entrega_7\\Frontend\\PortalDesafiliacionWeb\\Cliente\\Solicitudes.aspx.designer.cs",
               "RelativeDocumentMoniker": "PortalDesafiliacionWeb\\Cliente\\Solicitudes.aspx.designer.cs",
@@ -578,11 +598,12 @@
               "RelativeToolTip": "PortalDesafiliacionWeb\\Cliente\\Solicitudes.aspx.designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-14T01:07:30.253Z"
+              "WhenOpened": "2025-06-14T01:07:30.253Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 28,
               "Title": "Solicitudes.aspx",
               "DocumentMoniker": "C:\\Users\\BRAULIO\\Desktop\\PUCP\\CICLO 9\\PROGRAMACION 3\\PortalDeDesafiliacionWeb\\Entrega_7\\Frontend\\PortalDesafiliacionWeb\\Cliente\\Solicitudes.aspx",
               "RelativeDocumentMoniker": "PortalDesafiliacionWeb\\Cliente\\Solicitudes.aspx",
@@ -590,11 +611,12 @@
               "RelativeToolTip": "PortalDesafiliacionWeb\\Cliente\\Solicitudes.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-06-06T22:22:05.728Z"
+              "WhenOpened": "2025-06-06T22:22:05.728Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "FlujoDesafiliaciones.Master",
               "DocumentMoniker": "C:\\Users\\BRAULIO\\Desktop\\PUCP\\CICLO 9\\PROGRAMACION 3\\PortalDeDesafiliacionWeb\\Entrega_7\\Frontend\\PortalDesafiliacionWeb\\Desafiliaciones\\FlujoDesafiliaciones.Master",
               "RelativeDocumentMoniker": "PortalDesafiliacionWeb\\Desafiliaciones\\FlujoDesafiliaciones.Master",
@@ -602,11 +624,12 @@
               "RelativeToolTip": "PortalDesafiliacionWeb\\Desafiliaciones\\FlujoDesafiliaciones.Master",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-06-01T19:39:36.702Z"
+              "WhenOpened": "2025-06-01T19:39:36.702Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 29,
               "Title": "Web.Debug.config",
               "DocumentMoniker": "C:\\Users\\BRAULIO\\Desktop\\PUCP\\CICLO 9\\PROGRAMACION 3\\PortalDeDesafiliacionWeb\\Entrega_7\\Frontend\\PortalDesafiliacionWeb\\Web.Debug.config",
               "RelativeDocumentMoniker": "PortalDesafiliacionWeb\\Web.Debug.config",
@@ -614,11 +637,12 @@
               "RelativeToolTip": "PortalDesafiliacionWeb\\Web.Debug.config",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2025-06-18T02:36:22.801Z"
+              "WhenOpened": "2025-06-18T02:36:22.801Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 33,
               "Title": "MainLayout.Master.designer.cs",
               "DocumentMoniker": "C:\\Users\\BRAULIO\\Desktop\\PUCP\\CICLO 9\\PROGRAMACION 3\\PortalDeDesafiliacionWeb\\Entrega_7\\Frontend\\PortalDesafiliacionWeb\\MainLayout.Master.designer.cs",
               "RelativeDocumentMoniker": "PortalDesafiliacionWeb\\MainLayout.Master.designer.cs",
@@ -626,11 +650,12 @@
               "RelativeToolTip": "PortalDesafiliacionWeb\\MainLayout.Master.designer.cs",
               "ViewState": "AgIAABoAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-13T21:33:03.564Z"
+              "WhenOpened": "2025-06-13T21:33:03.564Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 34,
               "Title": "Plantilla.aspx.designer.cs",
               "DocumentMoniker": "C:\\Users\\BRAULIO\\Desktop\\PUCP\\CICLO 9\\PROGRAMACION 3\\PortalDeDesafiliacionWeb\\Entrega_7\\Frontend\\PortalDesafiliacionWeb\\Administrador\\Plantilla.aspx.designer.cs",
               "RelativeDocumentMoniker": "PortalDesafiliacionWeb\\Administrador\\Plantilla.aspx.designer.cs",
@@ -638,11 +663,12 @@
               "RelativeToolTip": "PortalDesafiliacionWeb\\Administrador\\Plantilla.aspx.designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAI8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-07T20:59:57.662Z"
+              "WhenOpened": "2025-06-07T20:59:57.662Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 36,
               "Title": "InicioAD.aspx.designer.cs",
               "DocumentMoniker": "C:\\Users\\BRAULIO\\Desktop\\PUCP\\CICLO 9\\PROGRAMACION 3\\PortalDeDesafiliacionWeb\\Entrega_7\\Frontend\\PortalDesafiliacionWeb\\Administrador\\InicioAD.aspx.designer.cs",
               "RelativeDocumentMoniker": "PortalDesafiliacionWeb\\Administrador\\InicioAD.aspx.designer.cs",
@@ -650,11 +676,12 @@
               "RelativeToolTip": "PortalDesafiliacionWeb\\Administrador\\InicioAD.aspx.designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-07T07:37:21.561Z"
+              "WhenOpened": "2025-06-07T07:37:21.561Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 39,
               "Title": "Lineas.aspx.designer.cs",
               "DocumentMoniker": "C:\\Users\\BRAULIO\\Desktop\\PUCP\\CICLO 9\\PROGRAMACION 3\\PortalDeDesafiliacionWeb\\Entrega_7\\Frontend\\PortalDesafiliacionWeb\\Cliente\\Lineas.aspx.designer.cs",
               "RelativeDocumentMoniker": "PortalDesafiliacionWeb\\Cliente\\Lineas.aspx.designer.cs",
@@ -662,11 +689,12 @@
               "RelativeToolTip": "PortalDesafiliacionWeb\\Cliente\\Lineas.aspx.designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAD4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-07T04:01:28.931Z"
+              "WhenOpened": "2025-06-07T04:01:28.931Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 37,
               "Title": "InicioAD.aspx.cs",
               "DocumentMoniker": "C:\\Users\\BRAULIO\\Desktop\\PUCP\\CICLO 9\\PROGRAMACION 3\\PortalDeDesafiliacionWeb\\Entrega_7\\Frontend\\PortalDesafiliacionWeb\\Administrador\\InicioAD.aspx.cs",
               "RelativeDocumentMoniker": "PortalDesafiliacionWeb\\Administrador\\InicioAD.aspx.cs",
@@ -674,11 +702,12 @@
               "RelativeToolTip": "PortalDesafiliacionWeb\\Administrador\\InicioAD.aspx.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T04:52:05.55Z"
+              "WhenOpened": "2025-06-03T04:52:05.55Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 40,
               "Title": "Reporte.aspx.cs",
               "DocumentMoniker": "C:\\Users\\BRAULIO\\Desktop\\PUCP\\CICLO 9\\PROGRAMACION 3\\PortalDeDesafiliacionWeb\\Entrega_7\\Frontend\\PortalDesafiliacionWeb\\Administrador\\Reporte.aspx.cs",
               "RelativeDocumentMoniker": "PortalDesafiliacionWeb\\Administrador\\Reporte.aspx.cs",
@@ -686,11 +715,12 @@
               "RelativeToolTip": "PortalDesafiliacionWeb\\Administrador\\Reporte.aspx.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAD8AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T05:30:27.91Z"
+              "WhenOpened": "2025-06-03T05:30:27.91Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 30,
               "Title": "MainLayout.Master",
               "DocumentMoniker": "C:\\Users\\BRAULIO\\Desktop\\PUCP\\CICLO 9\\PROGRAMACION 3\\PortalDeDesafiliacionWeb\\Entrega_7\\Frontend\\PortalDesafiliacionWeb\\MainLayout.Master",
               "RelativeDocumentMoniker": "PortalDesafiliacionWeb\\MainLayout.Master",
@@ -698,24 +728,25 @@
               "RelativeToolTip": "PortalDesafiliacionWeb\\MainLayout.Master",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-05-31T18:25:21.249Z"
+              "WhenOpened": "2025-05-31T18:25:21.249Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Plantilla.aspx.cs",
               "DocumentMoniker": "C:\\Users\\BRAULIO\\Desktop\\PUCP\\CICLO 9\\PROGRAMACION 3\\PortalDeDesafiliacionWeb\\Entrega_7\\Frontend\\PortalDesafiliacionWeb\\Administrador\\Plantilla.aspx.cs",
               "RelativeDocumentMoniker": "PortalDesafiliacionWeb\\Administrador\\Plantilla.aspx.cs",
               "ToolTip": "C:\\Users\\BRAULIO\\Desktop\\PUCP\\CICLO 9\\PROGRAMACION 3\\PortalDeDesafiliacionWeb\\Entrega_7\\Frontend\\PortalDesafiliacionWeb\\Administrador\\Plantilla.aspx.cs",
               "RelativeToolTip": "PortalDesafiliacionWeb\\Administrador\\Plantilla.aspx.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAYwDAAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAqwCwAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-03T04:58:16.932Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 3,
               "Title": "Reporte.aspx",
               "DocumentMoniker": "C:\\Users\\BRAULIO\\Desktop\\PUCP\\CICLO 9\\PROGRAMACION 3\\PortalDeDesafiliacionWeb\\Entrega_7\\Frontend\\PortalDesafiliacionWeb\\Administrador\\Reporte.aspx",
               "RelativeDocumentMoniker": "PortalDesafiliacionWeb\\Administrador\\Reporte.aspx",
@@ -723,11 +754,12 @@
               "RelativeToolTip": "PortalDesafiliacionWeb\\Administrador\\Reporte.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-06-03T05:29:54.806Z"
+              "WhenOpened": "2025-06-03T05:29:54.806Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 32,
               "Title": "ListarTelefono.aspx",
               "DocumentMoniker": "C:\\Users\\BRAULIO\\Desktop\\PUCP\\CICLO 9\\PROGRAMACION 3\\PortalDeDesafiliacionWeb\\Entrega_7\\Frontend\\PortalDesafiliacionWeb\\Cliente\\ListarTelefono.aspx",
               "RelativeDocumentMoniker": "PortalDesafiliacionWeb\\Cliente\\ListarTelefono.aspx",
@@ -735,11 +767,12 @@
               "RelativeToolTip": "PortalDesafiliacionWeb\\Cliente\\ListarTelefono.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-05-31T18:33:59.657Z"
+              "WhenOpened": "2025-05-31T18:33:59.657Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 31,
               "Title": "MainLayout.Master.cs",
               "DocumentMoniker": "C:\\Users\\BRAULIO\\Desktop\\PUCP\\CICLO 9\\PROGRAMACION 3\\PortalDeDesafiliacionWeb\\Entrega_7\\Frontend\\PortalDesafiliacionWeb\\MainLayout.Master.cs",
               "RelativeDocumentMoniker": "PortalDesafiliacionWeb\\MainLayout.Master.cs",
@@ -747,7 +780,8 @@
               "RelativeToolTip": "PortalDesafiliacionWeb\\MainLayout.Master.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-31T18:25:38.73Z"
+              "WhenOpened": "2025-05-31T18:25:38.73Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -759,11 +793,12 @@
               "RelativeToolTip": "PortalDesafiliacionWeb\\Desafiliaciones\\OfertaSegunda.aspx.designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAEcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T01:11:53.936Z"
+              "WhenOpened": "2025-06-02T01:11:53.936Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 38,
               "Title": "FlujoDesafiliaciones.Master.cs",
               "DocumentMoniker": "C:\\Users\\BRAULIO\\Desktop\\PUCP\\CICLO 9\\PROGRAMACION 3\\PortalDeDesafiliacionWeb\\Entrega_7\\Frontend\\PortalDesafiliacionWeb\\Desafiliaciones\\FlujoDesafiliaciones.Master.cs",
               "RelativeDocumentMoniker": "PortalDesafiliacionWeb\\Desafiliaciones\\FlujoDesafiliaciones.Master.cs",
@@ -771,7 +806,8 @@
               "RelativeToolTip": "PortalDesafiliacionWeb\\Desafiliaciones\\FlujoDesafiliaciones.Master.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-01T19:44:03.611Z"
+              "WhenOpened": "2025-06-01T19:44:03.611Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -783,7 +819,8 @@
               "RelativeToolTip": "PortalDesafiliacionWeb\\Cliente\\ListarTelefono.aspx.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-01T16:21:00.502Z"
+              "WhenOpened": "2025-06-01T16:21:00.502Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -795,11 +832,12 @@
               "RelativeToolTip": "PortalDesafiliacionWeb\\Cliente\\ListarTelefono.aspx.designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-01T17:17:16.433Z"
+              "WhenOpened": "2025-06-01T17:17:16.433Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 35,
               "Title": "Login.aspx.designer.cs",
               "DocumentMoniker": "C:\\Users\\BRAULIO\\Desktop\\PUCP\\CICLO 9\\PROGRAMACION 3\\PortalDeDesafiliacionWeb\\Entrega_7\\Frontend\\PortalDesafiliacionWeb\\Login.aspx.designer.cs",
               "RelativeDocumentMoniker": "PortalDesafiliacionWeb\\Login.aspx.designer.cs",
@@ -807,7 +845,8 @@
               "RelativeToolTip": "PortalDesafiliacionWeb\\Login.aspx.designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-01T16:30:15.588Z"
+              "WhenOpened": "2025-06-01T16:30:15.588Z",
+              "EditorCaption": ""
             }
           ]
         }

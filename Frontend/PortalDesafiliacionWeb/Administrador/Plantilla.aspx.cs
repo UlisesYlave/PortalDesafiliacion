@@ -11,7 +11,7 @@ namespace PortalDesafiliacionWeb.Administrador
     public partial class Plantilla : System.Web.UI.Page
     {
         private PlantillaOfertaWSClient plantillaWS;
-        private 
+
         protected void Page_Load(object sender, EventArgs e)
         {
             plantillaWS = new PlantillaOfertaWSClient();

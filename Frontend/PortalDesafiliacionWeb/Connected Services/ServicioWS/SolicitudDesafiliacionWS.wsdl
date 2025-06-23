@@ -5,14 +5,17 @@
       <xsd:import schemaLocation="http://localhost:8080/PortalWS/SolicitudDesafiliacionWS?xsd=1" namespace="http://services.softprog.pucp.edu.pe/" />
     </xsd:schema>
   </types>
-  <message name="exportToCsvPorCliente">
-    <part name="parameters" element="tns:exportToCsvPorCliente" />
+  <message name="enviarCodigoSMS">
+    <part name="parameters" element="tns:enviarCodigoSMS" />
   </message>
-  <message name="exportToCsvPorClienteResponse">
-    <part name="parameters" element="tns:exportToCsvPorClienteResponse" />
+  <message name="enviarCodigoSMSResponse">
+    <part name="parameters" element="tns:enviarCodigoSMSResponse" />
   </message>
-  <message name="IOException">
-    <part name="fault" element="tns:IOException" />
+  <message name="validarCodigoSMS">
+    <part name="parameters" element="tns:validarCodigoSMS" />
+  </message>
+  <message name="validarCodigoSMSResponse">
+    <part name="parameters" element="tns:validarCodigoSMSResponse" />
   </message>
   <message name="exportToExcelPorCliente">
     <part name="parameters" element="tns:exportToExcelPorCliente" />
@@ -20,41 +23,14 @@
   <message name="exportToExcelPorClienteResponse">
     <part name="parameters" element="tns:exportToExcelPorClienteResponse" />
   </message>
-  <message name="listarSolicitudesPorCliente">
-    <part name="parameters" element="tns:listarSolicitudesPorCliente" />
+  <message name="IOException">
+    <part name="fault" element="tns:IOException" />
   </message>
-  <message name="listarSolicitudesPorClienteResponse">
-    <part name="parameters" element="tns:listarSolicitudesPorClienteResponse" />
+  <message name="exportToCsvPorCliente">
+    <part name="parameters" element="tns:exportToCsvPorCliente" />
   </message>
-  <message name="actualizarResultadoDesafiliacion">
-    <part name="parameters" element="tns:actualizarResultadoDesafiliacion" />
-  </message>
-  <message name="actualizarResultadoDesafiliacionResponse">
-    <part name="parameters" element="tns:actualizarResultadoDesafiliacionResponse" />
-  </message>
-  <message name="insertarSolicitud">
-    <part name="parameters" element="tns:insertarSolicitud" />
-  </message>
-  <message name="insertarSolicitudResponse">
-    <part name="parameters" element="tns:insertarSolicitudResponse" />
-  </message>
-  <message name="enviarCodigoSMS">
-    <part name="parameters" element="tns:enviarCodigoSMS" />
-  </message>
-  <message name="enviarCodigoSMSResponse">
-    <part name="parameters" element="tns:enviarCodigoSMSResponse" />
-  </message>
-  <message name="listarSolicitudes">
-    <part name="parameters" element="tns:listarSolicitudes" />
-  </message>
-  <message name="listarSolicitudesResponse">
-    <part name="parameters" element="tns:listarSolicitudesResponse" />
-  </message>
-  <message name="eliminarSolicitud">
-    <part name="parameters" element="tns:eliminarSolicitud" />
-  </message>
-  <message name="eliminarSolicitudResponse">
-    <part name="parameters" element="tns:eliminarSolicitudResponse" />
+  <message name="exportToCsvPorClienteResponse">
+    <part name="parameters" element="tns:exportToCsvPorClienteResponse" />
   </message>
   <message name="modificarSolicitud">
     <part name="parameters" element="tns:modificarSolicitud" />
@@ -68,46 +44,54 @@
   <message name="obtenerSolicitudResponse">
     <part name="parameters" element="tns:obtenerSolicitudResponse" />
   </message>
-  <message name="validarCodigoSMS">
-    <part name="parameters" element="tns:validarCodigoSMS" />
+  <message name="eliminarSolicitud">
+    <part name="parameters" element="tns:eliminarSolicitud" />
   </message>
-  <message name="validarCodigoSMSResponse">
-    <part name="parameters" element="tns:validarCodigoSMSResponse" />
+  <message name="eliminarSolicitudResponse">
+    <part name="parameters" element="tns:eliminarSolicitudResponse" />
+  </message>
+  <message name="insertarSolicitud">
+    <part name="parameters" element="tns:insertarSolicitud" />
+  </message>
+  <message name="insertarSolicitudResponse">
+    <part name="parameters" element="tns:insertarSolicitudResponse" />
+  </message>
+  <message name="listarSolicitudes">
+    <part name="parameters" element="tns:listarSolicitudes" />
+  </message>
+  <message name="listarSolicitudesResponse">
+    <part name="parameters" element="tns:listarSolicitudesResponse" />
+  </message>
+  <message name="listarSolicitudesPorCliente">
+    <part name="parameters" element="tns:listarSolicitudesPorCliente" />
+  </message>
+  <message name="listarSolicitudesPorClienteResponse">
+    <part name="parameters" element="tns:listarSolicitudesPorClienteResponse" />
+  </message>
+  <message name="actualizarResultadoDesafiliacion">
+    <part name="parameters" element="tns:actualizarResultadoDesafiliacion" />
+  </message>
+  <message name="actualizarResultadoDesafiliacionResponse">
+    <part name="parameters" element="tns:actualizarResultadoDesafiliacionResponse" />
   </message>
   <portType name="SolicitudDesafiliacionWS">
-    <operation name="exportToCsvPorCliente">
-      <input wsam:Action="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/exportToCsvPorClienteRequest" message="tns:exportToCsvPorCliente" />
-      <output wsam:Action="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/exportToCsvPorClienteResponse" message="tns:exportToCsvPorClienteResponse" />
-      <fault wsam:Action="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/exportToCsvPorCliente/Fault/IOException" name="IOException" message="tns:IOException" />
+    <operation name="enviarCodigoSMS">
+      <input wsam:Action="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/enviarCodigoSMSRequest" message="tns:enviarCodigoSMS" />
+      <output wsam:Action="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/enviarCodigoSMSResponse" message="tns:enviarCodigoSMSResponse" />
+    </operation>
+    <operation name="validarCodigoSMS">
+      <input wsam:Action="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/validarCodigoSMSRequest" message="tns:validarCodigoSMS" />
+      <output wsam:Action="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/validarCodigoSMSResponse" message="tns:validarCodigoSMSResponse" />
     </operation>
     <operation name="exportToExcelPorCliente">
       <input wsam:Action="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/exportToExcelPorClienteRequest" message="tns:exportToExcelPorCliente" />
       <output wsam:Action="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/exportToExcelPorClienteResponse" message="tns:exportToExcelPorClienteResponse" />
       <fault wsam:Action="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/exportToExcelPorCliente/Fault/IOException" name="IOException" message="tns:IOException" />
     </operation>
-    <operation name="listarSolicitudesPorCliente">
-      <input wsam:Action="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/listarSolicitudesPorClienteRequest" message="tns:listarSolicitudesPorCliente" />
-      <output wsam:Action="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/listarSolicitudesPorClienteResponse" message="tns:listarSolicitudesPorClienteResponse" />
-    </operation>
-    <operation name="actualizarResultadoDesafiliacion">
-      <input wsam:Action="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/actualizarResultadoDesafiliacionRequest" message="tns:actualizarResultadoDesafiliacion" />
-      <output wsam:Action="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/actualizarResultadoDesafiliacionResponse" message="tns:actualizarResultadoDesafiliacionResponse" />
-    </operation>
-    <operation name="insertarSolicitud">
-      <input wsam:Action="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/insertarSolicitudRequest" message="tns:insertarSolicitud" />
-      <output wsam:Action="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/insertarSolicitudResponse" message="tns:insertarSolicitudResponse" />
-    </operation>
-    <operation name="enviarCodigoSMS">
-      <input wsam:Action="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/enviarCodigoSMSRequest" message="tns:enviarCodigoSMS" />
-      <output wsam:Action="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/enviarCodigoSMSResponse" message="tns:enviarCodigoSMSResponse" />
-    </operation>
-    <operation name="listarSolicitudes">
-      <input wsam:Action="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/listarSolicitudesRequest" message="tns:listarSolicitudes" />
-      <output wsam:Action="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/listarSolicitudesResponse" message="tns:listarSolicitudesResponse" />
-    </operation>
-    <operation name="eliminarSolicitud">
-      <input wsam:Action="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/eliminarSolicitudRequest" message="tns:eliminarSolicitud" />
-      <output wsam:Action="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/eliminarSolicitudResponse" message="tns:eliminarSolicitudResponse" />
+    <operation name="exportToCsvPorCliente">
+      <input wsam:Action="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/exportToCsvPorClienteRequest" message="tns:exportToCsvPorCliente" />
+      <output wsam:Action="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/exportToCsvPorClienteResponse" message="tns:exportToCsvPorClienteResponse" />
+      <fault wsam:Action="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/exportToCsvPorCliente/Fault/IOException" name="IOException" message="tns:IOException" />
     </operation>
     <operation name="modificarSolicitud">
       <input wsam:Action="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/modificarSolicitudRequest" message="tns:modificarSolicitud" />
@@ -117,14 +101,30 @@
       <input wsam:Action="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/obtenerSolicitudRequest" message="tns:obtenerSolicitud" />
       <output wsam:Action="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/obtenerSolicitudResponse" message="tns:obtenerSolicitudResponse" />
     </operation>
-    <operation name="validarCodigoSMS">
-      <input wsam:Action="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/validarCodigoSMSRequest" message="tns:validarCodigoSMS" />
-      <output wsam:Action="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/validarCodigoSMSResponse" message="tns:validarCodigoSMSResponse" />
+    <operation name="eliminarSolicitud">
+      <input wsam:Action="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/eliminarSolicitudRequest" message="tns:eliminarSolicitud" />
+      <output wsam:Action="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/eliminarSolicitudResponse" message="tns:eliminarSolicitudResponse" />
+    </operation>
+    <operation name="insertarSolicitud">
+      <input wsam:Action="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/insertarSolicitudRequest" message="tns:insertarSolicitud" />
+      <output wsam:Action="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/insertarSolicitudResponse" message="tns:insertarSolicitudResponse" />
+    </operation>
+    <operation name="listarSolicitudes">
+      <input wsam:Action="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/listarSolicitudesRequest" message="tns:listarSolicitudes" />
+      <output wsam:Action="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/listarSolicitudesResponse" message="tns:listarSolicitudesResponse" />
+    </operation>
+    <operation name="listarSolicitudesPorCliente">
+      <input wsam:Action="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/listarSolicitudesPorClienteRequest" message="tns:listarSolicitudesPorCliente" />
+      <output wsam:Action="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/listarSolicitudesPorClienteResponse" message="tns:listarSolicitudesPorClienteResponse" />
+    </operation>
+    <operation name="actualizarResultadoDesafiliacion">
+      <input wsam:Action="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/actualizarResultadoDesafiliacionRequest" message="tns:actualizarResultadoDesafiliacion" />
+      <output wsam:Action="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/actualizarResultadoDesafiliacionResponse" message="tns:actualizarResultadoDesafiliacionResponse" />
     </operation>
   </portType>
   <binding name="SolicitudDesafiliacionWSPortBinding" type="tns:SolicitudDesafiliacionWS">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
-    <operation name="exportToCsvPorCliente">
+    <operation name="enviarCodigoSMS">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -132,9 +132,15 @@
       <output>
         <soap:body use="literal" />
       </output>
-      <fault name="IOException">
-        <soap:fault use="literal" name="IOException" namespace="" />
-      </fault>
+    </operation>
+    <operation name="validarCodigoSMS">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
     </operation>
     <operation name="exportToExcelPorCliente">
       <soap:operation soapAction="" />
@@ -148,7 +154,7 @@
         <soap:fault use="literal" name="IOException" namespace="" />
       </fault>
     </operation>
-    <operation name="listarSolicitudesPorCliente">
+    <operation name="exportToCsvPorCliente">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -156,51 +162,9 @@
       <output>
         <soap:body use="literal" />
       </output>
-    </operation>
-    <operation name="actualizarResultadoDesafiliacion">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="insertarSolicitud">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="enviarCodigoSMS">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="listarSolicitudes">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="eliminarSolicitud">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
+      <fault name="IOException">
+        <soap:fault use="literal" name="IOException" namespace="" />
+      </fault>
     </operation>
     <operation name="modificarSolicitud">
       <soap:operation soapAction="" />
@@ -220,7 +184,43 @@
         <soap:body use="literal" />
       </output>
     </operation>
-    <operation name="validarCodigoSMS">
+    <operation name="eliminarSolicitud">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="insertarSolicitud">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarSolicitudes">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarSolicitudesPorCliente">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="actualizarResultadoDesafiliacion">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />

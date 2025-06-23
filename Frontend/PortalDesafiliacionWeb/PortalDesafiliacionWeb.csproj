@@ -88,10 +88,16 @@
     <Content Include="Connected Services\ServicioWS\PortalDesafiliacionWeb.ServicioWS.asignarPrioridadClienteResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
+    <Content Include="Connected Services\ServicioWS\PortalDesafiliacionWeb.ServicioWS.buscarEquipoPorIdResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
     <Content Include="Connected Services\ServicioWS\PortalDesafiliacionWeb.ServicioWS.buscarTipoUsuarioResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
     <Content Include="Connected Services\ServicioWS\PortalDesafiliacionWeb.ServicioWS.desafiliarLineaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServicioWS\PortalDesafiliacionWeb.ServicioWS.eliminarEquipoResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
     <Content Include="Connected Services\ServicioWS\PortalDesafiliacionWeb.ServicioWS.eliminarPlantillaResponse.datasource">
@@ -161,6 +167,9 @@
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
     <Content Include="Connected Services\ServicioWS\PortalDesafiliacionWeb.ServicioWS.migracionPrepagoAPostpagoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServicioWS\PortalDesafiliacionWeb.ServicioWS.modificarEquipoResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
     <Content Include="Connected Services\ServicioWS\PortalDesafiliacionWeb.ServicioWS.modificarPlantillaResponse.datasource">

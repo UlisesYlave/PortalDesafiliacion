@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:tns="http://ws.pdm.pucp.edu.pe/" targetNamespace="http://ws.pdm.pucp.edu.pe/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="buscarEquipoPorId" type="tns:buscarEquipoPorId" />
+  <xs:element name="buscarEquipoPorIdResponse" type="tns:buscarEquipoPorIdResponse" />
+  <xs:element name="eliminarEquipo" type="tns:eliminarEquipo" />
+  <xs:element name="eliminarEquipoResponse" type="tns:eliminarEquipoResponse" />
   <xs:element name="insertarEquipo" type="tns:insertarEquipo" />
   <xs:element name="insertarEquipoResponse" type="tns:insertarEquipoResponse" />
   <xs:element name="listarEquipos" type="tns:listarEquipos" />
   <xs:element name="listarEquiposResponse" type="tns:listarEquiposResponse" />
-  <xs:complexType name="listarEquipos">
-    <xs:sequence />
-  </xs:complexType>
-  <xs:complexType name="listarEquiposResponse">
+  <xs:element name="modificarEquipo" type="tns:modificarEquipo" />
+  <xs:element name="modificarEquipoResponse" type="tns:modificarEquipoResponse" />
+  <xs:complexType name="insertarEquipo">
     <xs:sequence>
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:equipo" />
+      <xs:element minOccurs="0" name="equipo" type="tns:equipo" />
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="equipo">
@@ -22,14 +25,47 @@
       <xs:element name="stock" type="xs:int" />
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="insertarEquipo">
+  <xs:complexType name="insertarEquipoResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarEquipo">
+    <xs:sequence>
+      <xs:element name="idEquipo" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarEquipoResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarEquipoPorId">
+    <xs:sequence>
+      <xs:element name="idEquipo" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarEquipoPorIdResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:equipo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarEquipo">
     <xs:sequence>
       <xs:element minOccurs="0" name="equipo" type="tns:equipo" />
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="insertarEquipoResponse">
+  <xs:complexType name="modificarEquipoResponse">
     <xs:sequence>
-      <xs:element name="return" type="xs:int" />
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarEquipos">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listarEquiposResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:equipo" />
     </xs:sequence>
   </xs:complexType>
   <xs:simpleType name="categoria">

@@ -18,6 +18,23 @@
   <xs:element name="obtenerUsuarioResponse" type="tns:obtenerUsuarioResponse" />
   <xs:element name="verificarUsuario" type="tns:verificarUsuario" />
   <xs:element name="verificarUsuarioResponse" type="tns:verificarUsuarioResponse" />
+  <xs:complexType name="insertarUsuario">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="primerNombre" type="xs:string" />
+      <xs:element minOccurs="0" name="segundoNombre" type="xs:string" />
+      <xs:element minOccurs="0" name="apellidoPaterno" type="xs:string" />
+      <xs:element minOccurs="0" name="apellidoMaterno" type="xs:string" />
+      <xs:element minOccurs="0" name="tipoDocumento" type="xs:string" />
+      <xs:element minOccurs="0" name="numeroDocumento" type="xs:string" />
+      <xs:element minOccurs="0" name="correo" type="xs:string" />
+      <xs:element minOccurs="0" name="contrasena" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="insertarUsuarioResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
   <xs:complexType name="obtenerUsuario">
     <xs:sequence>
       <xs:element name="idUsuario" type="xs:int" />
@@ -41,23 +58,6 @@
       <xs:element minOccurs="0" name="primerNombre" type="xs:string" />
       <xs:element minOccurs="0" name="segundoNombre" type="xs:string" />
       <xs:element minOccurs="0" name="tipoDocumento" type="xs:string" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="insertarUsuario">
-    <xs:sequence>
-      <xs:element minOccurs="0" name="primerNombre" type="xs:string" />
-      <xs:element minOccurs="0" name="segundoNombre" type="xs:string" />
-      <xs:element minOccurs="0" name="apellidoPaterno" type="xs:string" />
-      <xs:element minOccurs="0" name="apellidoMaterno" type="xs:string" />
-      <xs:element minOccurs="0" name="tipoDocumento" type="xs:string" />
-      <xs:element minOccurs="0" name="numeroDocumento" type="xs:string" />
-      <xs:element minOccurs="0" name="correo" type="xs:string" />
-      <xs:element minOccurs="0" name="contrasena" type="xs:string" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="insertarUsuarioResponse">
-    <xs:sequence>
-      <xs:element name="return" type="xs:int" />
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="obtenerUsuarioPorCorreoODocumento">

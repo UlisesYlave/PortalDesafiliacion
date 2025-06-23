@@ -5,31 +5,31 @@
       <xsd:import schemaLocation="http://localhost:8080/PortalWS/PostpagoWS?xsd=1" namespace="http://services.softprog.pucp.edu.pe/" />
     </xsd:schema>
   </types>
-  <message name="obtenerDeudaPendiente">
-    <part name="parameters" element="tns:obtenerDeudaPendiente" />
-  </message>
-  <message name="obtenerDeudaPendienteResponse">
-    <part name="parameters" element="tns:obtenerDeudaPendienteResponse" />
-  </message>
   <message name="eliminarPostpago">
     <part name="parameters" element="tns:eliminarPostpago" />
   </message>
   <message name="eliminarPostpagoResponse">
     <part name="parameters" element="tns:eliminarPostpagoResponse" />
   </message>
+  <message name="obtenerDeudaPendiente">
+    <part name="parameters" element="tns:obtenerDeudaPendiente" />
+  </message>
+  <message name="obtenerDeudaPendienteResponse">
+    <part name="parameters" element="tns:obtenerDeudaPendienteResponse" />
+  </message>
   <portType name="PostpagoWS">
-    <operation name="obtenerDeudaPendiente">
-      <input wsam:Action="http://services.softprog.pucp.edu.pe/PostpagoWS/obtenerDeudaPendienteRequest" message="tns:obtenerDeudaPendiente" />
-      <output wsam:Action="http://services.softprog.pucp.edu.pe/PostpagoWS/obtenerDeudaPendienteResponse" message="tns:obtenerDeudaPendienteResponse" />
-    </operation>
     <operation name="eliminarPostpago">
       <input wsam:Action="http://services.softprog.pucp.edu.pe/PostpagoWS/eliminarPostpagoRequest" message="tns:eliminarPostpago" />
       <output wsam:Action="http://services.softprog.pucp.edu.pe/PostpagoWS/eliminarPostpagoResponse" message="tns:eliminarPostpagoResponse" />
     </operation>
+    <operation name="obtenerDeudaPendiente">
+      <input wsam:Action="http://services.softprog.pucp.edu.pe/PostpagoWS/obtenerDeudaPendienteRequest" message="tns:obtenerDeudaPendiente" />
+      <output wsam:Action="http://services.softprog.pucp.edu.pe/PostpagoWS/obtenerDeudaPendienteResponse" message="tns:obtenerDeudaPendienteResponse" />
+    </operation>
   </portType>
   <binding name="PostpagoWSPortBinding" type="tns:PostpagoWS">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
-    <operation name="obtenerDeudaPendiente">
+    <operation name="eliminarPostpago">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -38,7 +38,7 @@
         <soap:body use="literal" />
       </output>
     </operation>
-    <operation name="eliminarPostpago">
+    <operation name="obtenerDeudaPendiente">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />

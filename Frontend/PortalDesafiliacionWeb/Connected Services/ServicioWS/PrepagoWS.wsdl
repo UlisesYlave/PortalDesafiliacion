@@ -5,31 +5,31 @@
       <xsd:import schemaLocation="http://localhost:8080/PortalWS/PrepagoWS?xsd=1" namespace="http://ws.pdm.pucp.edu.pe/" />
     </xsd:schema>
   </types>
-  <message name="migracionPrepagoAPostpago">
-    <part name="parameters" element="tns:migracionPrepagoAPostpago" />
-  </message>
-  <message name="migracionPrepagoAPostpagoResponse">
-    <part name="parameters" element="tns:migracionPrepagoAPostpagoResponse" />
-  </message>
   <message name="eliminarPrepago">
     <part name="parameters" element="tns:eliminarPrepago" />
   </message>
   <message name="eliminarPrepagoResponse">
     <part name="parameters" element="tns:eliminarPrepagoResponse" />
   </message>
+  <message name="migracionPrepagoAPostpago">
+    <part name="parameters" element="tns:migracionPrepagoAPostpago" />
+  </message>
+  <message name="migracionPrepagoAPostpagoResponse">
+    <part name="parameters" element="tns:migracionPrepagoAPostpagoResponse" />
+  </message>
   <portType name="PrepagoWS">
-    <operation name="migracionPrepagoAPostpago">
-      <input wsam:Action="http://ws.pdm.pucp.edu.pe/PrepagoWS/migracionPrepagoAPostpagoRequest" message="tns:migracionPrepagoAPostpago" />
-      <output wsam:Action="http://ws.pdm.pucp.edu.pe/PrepagoWS/migracionPrepagoAPostpagoResponse" message="tns:migracionPrepagoAPostpagoResponse" />
-    </operation>
     <operation name="eliminarPrepago">
       <input wsam:Action="http://ws.pdm.pucp.edu.pe/PrepagoWS/eliminarPrepagoRequest" message="tns:eliminarPrepago" />
       <output wsam:Action="http://ws.pdm.pucp.edu.pe/PrepagoWS/eliminarPrepagoResponse" message="tns:eliminarPrepagoResponse" />
     </operation>
+    <operation name="migracionPrepagoAPostpago">
+      <input wsam:Action="http://ws.pdm.pucp.edu.pe/PrepagoWS/migracionPrepagoAPostpagoRequest" message="tns:migracionPrepagoAPostpago" />
+      <output wsam:Action="http://ws.pdm.pucp.edu.pe/PrepagoWS/migracionPrepagoAPostpagoResponse" message="tns:migracionPrepagoAPostpagoResponse" />
+    </operation>
   </portType>
   <binding name="PrepagoWSPortBinding" type="tns:PrepagoWS">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
-    <operation name="migracionPrepagoAPostpago">
+    <operation name="eliminarPrepago">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -38,7 +38,7 @@
         <soap:body use="literal" />
       </output>
     </operation>
-    <operation name="eliminarPrepago">
+    <operation name="migracionPrepagoAPostpago">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
