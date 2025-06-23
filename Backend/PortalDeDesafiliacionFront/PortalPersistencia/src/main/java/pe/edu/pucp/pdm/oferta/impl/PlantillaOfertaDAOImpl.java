@@ -9,6 +9,9 @@ import java.sql.Types;
 import pe.edu.pucp.pdm.dao.BaseDAOImpl;
 import pe.edu.pucp.pdm.ofertamodel.PlantillaOferta;
 import pe.edu.pucp.pdm.oferta.dao.IPlantillaOfertaDAO;
+import pe.edu.pucp.pdm.usuario.dao.IPrioridadDAO;
+import pe.edu.pucp.pdm.usuario.impl.PrioridadDAOImpl;
+import pe.edu.pucp.pdm.usuariomodel.Prioridad;
 
 public class PlantillaOfertaDAOImpl  extends BaseDAOImpl<PlantillaOferta> implements IPlantillaOfertaDAO{
     @Override
@@ -64,6 +67,9 @@ public class PlantillaOfertaDAOImpl  extends BaseDAOImpl<PlantillaOferta> implem
     
     @Override
     protected PlantillaOferta mapearModelo(ResultSet rs) throws SQLException {
+        IPrioridadDAO prioridadDAO = new PrioridadDAOImpl();
+        Prioridad prioridad = prioridadDAO.buscar(rs.getInt("idPrioridad"));
+        
         PlantillaOferta plantilla = new PlantillaOferta();
         plantilla.setIdPlantilla(rs.getInt("idPlantillaOferta"));
         plantilla.setNombre(rs.getString("nombre"));
@@ -72,6 +78,7 @@ public class PlantillaOfertaDAOImpl  extends BaseDAOImpl<PlantillaOferta> implem
         plantilla.setActiva(rs.getBoolean("activa"));
         plantilla.setTipoServicio(rs.getInt("tipoServicio"));
         plantilla.setActiva(rs.getBoolean("activa"));
+        plantilla.setPrioridad(prioridad);
         // Los campos tipoServicio, prioridad, modalidades y parametros no están en el RS
         return plantilla;
     }
