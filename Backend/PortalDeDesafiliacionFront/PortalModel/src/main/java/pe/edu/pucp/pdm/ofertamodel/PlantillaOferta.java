@@ -90,4 +90,12 @@ public class PlantillaOferta {
     public void setModalidades(List<Modalidad> modalidades) {
         this.modalidades = modalidades;
     }
+    
+    public List<Parametro> getParametros(){
+        return this.parametros;
+    }
+    
+    public void setParametros(List<Parametro> parametros){
+        this.parametros = parametros;
+    }
 }

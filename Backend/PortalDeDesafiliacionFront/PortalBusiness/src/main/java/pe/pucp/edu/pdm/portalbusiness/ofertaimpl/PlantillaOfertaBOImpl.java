@@ -3,7 +3,10 @@ package pe.pucp.edu.pdm.portalbusiness.ofertaimpl;
 import java.util.List;
 import pe.edu.pucp.pdm.oferta.dao.IPlantillaOfertaDAO;
 import pe.edu.pucp.pdm.oferta.impl.PlantillaOfertaDAOImpl;
+import pe.edu.pucp.pdm.ofertamodel.Oferta;
 import pe.edu.pucp.pdm.ofertamodel.PlantillaOferta;
+import pe.edu.pucp.pdm.serviciomodel.Linea;
+import pe.edu.pucp.pdm.usuariomodel.Prioridad;
 import pe.pucp.edu.pdm.portalbusiness.ofertabo.IPlantillaOfertaBO;
 
 public class PlantillaOfertaBOImpl implements IPlantillaOfertaBO{
@@ -32,5 +35,10 @@ public class PlantillaOfertaBOImpl implements IPlantillaOfertaBO{
      @Override
      public boolean eliminar(int idPlantilla){
          return plantillaDAO.eliminar(idPlantilla);
+     }
+     
+     @Override
+     public List<Oferta> generarOfertas(Prioridad prioridadCliente,Linea linea){
+         return plantillaDAO.generarOfertas(prioridadCliente,linea);
      }
 }

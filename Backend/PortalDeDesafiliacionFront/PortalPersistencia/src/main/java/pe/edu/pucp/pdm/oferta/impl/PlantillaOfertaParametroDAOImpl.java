@@ -1,10 +1,15 @@
 package pe.edu.pucp.pdm.oferta.impl;
 
+import java.io.IOException;
 import java.sql.CallableStatement;
 import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Types;
+import java.util.ArrayList;
+import java.util.List;
+import pe.edu.pucp.pdm.config.DBManager;
 import pe.edu.pucp.pdm.dao.BaseDAOImpl; 
 import pe.edu.pucp.pdm.ofertamodel.PlantillaOfertaParametro;
 import pe.edu.pucp.pdm.oferta.dao.IPlantillaOfertaParametroDAO;
@@ -66,5 +71,47 @@ public class PlantillaOfertaParametroDAOImpl extends BaseDAOImpl<PlantillaOferta
         pop.setId(rs.getInt("id"));
         return pop;
     }
+    
+    @Override
+    public List<PlantillaOfertaParametro> listarPlantillaOfertaParametros(int idPlantilla) {
+        List<PlantillaOfertaParametro> plantillaParam = new ArrayList<>();
+        String sqlParametros = "SELECT * FROM PlantillaOferta_Parametro WHERE idPlantillaOferta = ?";
+        try (Connection conn = DBManager.getInstance().getConnection()) {
+            try (PreparedStatement psParametros = conn.prepareStatement(sqlParametros)) {
+                psParametros.setInt(1, idPlantilla);
+                ResultSet rs = psParametros.executeQuery();
+                if (!rs.isBeforeFirst()) {
+                    return plantillaParam;
+                }
+                while (rs.next()) {
+                    PlantillaOfertaParametro param = mapearModelo(rs);
+                    plantillaParam.add(param);
+                }
+            }
+        } catch (SQLException | IOException | ClassNotFoundException e) {
+            throw new RuntimeException("Error en buscarTipoUsuario: " + e.getMessage(), e);
+        }
+        return plantillaParam;
+    }
 
+    @Override
+    public String obtenerValorParametro(String palabraOriginal) {
+        String valorParametro = null;
+        String sqlProcedure = "CALL ObtenerValorParametroPorNombre(?)";
+
+        try (Connection conn = DBManager.getInstance().getConnection()) {
+            try (PreparedStatement ps = conn.prepareStatement(sqlProcedure)) {
+                ps.setString(1, palabraOriginal);
+                ResultSet rs = ps.executeQuery();
+
+                if (rs.next()) {
+                    valorParametro = rs.getString("valorParametro");
+                }
+            }
+        } catch (SQLException | IOException | ClassNotFoundException e) {
+            throw new RuntimeException("Error en obtenerValorParametro: " + e.getMessage(), e);
+        }
+
+        return valorParametro;
+    }
 }

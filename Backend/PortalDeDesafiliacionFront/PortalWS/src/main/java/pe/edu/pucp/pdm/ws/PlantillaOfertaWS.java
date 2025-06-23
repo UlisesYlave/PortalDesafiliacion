@@ -4,7 +4,10 @@ import jakarta.jws.WebMethod;
 import jakarta.jws.WebParam;
 import jakarta.jws.WebService;
 import java.util.List;
+import pe.edu.pucp.pdm.ofertamodel.Oferta;
 import pe.edu.pucp.pdm.ofertamodel.PlantillaOferta;
+import pe.edu.pucp.pdm.serviciomodel.Linea;
+import pe.edu.pucp.pdm.usuariomodel.Prioridad;
 import pe.pucp.edu.pdm.portalbusiness.ofertabo.IPlantillaOfertaBO;
 import pe.pucp.edu.pdm.portalbusiness.ofertaimpl.PlantillaOfertaBOImpl;
 
@@ -35,5 +38,12 @@ public class PlantillaOfertaWS {
     @WebMethod(operationName = "eliminarPlantilla")
     public boolean eliminarPlantilla( @WebParam(name = "idPlantilla") int idPlantilla){
         return plantillaOfertaBO.eliminar(idPlantilla);
+    }
+    @WebMethod(operationName = "generarOfertas")
+    public List<Oferta> generarOfertas(
+            @WebParam(name = "prioridadCliente")Prioridad prioridadCliente,
+            @WebParam(name = "idLinea")Linea linea
+    ){
+        return plantillaOfertaBO.generarOfertas(prioridadCliente,linea);
     }
 }

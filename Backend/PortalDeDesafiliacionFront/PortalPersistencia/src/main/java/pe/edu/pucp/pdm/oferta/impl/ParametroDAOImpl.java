@@ -5,6 +5,8 @@ import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Types;
+import java.util.ArrayList;
+import java.util.List;
 import pe.edu.pucp.pdm.dao.BaseDAOImpl;
 import pe.edu.pucp.pdm.oferta.dao.IParametroDAO;
 import pe.edu.pucp.pdm.ofertamodel.Parametro;
@@ -58,5 +60,15 @@ public class ParametroDAOImpl extends BaseDAOImpl<Parametro> implements IParamet
         );
         param.setIdParametro(rs.getInt("idParametro"));
         return param;
+    }
+    
+    @Override
+    public List<Parametro>listarParametros(List<Integer> idParametro){
+        List <Parametro> parametros = new ArrayList<>();
+        for(Integer id:idParametro){
+            Parametro nuevoParam = buscar(id);
+            parametros.add(nuevoParam);
+        }
+        return parametros;
     }
 }
