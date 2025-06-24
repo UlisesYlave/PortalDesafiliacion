@@ -38,6 +38,7 @@
   <xs:complexType name="modalidad">
     <xs:sequence>
       <xs:element name="idModalidad" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="prioridad">

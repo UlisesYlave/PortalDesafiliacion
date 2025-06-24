@@ -48,6 +48,356 @@ namespace PortalDesafiliacionWeb.ServicioWS {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://services.softprog.pucp.edu.pe/")]
+    public partial class tipoMotivo : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private string descripcionField;
+        
+        private int idMotivoField;
+        
+        private string nombreField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public string descripcion {
+            get {
+                return this.descripcionField;
+            }
+            set {
+                this.descripcionField = value;
+                this.RaisePropertyChanged("descripcion");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public int idMotivo {
+            get {
+                return this.idMotivoField;
+            }
+            set {
+                this.idMotivoField = value;
+                this.RaisePropertyChanged("idMotivo");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
+        public string nombre {
+            get {
+                return this.nombreField;
+            }
+            set {
+                this.nombreField = value;
+                this.RaisePropertyChanged("nombre");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://services.softprog.pucp.edu.pe/")]
+    public partial class encuesta : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private int calificacionField;
+        
+        private System.DateTime fechaEncuestaField;
+        
+        private bool fechaEncuestaFieldSpecified;
+        
+        private int idEncuestaField;
+        
+        private tipoMotivo motivoField;
+        
+        private string opinionField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public int calificacion {
+            get {
+                return this.calificacionField;
+            }
+            set {
+                this.calificacionField = value;
+                this.RaisePropertyChanged("calificacion");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public System.DateTime fechaEncuesta {
+            get {
+                return this.fechaEncuestaField;
+            }
+            set {
+                this.fechaEncuestaField = value;
+                this.RaisePropertyChanged("fechaEncuesta");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool fechaEncuestaSpecified {
+            get {
+                return this.fechaEncuestaFieldSpecified;
+            }
+            set {
+                this.fechaEncuestaFieldSpecified = value;
+                this.RaisePropertyChanged("fechaEncuestaSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
+        public int idEncuesta {
+            get {
+                return this.idEncuestaField;
+            }
+            set {
+                this.idEncuestaField = value;
+                this.RaisePropertyChanged("idEncuesta");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
+        public tipoMotivo motivo {
+            get {
+                return this.motivoField;
+            }
+            set {
+                this.motivoField = value;
+                this.RaisePropertyChanged("motivo");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
+        public string opinion {
+            get {
+                return this.opinionField;
+            }
+            set {
+                this.opinionField = value;
+                this.RaisePropertyChanged("opinion");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://services.softprog.pucp.edu.pe/")]
+    public partial class solicitudDesafiliacion : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private encuesta encuestaField;
+        
+        private System.DateTime fechaSolicitudField;
+        
+        private bool fechaSolicitudFieldSpecified;
+        
+        private int idClienteField;
+        
+        private int idLineaField;
+        
+        private int idOfertaField;
+        
+        private bool idOfertaFieldSpecified;
+        
+        private int idSolicitudField;
+        
+        private string observacionAgenteField;
+        
+        private resultado resultadoField;
+        
+        private bool resultadoFieldSpecified;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public encuesta encuesta {
+            get {
+                return this.encuestaField;
+            }
+            set {
+                this.encuestaField = value;
+                this.RaisePropertyChanged("encuesta");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public System.DateTime fechaSolicitud {
+            get {
+                return this.fechaSolicitudField;
+            }
+            set {
+                this.fechaSolicitudField = value;
+                this.RaisePropertyChanged("fechaSolicitud");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool fechaSolicitudSpecified {
+            get {
+                return this.fechaSolicitudFieldSpecified;
+            }
+            set {
+                this.fechaSolicitudFieldSpecified = value;
+                this.RaisePropertyChanged("fechaSolicitudSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
+        public int idCliente {
+            get {
+                return this.idClienteField;
+            }
+            set {
+                this.idClienteField = value;
+                this.RaisePropertyChanged("idCliente");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
+        public int idLinea {
+            get {
+                return this.idLineaField;
+            }
+            set {
+                this.idLineaField = value;
+                this.RaisePropertyChanged("idLinea");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
+        public int idOferta {
+            get {
+                return this.idOfertaField;
+            }
+            set {
+                this.idOfertaField = value;
+                this.RaisePropertyChanged("idOferta");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool idOfertaSpecified {
+            get {
+                return this.idOfertaFieldSpecified;
+            }
+            set {
+                this.idOfertaFieldSpecified = value;
+                this.RaisePropertyChanged("idOfertaSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=5)]
+        public int idSolicitud {
+            get {
+                return this.idSolicitudField;
+            }
+            set {
+                this.idSolicitudField = value;
+                this.RaisePropertyChanged("idSolicitud");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=6)]
+        public string observacionAgente {
+            get {
+                return this.observacionAgenteField;
+            }
+            set {
+                this.observacionAgenteField = value;
+                this.RaisePropertyChanged("observacionAgente");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=7)]
+        public resultado resultado {
+            get {
+                return this.resultadoField;
+            }
+            set {
+                this.resultadoField = value;
+                this.RaisePropertyChanged("resultado");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool resultadoSpecified {
+            get {
+                return this.resultadoFieldSpecified;
+            }
+            set {
+                this.resultadoFieldSpecified = value;
+                this.RaisePropertyChanged("resultadoSpecified");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://services.softprog.pucp.edu.pe/")]
+    public enum resultado {
+        
+        /// <remarks/>
+        DESAFILIADO,
+        
+        /// <remarks/>
+        NO_DESAFILIADO,
+        
+        /// <remarks/>
+        OFERTA_ACEPTADA,
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(TypeName="prioridad", Namespace="http://services.softprog.pucp.edu.pe/")]
     public partial class prioridad1 : object, System.ComponentModel.INotifyPropertyChanged {
         
@@ -477,6 +827,8 @@ namespace PortalDesafiliacionWeb.ServicioWS {
         
         private int idModalidadField;
         
+        private string nombreField;
+        
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
         public int idModalidad {
@@ -486,6 +838,18 @@ namespace PortalDesafiliacionWeb.ServicioWS {
             set {
                 this.idModalidadField = value;
                 this.RaisePropertyChanged("idModalidad");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public string nombre {
+            get {
+                return this.nombreField;
+            }
+            set {
+                this.nombreField = value;
+                this.RaisePropertyChanged("nombre");
             }
         }
         
@@ -1147,15 +1511,6 @@ namespace PortalDesafiliacionWeb.ServicioWS {
     public interface LineaWS {
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://ws.pdm.pucp.edu.pe/LineaWS/desafiliarLineaRequest", ReplyAction="http://ws.pdm.pucp.edu.pe/LineaWS/desafiliarLineaResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        PortalDesafiliacionWeb.ServicioWS.desafiliarLineaResponse desafiliarLinea(PortalDesafiliacionWeb.ServicioWS.desafiliarLineaRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://ws.pdm.pucp.edu.pe/LineaWS/desafiliarLineaRequest", ReplyAction="http://ws.pdm.pucp.edu.pe/LineaWS/desafiliarLineaResponse")]
-        System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.desafiliarLineaResponse> desafiliarLineaAsync(PortalDesafiliacionWeb.ServicioWS.desafiliarLineaRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://ws.pdm.pucp.edu.pe/LineaWS/listarLineasPorClienteRequest", ReplyAction="http://ws.pdm.pucp.edu.pe/LineaWS/listarLineasPorClienteResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
@@ -1163,42 +1518,15 @@ namespace PortalDesafiliacionWeb.ServicioWS {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://ws.pdm.pucp.edu.pe/LineaWS/listarLineasPorClienteRequest", ReplyAction="http://ws.pdm.pucp.edu.pe/LineaWS/listarLineasPorClienteResponse")]
         System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.listarLineasPorClienteResponse> listarLineasPorClienteAsync(PortalDesafiliacionWeb.ServicioWS.listarLineasPorClienteRequest request);
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="desafiliarLinea", WrapperNamespace="http://ws.pdm.pucp.edu.pe/", IsWrapped=true)]
-    public partial class desafiliarLineaRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.pdm.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int idLinea;
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://ws.pdm.pucp.edu.pe/LineaWS/desafiliarLineaRequest", ReplyAction="http://ws.pdm.pucp.edu.pe/LineaWS/desafiliarLineaResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        PortalDesafiliacionWeb.ServicioWS.desafiliarLineaResponse desafiliarLinea(PortalDesafiliacionWeb.ServicioWS.desafiliarLineaRequest request);
         
-        public desafiliarLineaRequest() {
-        }
-        
-        public desafiliarLineaRequest(int idLinea) {
-            this.idLinea = idLinea;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="desafiliarLineaResponse", WrapperNamespace="http://ws.pdm.pucp.edu.pe/", IsWrapped=true)]
-    public partial class desafiliarLineaResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.pdm.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public bool @return;
-        
-        public desafiliarLineaResponse() {
-        }
-        
-        public desafiliarLineaResponse(bool @return) {
-            this.@return = @return;
-        }
+        [System.ServiceModel.OperationContractAttribute(Action="http://ws.pdm.pucp.edu.pe/LineaWS/desafiliarLineaRequest", ReplyAction="http://ws.pdm.pucp.edu.pe/LineaWS/desafiliarLineaResponse")]
+        System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.desafiliarLineaResponse> desafiliarLineaAsync(PortalDesafiliacionWeb.ServicioWS.desafiliarLineaRequest request);
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -1237,6 +1565,42 @@ namespace PortalDesafiliacionWeb.ServicioWS {
         }
     }
     
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="desafiliarLinea", WrapperNamespace="http://ws.pdm.pucp.edu.pe/", IsWrapped=true)]
+    public partial class desafiliarLineaRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.pdm.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int idLinea;
+        
+        public desafiliarLineaRequest() {
+        }
+        
+        public desafiliarLineaRequest(int idLinea) {
+            this.idLinea = idLinea;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="desafiliarLineaResponse", WrapperNamespace="http://ws.pdm.pucp.edu.pe/", IsWrapped=true)]
+    public partial class desafiliarLineaResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.pdm.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public bool @return;
+        
+        public desafiliarLineaResponse() {
+        }
+        
+        public desafiliarLineaResponse(bool @return) {
+            this.@return = @return;
+        }
+    }
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     public interface LineaWSChannel : PortalDesafiliacionWeb.ServicioWS.LineaWS, System.ServiceModel.IClientChannel {
     }
@@ -1265,29 +1629,6 @@ namespace PortalDesafiliacionWeb.ServicioWS {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        PortalDesafiliacionWeb.ServicioWS.desafiliarLineaResponse PortalDesafiliacionWeb.ServicioWS.LineaWS.desafiliarLinea(PortalDesafiliacionWeb.ServicioWS.desafiliarLineaRequest request) {
-            return base.Channel.desafiliarLinea(request);
-        }
-        
-        public bool desafiliarLinea(int idLinea) {
-            PortalDesafiliacionWeb.ServicioWS.desafiliarLineaRequest inValue = new PortalDesafiliacionWeb.ServicioWS.desafiliarLineaRequest();
-            inValue.idLinea = idLinea;
-            PortalDesafiliacionWeb.ServicioWS.desafiliarLineaResponse retVal = ((PortalDesafiliacionWeb.ServicioWS.LineaWS)(this)).desafiliarLinea(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.desafiliarLineaResponse> PortalDesafiliacionWeb.ServicioWS.LineaWS.desafiliarLineaAsync(PortalDesafiliacionWeb.ServicioWS.desafiliarLineaRequest request) {
-            return base.Channel.desafiliarLineaAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.desafiliarLineaResponse> desafiliarLineaAsync(int idLinea) {
-            PortalDesafiliacionWeb.ServicioWS.desafiliarLineaRequest inValue = new PortalDesafiliacionWeb.ServicioWS.desafiliarLineaRequest();
-            inValue.idLinea = idLinea;
-            return ((PortalDesafiliacionWeb.ServicioWS.LineaWS)(this)).desafiliarLineaAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         PortalDesafiliacionWeb.ServicioWS.listarLineasPorClienteResponse PortalDesafiliacionWeb.ServicioWS.LineaWS.listarLineasPorCliente(PortalDesafiliacionWeb.ServicioWS.listarLineasPorClienteRequest request) {
             return base.Channel.listarLineasPorCliente(request);
         }
@@ -1309,6 +1650,29 @@ namespace PortalDesafiliacionWeb.ServicioWS {
             inValue.idCliente = idCliente;
             return ((PortalDesafiliacionWeb.ServicioWS.LineaWS)(this)).listarLineasPorClienteAsync(inValue);
         }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        PortalDesafiliacionWeb.ServicioWS.desafiliarLineaResponse PortalDesafiliacionWeb.ServicioWS.LineaWS.desafiliarLinea(PortalDesafiliacionWeb.ServicioWS.desafiliarLineaRequest request) {
+            return base.Channel.desafiliarLinea(request);
+        }
+        
+        public bool desafiliarLinea(int idLinea) {
+            PortalDesafiliacionWeb.ServicioWS.desafiliarLineaRequest inValue = new PortalDesafiliacionWeb.ServicioWS.desafiliarLineaRequest();
+            inValue.idLinea = idLinea;
+            PortalDesafiliacionWeb.ServicioWS.desafiliarLineaResponse retVal = ((PortalDesafiliacionWeb.ServicioWS.LineaWS)(this)).desafiliarLinea(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.desafiliarLineaResponse> PortalDesafiliacionWeb.ServicioWS.LineaWS.desafiliarLineaAsync(PortalDesafiliacionWeb.ServicioWS.desafiliarLineaRequest request) {
+            return base.Channel.desafiliarLineaAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.desafiliarLineaResponse> desafiliarLineaAsync(int idLinea) {
+            PortalDesafiliacionWeb.ServicioWS.desafiliarLineaRequest inValue = new PortalDesafiliacionWeb.ServicioWS.desafiliarLineaRequest();
+            inValue.idLinea = idLinea;
+            return ((PortalDesafiliacionWeb.ServicioWS.LineaWS)(this)).desafiliarLineaAsync(inValue);
+        }
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -1316,22 +1680,13 @@ namespace PortalDesafiliacionWeb.ServicioWS {
     public interface EquipoWS {
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://ws.pdm.pucp.edu.pe/EquipoWS/modificarEquipoRequest", ReplyAction="http://ws.pdm.pucp.edu.pe/EquipoWS/modificarEquipoResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://ws.pdm.pucp.edu.pe/EquipoWS/listarEquiposRequest", ReplyAction="http://ws.pdm.pucp.edu.pe/EquipoWS/listarEquiposResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        PortalDesafiliacionWeb.ServicioWS.modificarEquipoResponse modificarEquipo(PortalDesafiliacionWeb.ServicioWS.modificarEquipoRequest request);
+        PortalDesafiliacionWeb.ServicioWS.listarEquiposResponse listarEquipos(PortalDesafiliacionWeb.ServicioWS.listarEquiposRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://ws.pdm.pucp.edu.pe/EquipoWS/modificarEquipoRequest", ReplyAction="http://ws.pdm.pucp.edu.pe/EquipoWS/modificarEquipoResponse")]
-        System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.modificarEquipoResponse> modificarEquipoAsync(PortalDesafiliacionWeb.ServicioWS.modificarEquipoRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://ws.pdm.pucp.edu.pe/EquipoWS/insertarEquipoRequest", ReplyAction="http://ws.pdm.pucp.edu.pe/EquipoWS/insertarEquipoResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        PortalDesafiliacionWeb.ServicioWS.insertarEquipoResponse insertarEquipo(PortalDesafiliacionWeb.ServicioWS.insertarEquipoRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://ws.pdm.pucp.edu.pe/EquipoWS/insertarEquipoRequest", ReplyAction="http://ws.pdm.pucp.edu.pe/EquipoWS/insertarEquipoResponse")]
-        System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.insertarEquipoResponse> insertarEquipoAsync(PortalDesafiliacionWeb.ServicioWS.insertarEquipoRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://ws.pdm.pucp.edu.pe/EquipoWS/listarEquiposRequest", ReplyAction="http://ws.pdm.pucp.edu.pe/EquipoWS/listarEquiposResponse")]
+        System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.listarEquiposResponse> listarEquiposAsync(PortalDesafiliacionWeb.ServicioWS.listarEquiposRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://ws.pdm.pucp.edu.pe/EquipoWS/buscarEquipoPorIdRequest", ReplyAction="http://ws.pdm.pucp.edu.pe/EquipoWS/buscarEquipoPorIdResponse")]
@@ -1343,6 +1698,24 @@ namespace PortalDesafiliacionWeb.ServicioWS {
         System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.buscarEquipoPorIdResponse> buscarEquipoPorIdAsync(PortalDesafiliacionWeb.ServicioWS.buscarEquipoPorIdRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://ws.pdm.pucp.edu.pe/EquipoWS/insertarEquipoRequest", ReplyAction="http://ws.pdm.pucp.edu.pe/EquipoWS/insertarEquipoResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        PortalDesafiliacionWeb.ServicioWS.insertarEquipoResponse insertarEquipo(PortalDesafiliacionWeb.ServicioWS.insertarEquipoRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://ws.pdm.pucp.edu.pe/EquipoWS/insertarEquipoRequest", ReplyAction="http://ws.pdm.pucp.edu.pe/EquipoWS/insertarEquipoResponse")]
+        System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.insertarEquipoResponse> insertarEquipoAsync(PortalDesafiliacionWeb.ServicioWS.insertarEquipoRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://ws.pdm.pucp.edu.pe/EquipoWS/modificarEquipoRequest", ReplyAction="http://ws.pdm.pucp.edu.pe/EquipoWS/modificarEquipoResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        PortalDesafiliacionWeb.ServicioWS.modificarEquipoResponse modificarEquipo(PortalDesafiliacionWeb.ServicioWS.modificarEquipoRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://ws.pdm.pucp.edu.pe/EquipoWS/modificarEquipoRequest", ReplyAction="http://ws.pdm.pucp.edu.pe/EquipoWS/modificarEquipoResponse")]
+        System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.modificarEquipoResponse> modificarEquipoAsync(PortalDesafiliacionWeb.ServicioWS.modificarEquipoRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://ws.pdm.pucp.edu.pe/EquipoWS/eliminarEquipoRequest", ReplyAction="http://ws.pdm.pucp.edu.pe/EquipoWS/eliminarEquipoResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
@@ -1350,85 +1723,32 @@ namespace PortalDesafiliacionWeb.ServicioWS {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://ws.pdm.pucp.edu.pe/EquipoWS/eliminarEquipoRequest", ReplyAction="http://ws.pdm.pucp.edu.pe/EquipoWS/eliminarEquipoResponse")]
         System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.eliminarEquipoResponse> eliminarEquipoAsync(PortalDesafiliacionWeb.ServicioWS.eliminarEquipoRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://ws.pdm.pucp.edu.pe/EquipoWS/listarEquiposRequest", ReplyAction="http://ws.pdm.pucp.edu.pe/EquipoWS/listarEquiposResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        PortalDesafiliacionWeb.ServicioWS.listarEquiposResponse listarEquipos(PortalDesafiliacionWeb.ServicioWS.listarEquiposRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://ws.pdm.pucp.edu.pe/EquipoWS/listarEquiposRequest", ReplyAction="http://ws.pdm.pucp.edu.pe/EquipoWS/listarEquiposResponse")]
-        System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.listarEquiposResponse> listarEquiposAsync(PortalDesafiliacionWeb.ServicioWS.listarEquiposRequest request);
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="modificarEquipo", WrapperNamespace="http://ws.pdm.pucp.edu.pe/", IsWrapped=true)]
-    public partial class modificarEquipoRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarEquipos", WrapperNamespace="http://ws.pdm.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarEquiposRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.pdm.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public PortalDesafiliacionWeb.ServicioWS.equipo equipo;
-        
-        public modificarEquipoRequest() {
-        }
-        
-        public modificarEquipoRequest(PortalDesafiliacionWeb.ServicioWS.equipo equipo) {
-            this.equipo = equipo;
+        public listarEquiposRequest() {
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="modificarEquipoResponse", WrapperNamespace="http://ws.pdm.pucp.edu.pe/", IsWrapped=true)]
-    public partial class modificarEquipoResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarEquiposResponse", WrapperNamespace="http://ws.pdm.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarEquiposResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.pdm.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public bool @return;
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public PortalDesafiliacionWeb.ServicioWS.equipo[] @return;
         
-        public modificarEquipoResponse() {
+        public listarEquiposResponse() {
         }
         
-        public modificarEquipoResponse(bool @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarEquipo", WrapperNamespace="http://ws.pdm.pucp.edu.pe/", IsWrapped=true)]
-    public partial class insertarEquipoRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.pdm.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public PortalDesafiliacionWeb.ServicioWS.equipo equipo;
-        
-        public insertarEquipoRequest() {
-        }
-        
-        public insertarEquipoRequest(PortalDesafiliacionWeb.ServicioWS.equipo equipo) {
-            this.equipo = equipo;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarEquipoResponse", WrapperNamespace="http://ws.pdm.pucp.edu.pe/", IsWrapped=true)]
-    public partial class insertarEquipoResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.pdm.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int @return;
-        
-        public insertarEquipoResponse() {
-        }
-        
-        public insertarEquipoResponse(int @return) {
+        public listarEquiposResponse(PortalDesafiliacionWeb.ServicioWS.equipo[] @return) {
             this.@return = @return;
         }
     }
@@ -1472,6 +1792,78 @@ namespace PortalDesafiliacionWeb.ServicioWS {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarEquipo", WrapperNamespace="http://ws.pdm.pucp.edu.pe/", IsWrapped=true)]
+    public partial class insertarEquipoRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.pdm.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public PortalDesafiliacionWeb.ServicioWS.equipo equipo;
+        
+        public insertarEquipoRequest() {
+        }
+        
+        public insertarEquipoRequest(PortalDesafiliacionWeb.ServicioWS.equipo equipo) {
+            this.equipo = equipo;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarEquipoResponse", WrapperNamespace="http://ws.pdm.pucp.edu.pe/", IsWrapped=true)]
+    public partial class insertarEquipoResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.pdm.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int @return;
+        
+        public insertarEquipoResponse() {
+        }
+        
+        public insertarEquipoResponse(int @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="modificarEquipo", WrapperNamespace="http://ws.pdm.pucp.edu.pe/", IsWrapped=true)]
+    public partial class modificarEquipoRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.pdm.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public PortalDesafiliacionWeb.ServicioWS.equipo equipo;
+        
+        public modificarEquipoRequest() {
+        }
+        
+        public modificarEquipoRequest(PortalDesafiliacionWeb.ServicioWS.equipo equipo) {
+            this.equipo = equipo;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="modificarEquipoResponse", WrapperNamespace="http://ws.pdm.pucp.edu.pe/", IsWrapped=true)]
+    public partial class modificarEquipoResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.pdm.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public bool @return;
+        
+        public modificarEquipoResponse() {
+        }
+        
+        public modificarEquipoResponse(bool @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarEquipo", WrapperNamespace="http://ws.pdm.pucp.edu.pe/", IsWrapped=true)]
     public partial class eliminarEquipoRequest {
         
@@ -1505,34 +1897,6 @@ namespace PortalDesafiliacionWeb.ServicioWS {
         }
     }
     
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarEquipos", WrapperNamespace="http://ws.pdm.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarEquiposRequest {
-        
-        public listarEquiposRequest() {
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarEquiposResponse", WrapperNamespace="http://ws.pdm.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarEquiposResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.pdm.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public PortalDesafiliacionWeb.ServicioWS.equipo[] @return;
-        
-        public listarEquiposResponse() {
-        }
-        
-        public listarEquiposResponse(PortalDesafiliacionWeb.ServicioWS.equipo[] @return) {
-            this.@return = @return;
-        }
-    }
-    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     public interface EquipoWSChannel : PortalDesafiliacionWeb.ServicioWS.EquipoWS, System.ServiceModel.IClientChannel {
     }
@@ -1561,49 +1925,24 @@ namespace PortalDesafiliacionWeb.ServicioWS {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        PortalDesafiliacionWeb.ServicioWS.modificarEquipoResponse PortalDesafiliacionWeb.ServicioWS.EquipoWS.modificarEquipo(PortalDesafiliacionWeb.ServicioWS.modificarEquipoRequest request) {
-            return base.Channel.modificarEquipo(request);
+        PortalDesafiliacionWeb.ServicioWS.listarEquiposResponse PortalDesafiliacionWeb.ServicioWS.EquipoWS.listarEquipos(PortalDesafiliacionWeb.ServicioWS.listarEquiposRequest request) {
+            return base.Channel.listarEquipos(request);
         }
         
-        public bool modificarEquipo(PortalDesafiliacionWeb.ServicioWS.equipo equipo) {
-            PortalDesafiliacionWeb.ServicioWS.modificarEquipoRequest inValue = new PortalDesafiliacionWeb.ServicioWS.modificarEquipoRequest();
-            inValue.equipo = equipo;
-            PortalDesafiliacionWeb.ServicioWS.modificarEquipoResponse retVal = ((PortalDesafiliacionWeb.ServicioWS.EquipoWS)(this)).modificarEquipo(inValue);
+        public PortalDesafiliacionWeb.ServicioWS.equipo[] listarEquipos() {
+            PortalDesafiliacionWeb.ServicioWS.listarEquiposRequest inValue = new PortalDesafiliacionWeb.ServicioWS.listarEquiposRequest();
+            PortalDesafiliacionWeb.ServicioWS.listarEquiposResponse retVal = ((PortalDesafiliacionWeb.ServicioWS.EquipoWS)(this)).listarEquipos(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.modificarEquipoResponse> PortalDesafiliacionWeb.ServicioWS.EquipoWS.modificarEquipoAsync(PortalDesafiliacionWeb.ServicioWS.modificarEquipoRequest request) {
-            return base.Channel.modificarEquipoAsync(request);
+        System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.listarEquiposResponse> PortalDesafiliacionWeb.ServicioWS.EquipoWS.listarEquiposAsync(PortalDesafiliacionWeb.ServicioWS.listarEquiposRequest request) {
+            return base.Channel.listarEquiposAsync(request);
         }
         
-        public System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.modificarEquipoResponse> modificarEquipoAsync(PortalDesafiliacionWeb.ServicioWS.equipo equipo) {
-            PortalDesafiliacionWeb.ServicioWS.modificarEquipoRequest inValue = new PortalDesafiliacionWeb.ServicioWS.modificarEquipoRequest();
-            inValue.equipo = equipo;
-            return ((PortalDesafiliacionWeb.ServicioWS.EquipoWS)(this)).modificarEquipoAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        PortalDesafiliacionWeb.ServicioWS.insertarEquipoResponse PortalDesafiliacionWeb.ServicioWS.EquipoWS.insertarEquipo(PortalDesafiliacionWeb.ServicioWS.insertarEquipoRequest request) {
-            return base.Channel.insertarEquipo(request);
-        }
-        
-        public int insertarEquipo(PortalDesafiliacionWeb.ServicioWS.equipo equipo) {
-            PortalDesafiliacionWeb.ServicioWS.insertarEquipoRequest inValue = new PortalDesafiliacionWeb.ServicioWS.insertarEquipoRequest();
-            inValue.equipo = equipo;
-            PortalDesafiliacionWeb.ServicioWS.insertarEquipoResponse retVal = ((PortalDesafiliacionWeb.ServicioWS.EquipoWS)(this)).insertarEquipo(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.insertarEquipoResponse> PortalDesafiliacionWeb.ServicioWS.EquipoWS.insertarEquipoAsync(PortalDesafiliacionWeb.ServicioWS.insertarEquipoRequest request) {
-            return base.Channel.insertarEquipoAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.insertarEquipoResponse> insertarEquipoAsync(PortalDesafiliacionWeb.ServicioWS.equipo equipo) {
-            PortalDesafiliacionWeb.ServicioWS.insertarEquipoRequest inValue = new PortalDesafiliacionWeb.ServicioWS.insertarEquipoRequest();
-            inValue.equipo = equipo;
-            return ((PortalDesafiliacionWeb.ServicioWS.EquipoWS)(this)).insertarEquipoAsync(inValue);
+        public System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.listarEquiposResponse> listarEquiposAsync() {
+            PortalDesafiliacionWeb.ServicioWS.listarEquiposRequest inValue = new PortalDesafiliacionWeb.ServicioWS.listarEquiposRequest();
+            return ((PortalDesafiliacionWeb.ServicioWS.EquipoWS)(this)).listarEquiposAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -1630,6 +1969,52 @@ namespace PortalDesafiliacionWeb.ServicioWS {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        PortalDesafiliacionWeb.ServicioWS.insertarEquipoResponse PortalDesafiliacionWeb.ServicioWS.EquipoWS.insertarEquipo(PortalDesafiliacionWeb.ServicioWS.insertarEquipoRequest request) {
+            return base.Channel.insertarEquipo(request);
+        }
+        
+        public int insertarEquipo(PortalDesafiliacionWeb.ServicioWS.equipo equipo) {
+            PortalDesafiliacionWeb.ServicioWS.insertarEquipoRequest inValue = new PortalDesafiliacionWeb.ServicioWS.insertarEquipoRequest();
+            inValue.equipo = equipo;
+            PortalDesafiliacionWeb.ServicioWS.insertarEquipoResponse retVal = ((PortalDesafiliacionWeb.ServicioWS.EquipoWS)(this)).insertarEquipo(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.insertarEquipoResponse> PortalDesafiliacionWeb.ServicioWS.EquipoWS.insertarEquipoAsync(PortalDesafiliacionWeb.ServicioWS.insertarEquipoRequest request) {
+            return base.Channel.insertarEquipoAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.insertarEquipoResponse> insertarEquipoAsync(PortalDesafiliacionWeb.ServicioWS.equipo equipo) {
+            PortalDesafiliacionWeb.ServicioWS.insertarEquipoRequest inValue = new PortalDesafiliacionWeb.ServicioWS.insertarEquipoRequest();
+            inValue.equipo = equipo;
+            return ((PortalDesafiliacionWeb.ServicioWS.EquipoWS)(this)).insertarEquipoAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        PortalDesafiliacionWeb.ServicioWS.modificarEquipoResponse PortalDesafiliacionWeb.ServicioWS.EquipoWS.modificarEquipo(PortalDesafiliacionWeb.ServicioWS.modificarEquipoRequest request) {
+            return base.Channel.modificarEquipo(request);
+        }
+        
+        public bool modificarEquipo(PortalDesafiliacionWeb.ServicioWS.equipo equipo) {
+            PortalDesafiliacionWeb.ServicioWS.modificarEquipoRequest inValue = new PortalDesafiliacionWeb.ServicioWS.modificarEquipoRequest();
+            inValue.equipo = equipo;
+            PortalDesafiliacionWeb.ServicioWS.modificarEquipoResponse retVal = ((PortalDesafiliacionWeb.ServicioWS.EquipoWS)(this)).modificarEquipo(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.modificarEquipoResponse> PortalDesafiliacionWeb.ServicioWS.EquipoWS.modificarEquipoAsync(PortalDesafiliacionWeb.ServicioWS.modificarEquipoRequest request) {
+            return base.Channel.modificarEquipoAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.modificarEquipoResponse> modificarEquipoAsync(PortalDesafiliacionWeb.ServicioWS.equipo equipo) {
+            PortalDesafiliacionWeb.ServicioWS.modificarEquipoRequest inValue = new PortalDesafiliacionWeb.ServicioWS.modificarEquipoRequest();
+            inValue.equipo = equipo;
+            return ((PortalDesafiliacionWeb.ServicioWS.EquipoWS)(this)).modificarEquipoAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         PortalDesafiliacionWeb.ServicioWS.eliminarEquipoResponse PortalDesafiliacionWeb.ServicioWS.EquipoWS.eliminarEquipo(PortalDesafiliacionWeb.ServicioWS.eliminarEquipoRequest request) {
             return base.Channel.eliminarEquipo(request);
         }
@@ -1651,59 +2036,11 @@ namespace PortalDesafiliacionWeb.ServicioWS {
             inValue.idEquipo = idEquipo;
             return ((PortalDesafiliacionWeb.ServicioWS.EquipoWS)(this)).eliminarEquipoAsync(inValue);
         }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        PortalDesafiliacionWeb.ServicioWS.listarEquiposResponse PortalDesafiliacionWeb.ServicioWS.EquipoWS.listarEquipos(PortalDesafiliacionWeb.ServicioWS.listarEquiposRequest request) {
-            return base.Channel.listarEquipos(request);
-        }
-        
-        public PortalDesafiliacionWeb.ServicioWS.equipo[] listarEquipos() {
-            PortalDesafiliacionWeb.ServicioWS.listarEquiposRequest inValue = new PortalDesafiliacionWeb.ServicioWS.listarEquiposRequest();
-            PortalDesafiliacionWeb.ServicioWS.listarEquiposResponse retVal = ((PortalDesafiliacionWeb.ServicioWS.EquipoWS)(this)).listarEquipos(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.listarEquiposResponse> PortalDesafiliacionWeb.ServicioWS.EquipoWS.listarEquiposAsync(PortalDesafiliacionWeb.ServicioWS.listarEquiposRequest request) {
-            return base.Channel.listarEquiposAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.listarEquiposResponse> listarEquiposAsync() {
-            PortalDesafiliacionWeb.ServicioWS.listarEquiposRequest inValue = new PortalDesafiliacionWeb.ServicioWS.listarEquiposRequest();
-            return ((PortalDesafiliacionWeb.ServicioWS.EquipoWS)(this)).listarEquiposAsync(inValue);
-        }
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ServiceModel.ServiceContractAttribute(Namespace="http://services.softprog.pucp.edu.pe/", ConfigurationName="ServicioWS.UsuarioWS")]
     public interface UsuarioWS {
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.softprog.pucp.edu.pe/UsuarioWS/insertarUsuarioRequest", ReplyAction="http://services.softprog.pucp.edu.pe/UsuarioWS/insertarUsuarioResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        PortalDesafiliacionWeb.ServicioWS.insertarUsuarioResponse insertarUsuario(PortalDesafiliacionWeb.ServicioWS.insertarUsuarioRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.softprog.pucp.edu.pe/UsuarioWS/insertarUsuarioRequest", ReplyAction="http://services.softprog.pucp.edu.pe/UsuarioWS/insertarUsuarioResponse")]
-        System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.insertarUsuarioResponse> insertarUsuarioAsync(PortalDesafiliacionWeb.ServicioWS.insertarUsuarioRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.softprog.pucp.edu.pe/UsuarioWS/buscarTipoUsuarioRequest", ReplyAction="http://services.softprog.pucp.edu.pe/UsuarioWS/buscarTipoUsuarioResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        PortalDesafiliacionWeb.ServicioWS.buscarTipoUsuarioResponse buscarTipoUsuario(PortalDesafiliacionWeb.ServicioWS.buscarTipoUsuarioRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.softprog.pucp.edu.pe/UsuarioWS/buscarTipoUsuarioRequest", ReplyAction="http://services.softprog.pucp.edu.pe/UsuarioWS/buscarTipoUsuarioResponse")]
-        System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.buscarTipoUsuarioResponse> buscarTipoUsuarioAsync(PortalDesafiliacionWeb.ServicioWS.buscarTipoUsuarioRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.softprog.pucp.edu.pe/UsuarioWS/verificarUsuarioRequest", ReplyAction="http://services.softprog.pucp.edu.pe/UsuarioWS/verificarUsuarioResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        PortalDesafiliacionWeb.ServicioWS.verificarUsuarioResponse verificarUsuario(PortalDesafiliacionWeb.ServicioWS.verificarUsuarioRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.softprog.pucp.edu.pe/UsuarioWS/verificarUsuarioRequest", ReplyAction="http://services.softprog.pucp.edu.pe/UsuarioWS/verificarUsuarioResponse")]
-        System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.verificarUsuarioResponse> verificarUsuarioAsync(PortalDesafiliacionWeb.ServicioWS.verificarUsuarioRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://services.softprog.pucp.edu.pe/UsuarioWS/obtenerUsuarioRequest", ReplyAction="http://services.softprog.pucp.edu.pe/UsuarioWS/obtenerUsuarioResponse")]
@@ -1750,6 +2087,33 @@ namespace PortalDesafiliacionWeb.ServicioWS {
         System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.listarUsuariosResponse> listarUsuariosAsync(PortalDesafiliacionWeb.ServicioWS.listarUsuariosRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.softprog.pucp.edu.pe/UsuarioWS/insertarUsuarioRequest", ReplyAction="http://services.softprog.pucp.edu.pe/UsuarioWS/insertarUsuarioResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        PortalDesafiliacionWeb.ServicioWS.insertarUsuarioResponse insertarUsuario(PortalDesafiliacionWeb.ServicioWS.insertarUsuarioRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.softprog.pucp.edu.pe/UsuarioWS/insertarUsuarioRequest", ReplyAction="http://services.softprog.pucp.edu.pe/UsuarioWS/insertarUsuarioResponse")]
+        System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.insertarUsuarioResponse> insertarUsuarioAsync(PortalDesafiliacionWeb.ServicioWS.insertarUsuarioRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.softprog.pucp.edu.pe/UsuarioWS/buscarTipoUsuarioRequest", ReplyAction="http://services.softprog.pucp.edu.pe/UsuarioWS/buscarTipoUsuarioResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        PortalDesafiliacionWeb.ServicioWS.buscarTipoUsuarioResponse buscarTipoUsuario(PortalDesafiliacionWeb.ServicioWS.buscarTipoUsuarioRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.softprog.pucp.edu.pe/UsuarioWS/buscarTipoUsuarioRequest", ReplyAction="http://services.softprog.pucp.edu.pe/UsuarioWS/buscarTipoUsuarioResponse")]
+        System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.buscarTipoUsuarioResponse> buscarTipoUsuarioAsync(PortalDesafiliacionWeb.ServicioWS.buscarTipoUsuarioRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.softprog.pucp.edu.pe/UsuarioWS/verificarUsuarioRequest", ReplyAction="http://services.softprog.pucp.edu.pe/UsuarioWS/verificarUsuarioResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        PortalDesafiliacionWeb.ServicioWS.verificarUsuarioResponse verificarUsuario(PortalDesafiliacionWeb.ServicioWS.verificarUsuarioRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.softprog.pucp.edu.pe/UsuarioWS/verificarUsuarioRequest", ReplyAction="http://services.softprog.pucp.edu.pe/UsuarioWS/verificarUsuarioResponse")]
+        System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.verificarUsuarioResponse> verificarUsuarioAsync(PortalDesafiliacionWeb.ServicioWS.verificarUsuarioRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://services.softprog.pucp.edu.pe/UsuarioWS/obtenerUsuarioPorCorreoODocumentoR" +
             "equest", ReplyAction="http://services.softprog.pucp.edu.pe/UsuarioWS/obtenerUsuarioPorCorreoODocumentoR" +
             "esponse")]
@@ -1761,154 +2125,6 @@ namespace PortalDesafiliacionWeb.ServicioWS {
             "equest", ReplyAction="http://services.softprog.pucp.edu.pe/UsuarioWS/obtenerUsuarioPorCorreoODocumentoR" +
             "esponse")]
         System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.obtenerUsuarioPorCorreoODocumentoResponse> obtenerUsuarioPorCorreoODocumentoAsync(PortalDesafiliacionWeb.ServicioWS.obtenerUsuarioPorCorreoODocumentoRequest request);
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarUsuario", WrapperNamespace="http://services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class insertarUsuarioRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public string primerNombre;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softprog.pucp.edu.pe/", Order=1)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public string segundoNombre;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softprog.pucp.edu.pe/", Order=2)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public string apellidoPaterno;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softprog.pucp.edu.pe/", Order=3)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public string apellidoMaterno;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softprog.pucp.edu.pe/", Order=4)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public string tipoDocumento;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softprog.pucp.edu.pe/", Order=5)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public string numeroDocumento;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softprog.pucp.edu.pe/", Order=6)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public string correo;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softprog.pucp.edu.pe/", Order=7)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public string contrasena;
-        
-        public insertarUsuarioRequest() {
-        }
-        
-        public insertarUsuarioRequest(string primerNombre, string segundoNombre, string apellidoPaterno, string apellidoMaterno, string tipoDocumento, string numeroDocumento, string correo, string contrasena) {
-            this.primerNombre = primerNombre;
-            this.segundoNombre = segundoNombre;
-            this.apellidoPaterno = apellidoPaterno;
-            this.apellidoMaterno = apellidoMaterno;
-            this.tipoDocumento = tipoDocumento;
-            this.numeroDocumento = numeroDocumento;
-            this.correo = correo;
-            this.contrasena = contrasena;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarUsuarioResponse", WrapperNamespace="http://services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class insertarUsuarioResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int @return;
-        
-        public insertarUsuarioResponse() {
-        }
-        
-        public insertarUsuarioResponse(int @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="buscarTipoUsuario", WrapperNamespace="http://services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class buscarTipoUsuarioRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int idUsuario;
-        
-        public buscarTipoUsuarioRequest() {
-        }
-        
-        public buscarTipoUsuarioRequest(int idUsuario) {
-            this.idUsuario = idUsuario;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="buscarTipoUsuarioResponse", WrapperNamespace="http://services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class buscarTipoUsuarioResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int @return;
-        
-        public buscarTipoUsuarioResponse() {
-        }
-        
-        public buscarTipoUsuarioResponse(int @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="verificarUsuario", WrapperNamespace="http://services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class verificarUsuarioRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public string documentoOCorreo;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softprog.pucp.edu.pe/", Order=1)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public string contrasena;
-        
-        public verificarUsuarioRequest() {
-        }
-        
-        public verificarUsuarioRequest(string documentoOCorreo, string contrasena) {
-            this.documentoOCorreo = documentoOCorreo;
-            this.contrasena = contrasena;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="verificarUsuarioResponse", WrapperNamespace="http://services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class verificarUsuarioResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int @return;
-        
-        public verificarUsuarioResponse() {
-        }
-        
-        public verificarUsuarioResponse(int @return) {
-            this.@return = @return;
-        }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -2083,6 +2299,154 @@ namespace PortalDesafiliacionWeb.ServicioWS {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarUsuario", WrapperNamespace="http://services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class insertarUsuarioRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string primerNombre;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softprog.pucp.edu.pe/", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string segundoNombre;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softprog.pucp.edu.pe/", Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string apellidoPaterno;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softprog.pucp.edu.pe/", Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string apellidoMaterno;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softprog.pucp.edu.pe/", Order=4)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string tipoDocumento;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softprog.pucp.edu.pe/", Order=5)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string numeroDocumento;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softprog.pucp.edu.pe/", Order=6)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string correo;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softprog.pucp.edu.pe/", Order=7)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string contrasena;
+        
+        public insertarUsuarioRequest() {
+        }
+        
+        public insertarUsuarioRequest(string primerNombre, string segundoNombre, string apellidoPaterno, string apellidoMaterno, string tipoDocumento, string numeroDocumento, string correo, string contrasena) {
+            this.primerNombre = primerNombre;
+            this.segundoNombre = segundoNombre;
+            this.apellidoPaterno = apellidoPaterno;
+            this.apellidoMaterno = apellidoMaterno;
+            this.tipoDocumento = tipoDocumento;
+            this.numeroDocumento = numeroDocumento;
+            this.correo = correo;
+            this.contrasena = contrasena;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarUsuarioResponse", WrapperNamespace="http://services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class insertarUsuarioResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int @return;
+        
+        public insertarUsuarioResponse() {
+        }
+        
+        public insertarUsuarioResponse(int @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="buscarTipoUsuario", WrapperNamespace="http://services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class buscarTipoUsuarioRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int idUsuario;
+        
+        public buscarTipoUsuarioRequest() {
+        }
+        
+        public buscarTipoUsuarioRequest(int idUsuario) {
+            this.idUsuario = idUsuario;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="buscarTipoUsuarioResponse", WrapperNamespace="http://services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class buscarTipoUsuarioResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int @return;
+        
+        public buscarTipoUsuarioResponse() {
+        }
+        
+        public buscarTipoUsuarioResponse(int @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="verificarUsuario", WrapperNamespace="http://services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class verificarUsuarioRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string documentoOCorreo;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softprog.pucp.edu.pe/", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string contrasena;
+        
+        public verificarUsuarioRequest() {
+        }
+        
+        public verificarUsuarioRequest(string documentoOCorreo, string contrasena) {
+            this.documentoOCorreo = documentoOCorreo;
+            this.contrasena = contrasena;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="verificarUsuarioResponse", WrapperNamespace="http://services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class verificarUsuarioResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int @return;
+        
+        public verificarUsuarioResponse() {
+        }
+        
+        public verificarUsuarioResponse(int @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName="obtenerUsuarioPorCorreoODocumento", WrapperNamespace="http://services.softprog.pucp.edu.pe/", IsWrapped=true)]
     public partial class obtenerUsuarioPorCorreoODocumentoRequest {
         
@@ -2146,91 +2510,6 @@ namespace PortalDesafiliacionWeb.ServicioWS {
         
         public UsuarioWSClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(binding, remoteAddress) {
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        PortalDesafiliacionWeb.ServicioWS.insertarUsuarioResponse PortalDesafiliacionWeb.ServicioWS.UsuarioWS.insertarUsuario(PortalDesafiliacionWeb.ServicioWS.insertarUsuarioRequest request) {
-            return base.Channel.insertarUsuario(request);
-        }
-        
-        public int insertarUsuario(string primerNombre, string segundoNombre, string apellidoPaterno, string apellidoMaterno, string tipoDocumento, string numeroDocumento, string correo, string contrasena) {
-            PortalDesafiliacionWeb.ServicioWS.insertarUsuarioRequest inValue = new PortalDesafiliacionWeb.ServicioWS.insertarUsuarioRequest();
-            inValue.primerNombre = primerNombre;
-            inValue.segundoNombre = segundoNombre;
-            inValue.apellidoPaterno = apellidoPaterno;
-            inValue.apellidoMaterno = apellidoMaterno;
-            inValue.tipoDocumento = tipoDocumento;
-            inValue.numeroDocumento = numeroDocumento;
-            inValue.correo = correo;
-            inValue.contrasena = contrasena;
-            PortalDesafiliacionWeb.ServicioWS.insertarUsuarioResponse retVal = ((PortalDesafiliacionWeb.ServicioWS.UsuarioWS)(this)).insertarUsuario(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.insertarUsuarioResponse> PortalDesafiliacionWeb.ServicioWS.UsuarioWS.insertarUsuarioAsync(PortalDesafiliacionWeb.ServicioWS.insertarUsuarioRequest request) {
-            return base.Channel.insertarUsuarioAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.insertarUsuarioResponse> insertarUsuarioAsync(string primerNombre, string segundoNombre, string apellidoPaterno, string apellidoMaterno, string tipoDocumento, string numeroDocumento, string correo, string contrasena) {
-            PortalDesafiliacionWeb.ServicioWS.insertarUsuarioRequest inValue = new PortalDesafiliacionWeb.ServicioWS.insertarUsuarioRequest();
-            inValue.primerNombre = primerNombre;
-            inValue.segundoNombre = segundoNombre;
-            inValue.apellidoPaterno = apellidoPaterno;
-            inValue.apellidoMaterno = apellidoMaterno;
-            inValue.tipoDocumento = tipoDocumento;
-            inValue.numeroDocumento = numeroDocumento;
-            inValue.correo = correo;
-            inValue.contrasena = contrasena;
-            return ((PortalDesafiliacionWeb.ServicioWS.UsuarioWS)(this)).insertarUsuarioAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        PortalDesafiliacionWeb.ServicioWS.buscarTipoUsuarioResponse PortalDesafiliacionWeb.ServicioWS.UsuarioWS.buscarTipoUsuario(PortalDesafiliacionWeb.ServicioWS.buscarTipoUsuarioRequest request) {
-            return base.Channel.buscarTipoUsuario(request);
-        }
-        
-        public int buscarTipoUsuario(int idUsuario) {
-            PortalDesafiliacionWeb.ServicioWS.buscarTipoUsuarioRequest inValue = new PortalDesafiliacionWeb.ServicioWS.buscarTipoUsuarioRequest();
-            inValue.idUsuario = idUsuario;
-            PortalDesafiliacionWeb.ServicioWS.buscarTipoUsuarioResponse retVal = ((PortalDesafiliacionWeb.ServicioWS.UsuarioWS)(this)).buscarTipoUsuario(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.buscarTipoUsuarioResponse> PortalDesafiliacionWeb.ServicioWS.UsuarioWS.buscarTipoUsuarioAsync(PortalDesafiliacionWeb.ServicioWS.buscarTipoUsuarioRequest request) {
-            return base.Channel.buscarTipoUsuarioAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.buscarTipoUsuarioResponse> buscarTipoUsuarioAsync(int idUsuario) {
-            PortalDesafiliacionWeb.ServicioWS.buscarTipoUsuarioRequest inValue = new PortalDesafiliacionWeb.ServicioWS.buscarTipoUsuarioRequest();
-            inValue.idUsuario = idUsuario;
-            return ((PortalDesafiliacionWeb.ServicioWS.UsuarioWS)(this)).buscarTipoUsuarioAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        PortalDesafiliacionWeb.ServicioWS.verificarUsuarioResponse PortalDesafiliacionWeb.ServicioWS.UsuarioWS.verificarUsuario(PortalDesafiliacionWeb.ServicioWS.verificarUsuarioRequest request) {
-            return base.Channel.verificarUsuario(request);
-        }
-        
-        public int verificarUsuario(string documentoOCorreo, string contrasena) {
-            PortalDesafiliacionWeb.ServicioWS.verificarUsuarioRequest inValue = new PortalDesafiliacionWeb.ServicioWS.verificarUsuarioRequest();
-            inValue.documentoOCorreo = documentoOCorreo;
-            inValue.contrasena = contrasena;
-            PortalDesafiliacionWeb.ServicioWS.verificarUsuarioResponse retVal = ((PortalDesafiliacionWeb.ServicioWS.UsuarioWS)(this)).verificarUsuario(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.verificarUsuarioResponse> PortalDesafiliacionWeb.ServicioWS.UsuarioWS.verificarUsuarioAsync(PortalDesafiliacionWeb.ServicioWS.verificarUsuarioRequest request) {
-            return base.Channel.verificarUsuarioAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.verificarUsuarioResponse> verificarUsuarioAsync(string documentoOCorreo, string contrasena) {
-            PortalDesafiliacionWeb.ServicioWS.verificarUsuarioRequest inValue = new PortalDesafiliacionWeb.ServicioWS.verificarUsuarioRequest();
-            inValue.documentoOCorreo = documentoOCorreo;
-            inValue.contrasena = contrasena;
-            return ((PortalDesafiliacionWeb.ServicioWS.UsuarioWS)(this)).verificarUsuarioAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -2345,6 +2624,91 @@ namespace PortalDesafiliacionWeb.ServicioWS {
         public System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.listarUsuariosResponse> listarUsuariosAsync() {
             PortalDesafiliacionWeb.ServicioWS.listarUsuariosRequest inValue = new PortalDesafiliacionWeb.ServicioWS.listarUsuariosRequest();
             return ((PortalDesafiliacionWeb.ServicioWS.UsuarioWS)(this)).listarUsuariosAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        PortalDesafiliacionWeb.ServicioWS.insertarUsuarioResponse PortalDesafiliacionWeb.ServicioWS.UsuarioWS.insertarUsuario(PortalDesafiliacionWeb.ServicioWS.insertarUsuarioRequest request) {
+            return base.Channel.insertarUsuario(request);
+        }
+        
+        public int insertarUsuario(string primerNombre, string segundoNombre, string apellidoPaterno, string apellidoMaterno, string tipoDocumento, string numeroDocumento, string correo, string contrasena) {
+            PortalDesafiliacionWeb.ServicioWS.insertarUsuarioRequest inValue = new PortalDesafiliacionWeb.ServicioWS.insertarUsuarioRequest();
+            inValue.primerNombre = primerNombre;
+            inValue.segundoNombre = segundoNombre;
+            inValue.apellidoPaterno = apellidoPaterno;
+            inValue.apellidoMaterno = apellidoMaterno;
+            inValue.tipoDocumento = tipoDocumento;
+            inValue.numeroDocumento = numeroDocumento;
+            inValue.correo = correo;
+            inValue.contrasena = contrasena;
+            PortalDesafiliacionWeb.ServicioWS.insertarUsuarioResponse retVal = ((PortalDesafiliacionWeb.ServicioWS.UsuarioWS)(this)).insertarUsuario(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.insertarUsuarioResponse> PortalDesafiliacionWeb.ServicioWS.UsuarioWS.insertarUsuarioAsync(PortalDesafiliacionWeb.ServicioWS.insertarUsuarioRequest request) {
+            return base.Channel.insertarUsuarioAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.insertarUsuarioResponse> insertarUsuarioAsync(string primerNombre, string segundoNombre, string apellidoPaterno, string apellidoMaterno, string tipoDocumento, string numeroDocumento, string correo, string contrasena) {
+            PortalDesafiliacionWeb.ServicioWS.insertarUsuarioRequest inValue = new PortalDesafiliacionWeb.ServicioWS.insertarUsuarioRequest();
+            inValue.primerNombre = primerNombre;
+            inValue.segundoNombre = segundoNombre;
+            inValue.apellidoPaterno = apellidoPaterno;
+            inValue.apellidoMaterno = apellidoMaterno;
+            inValue.tipoDocumento = tipoDocumento;
+            inValue.numeroDocumento = numeroDocumento;
+            inValue.correo = correo;
+            inValue.contrasena = contrasena;
+            return ((PortalDesafiliacionWeb.ServicioWS.UsuarioWS)(this)).insertarUsuarioAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        PortalDesafiliacionWeb.ServicioWS.buscarTipoUsuarioResponse PortalDesafiliacionWeb.ServicioWS.UsuarioWS.buscarTipoUsuario(PortalDesafiliacionWeb.ServicioWS.buscarTipoUsuarioRequest request) {
+            return base.Channel.buscarTipoUsuario(request);
+        }
+        
+        public int buscarTipoUsuario(int idUsuario) {
+            PortalDesafiliacionWeb.ServicioWS.buscarTipoUsuarioRequest inValue = new PortalDesafiliacionWeb.ServicioWS.buscarTipoUsuarioRequest();
+            inValue.idUsuario = idUsuario;
+            PortalDesafiliacionWeb.ServicioWS.buscarTipoUsuarioResponse retVal = ((PortalDesafiliacionWeb.ServicioWS.UsuarioWS)(this)).buscarTipoUsuario(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.buscarTipoUsuarioResponse> PortalDesafiliacionWeb.ServicioWS.UsuarioWS.buscarTipoUsuarioAsync(PortalDesafiliacionWeb.ServicioWS.buscarTipoUsuarioRequest request) {
+            return base.Channel.buscarTipoUsuarioAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.buscarTipoUsuarioResponse> buscarTipoUsuarioAsync(int idUsuario) {
+            PortalDesafiliacionWeb.ServicioWS.buscarTipoUsuarioRequest inValue = new PortalDesafiliacionWeb.ServicioWS.buscarTipoUsuarioRequest();
+            inValue.idUsuario = idUsuario;
+            return ((PortalDesafiliacionWeb.ServicioWS.UsuarioWS)(this)).buscarTipoUsuarioAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        PortalDesafiliacionWeb.ServicioWS.verificarUsuarioResponse PortalDesafiliacionWeb.ServicioWS.UsuarioWS.verificarUsuario(PortalDesafiliacionWeb.ServicioWS.verificarUsuarioRequest request) {
+            return base.Channel.verificarUsuario(request);
+        }
+        
+        public int verificarUsuario(string documentoOCorreo, string contrasena) {
+            PortalDesafiliacionWeb.ServicioWS.verificarUsuarioRequest inValue = new PortalDesafiliacionWeb.ServicioWS.verificarUsuarioRequest();
+            inValue.documentoOCorreo = documentoOCorreo;
+            inValue.contrasena = contrasena;
+            PortalDesafiliacionWeb.ServicioWS.verificarUsuarioResponse retVal = ((PortalDesafiliacionWeb.ServicioWS.UsuarioWS)(this)).verificarUsuario(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.verificarUsuarioResponse> PortalDesafiliacionWeb.ServicioWS.UsuarioWS.verificarUsuarioAsync(PortalDesafiliacionWeb.ServicioWS.verificarUsuarioRequest request) {
+            return base.Channel.verificarUsuarioAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.verificarUsuarioResponse> verificarUsuarioAsync(string documentoOCorreo, string contrasena) {
+            PortalDesafiliacionWeb.ServicioWS.verificarUsuarioRequest inValue = new PortalDesafiliacionWeb.ServicioWS.verificarUsuarioRequest();
+            inValue.documentoOCorreo = documentoOCorreo;
+            inValue.contrasena = contrasena;
+            return ((PortalDesafiliacionWeb.ServicioWS.UsuarioWS)(this)).verificarUsuarioAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -2547,13 +2911,13 @@ namespace PortalDesafiliacionWeb.ServicioWS {
     public interface PlantillaOfertaWS {
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://ws.pdm.pucp.edu.pe/PlantillaOfertaWS/insertarPlantillaRequest", ReplyAction="http://ws.pdm.pucp.edu.pe/PlantillaOfertaWS/insertarPlantillaResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://ws.pdm.pucp.edu.pe/PlantillaOfertaWS/listarPlantillasOfertasRequest", ReplyAction="http://ws.pdm.pucp.edu.pe/PlantillaOfertaWS/listarPlantillasOfertasResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        PortalDesafiliacionWeb.ServicioWS.insertarPlantillaResponse insertarPlantilla(PortalDesafiliacionWeb.ServicioWS.insertarPlantillaRequest request);
+        PortalDesafiliacionWeb.ServicioWS.listarPlantillasOfertasResponse listarPlantillasOfertas(PortalDesafiliacionWeb.ServicioWS.listarPlantillasOfertasRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://ws.pdm.pucp.edu.pe/PlantillaOfertaWS/insertarPlantillaRequest", ReplyAction="http://ws.pdm.pucp.edu.pe/PlantillaOfertaWS/insertarPlantillaResponse")]
-        System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.insertarPlantillaResponse> insertarPlantillaAsync(PortalDesafiliacionWeb.ServicioWS.insertarPlantillaRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://ws.pdm.pucp.edu.pe/PlantillaOfertaWS/listarPlantillasOfertasRequest", ReplyAction="http://ws.pdm.pucp.edu.pe/PlantillaOfertaWS/listarPlantillasOfertasResponse")]
+        System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.listarPlantillasOfertasResponse> listarPlantillasOfertasAsync(PortalDesafiliacionWeb.ServicioWS.listarPlantillasOfertasRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://ws.pdm.pucp.edu.pe/PlantillaOfertaWS/modificarPlantillaRequest", ReplyAction="http://ws.pdm.pucp.edu.pe/PlantillaOfertaWS/modificarPlantillaResponse")]
@@ -2565,6 +2929,15 @@ namespace PortalDesafiliacionWeb.ServicioWS {
         System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.modificarPlantillaResponse> modificarPlantillaAsync(PortalDesafiliacionWeb.ServicioWS.modificarPlantillaRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://ws.pdm.pucp.edu.pe/PlantillaOfertaWS/insertarPlantillaRequest", ReplyAction="http://ws.pdm.pucp.edu.pe/PlantillaOfertaWS/insertarPlantillaResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        PortalDesafiliacionWeb.ServicioWS.insertarPlantillaResponse insertarPlantilla(PortalDesafiliacionWeb.ServicioWS.insertarPlantillaRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://ws.pdm.pucp.edu.pe/PlantillaOfertaWS/insertarPlantillaRequest", ReplyAction="http://ws.pdm.pucp.edu.pe/PlantillaOfertaWS/insertarPlantillaResponse")]
+        System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.insertarPlantillaResponse> insertarPlantillaAsync(PortalDesafiliacionWeb.ServicioWS.insertarPlantillaRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://ws.pdm.pucp.edu.pe/PlantillaOfertaWS/eliminarPlantillaRequest", ReplyAction="http://ws.pdm.pucp.edu.pe/PlantillaOfertaWS/eliminarPlantillaResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
@@ -2572,49 +2945,32 @@ namespace PortalDesafiliacionWeb.ServicioWS {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://ws.pdm.pucp.edu.pe/PlantillaOfertaWS/eliminarPlantillaRequest", ReplyAction="http://ws.pdm.pucp.edu.pe/PlantillaOfertaWS/eliminarPlantillaResponse")]
         System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.eliminarPlantillaResponse> eliminarPlantillaAsync(PortalDesafiliacionWeb.ServicioWS.eliminarPlantillaRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://ws.pdm.pucp.edu.pe/PlantillaOfertaWS/listarPlantillasOfertasRequest", ReplyAction="http://ws.pdm.pucp.edu.pe/PlantillaOfertaWS/listarPlantillasOfertasResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        PortalDesafiliacionWeb.ServicioWS.listarPlantillasOfertasResponse listarPlantillasOfertas(PortalDesafiliacionWeb.ServicioWS.listarPlantillasOfertasRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://ws.pdm.pucp.edu.pe/PlantillaOfertaWS/listarPlantillasOfertasRequest", ReplyAction="http://ws.pdm.pucp.edu.pe/PlantillaOfertaWS/listarPlantillasOfertasResponse")]
-        System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.listarPlantillasOfertasResponse> listarPlantillasOfertasAsync(PortalDesafiliacionWeb.ServicioWS.listarPlantillasOfertasRequest request);
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarPlantilla", WrapperNamespace="http://ws.pdm.pucp.edu.pe/", IsWrapped=true)]
-    public partial class insertarPlantillaRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPlantillasOfertas", WrapperNamespace="http://ws.pdm.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarPlantillasOfertasRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.pdm.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public PortalDesafiliacionWeb.ServicioWS.plantillaOferta plantilla;
-        
-        public insertarPlantillaRequest() {
-        }
-        
-        public insertarPlantillaRequest(PortalDesafiliacionWeb.ServicioWS.plantillaOferta plantilla) {
-            this.plantilla = plantilla;
+        public listarPlantillasOfertasRequest() {
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarPlantillaResponse", WrapperNamespace="http://ws.pdm.pucp.edu.pe/", IsWrapped=true)]
-    public partial class insertarPlantillaResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPlantillasOfertasResponse", WrapperNamespace="http://ws.pdm.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarPlantillasOfertasResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.pdm.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int @return;
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public PortalDesafiliacionWeb.ServicioWS.plantillaOferta[] @return;
         
-        public insertarPlantillaResponse() {
+        public listarPlantillasOfertasResponse() {
         }
         
-        public insertarPlantillaResponse(int @return) {
+        public listarPlantillasOfertasResponse(PortalDesafiliacionWeb.ServicioWS.plantillaOferta[] @return) {
             this.@return = @return;
         }
     }
@@ -2658,6 +3014,42 @@ namespace PortalDesafiliacionWeb.ServicioWS {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarPlantilla", WrapperNamespace="http://ws.pdm.pucp.edu.pe/", IsWrapped=true)]
+    public partial class insertarPlantillaRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.pdm.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public PortalDesafiliacionWeb.ServicioWS.plantillaOferta plantilla;
+        
+        public insertarPlantillaRequest() {
+        }
+        
+        public insertarPlantillaRequest(PortalDesafiliacionWeb.ServicioWS.plantillaOferta plantilla) {
+            this.plantilla = plantilla;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarPlantillaResponse", WrapperNamespace="http://ws.pdm.pucp.edu.pe/", IsWrapped=true)]
+    public partial class insertarPlantillaResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.pdm.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int @return;
+        
+        public insertarPlantillaResponse() {
+        }
+        
+        public insertarPlantillaResponse(int @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarPlantilla", WrapperNamespace="http://ws.pdm.pucp.edu.pe/", IsWrapped=true)]
     public partial class eliminarPlantillaRequest {
         
@@ -2691,34 +3083,6 @@ namespace PortalDesafiliacionWeb.ServicioWS {
         }
     }
     
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPlantillasOfertas", WrapperNamespace="http://ws.pdm.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarPlantillasOfertasRequest {
-        
-        public listarPlantillasOfertasRequest() {
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPlantillasOfertasResponse", WrapperNamespace="http://ws.pdm.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarPlantillasOfertasResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.pdm.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public PortalDesafiliacionWeb.ServicioWS.plantillaOferta[] @return;
-        
-        public listarPlantillasOfertasResponse() {
-        }
-        
-        public listarPlantillasOfertasResponse(PortalDesafiliacionWeb.ServicioWS.plantillaOferta[] @return) {
-            this.@return = @return;
-        }
-    }
-    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     public interface PlantillaOfertaWSChannel : PortalDesafiliacionWeb.ServicioWS.PlantillaOfertaWS, System.ServiceModel.IClientChannel {
     }
@@ -2747,26 +3111,24 @@ namespace PortalDesafiliacionWeb.ServicioWS {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        PortalDesafiliacionWeb.ServicioWS.insertarPlantillaResponse PortalDesafiliacionWeb.ServicioWS.PlantillaOfertaWS.insertarPlantilla(PortalDesafiliacionWeb.ServicioWS.insertarPlantillaRequest request) {
-            return base.Channel.insertarPlantilla(request);
+        PortalDesafiliacionWeb.ServicioWS.listarPlantillasOfertasResponse PortalDesafiliacionWeb.ServicioWS.PlantillaOfertaWS.listarPlantillasOfertas(PortalDesafiliacionWeb.ServicioWS.listarPlantillasOfertasRequest request) {
+            return base.Channel.listarPlantillasOfertas(request);
         }
         
-        public int insertarPlantilla(PortalDesafiliacionWeb.ServicioWS.plantillaOferta plantilla) {
-            PortalDesafiliacionWeb.ServicioWS.insertarPlantillaRequest inValue = new PortalDesafiliacionWeb.ServicioWS.insertarPlantillaRequest();
-            inValue.plantilla = plantilla;
-            PortalDesafiliacionWeb.ServicioWS.insertarPlantillaResponse retVal = ((PortalDesafiliacionWeb.ServicioWS.PlantillaOfertaWS)(this)).insertarPlantilla(inValue);
+        public PortalDesafiliacionWeb.ServicioWS.plantillaOferta[] listarPlantillasOfertas() {
+            PortalDesafiliacionWeb.ServicioWS.listarPlantillasOfertasRequest inValue = new PortalDesafiliacionWeb.ServicioWS.listarPlantillasOfertasRequest();
+            PortalDesafiliacionWeb.ServicioWS.listarPlantillasOfertasResponse retVal = ((PortalDesafiliacionWeb.ServicioWS.PlantillaOfertaWS)(this)).listarPlantillasOfertas(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.insertarPlantillaResponse> PortalDesafiliacionWeb.ServicioWS.PlantillaOfertaWS.insertarPlantillaAsync(PortalDesafiliacionWeb.ServicioWS.insertarPlantillaRequest request) {
-            return base.Channel.insertarPlantillaAsync(request);
+        System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.listarPlantillasOfertasResponse> PortalDesafiliacionWeb.ServicioWS.PlantillaOfertaWS.listarPlantillasOfertasAsync(PortalDesafiliacionWeb.ServicioWS.listarPlantillasOfertasRequest request) {
+            return base.Channel.listarPlantillasOfertasAsync(request);
         }
         
-        public System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.insertarPlantillaResponse> insertarPlantillaAsync(PortalDesafiliacionWeb.ServicioWS.plantillaOferta plantilla) {
-            PortalDesafiliacionWeb.ServicioWS.insertarPlantillaRequest inValue = new PortalDesafiliacionWeb.ServicioWS.insertarPlantillaRequest();
-            inValue.plantilla = plantilla;
-            return ((PortalDesafiliacionWeb.ServicioWS.PlantillaOfertaWS)(this)).insertarPlantillaAsync(inValue);
+        public System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.listarPlantillasOfertasResponse> listarPlantillasOfertasAsync() {
+            PortalDesafiliacionWeb.ServicioWS.listarPlantillasOfertasRequest inValue = new PortalDesafiliacionWeb.ServicioWS.listarPlantillasOfertasRequest();
+            return ((PortalDesafiliacionWeb.ServicioWS.PlantillaOfertaWS)(this)).listarPlantillasOfertasAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -2793,6 +3155,29 @@ namespace PortalDesafiliacionWeb.ServicioWS {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        PortalDesafiliacionWeb.ServicioWS.insertarPlantillaResponse PortalDesafiliacionWeb.ServicioWS.PlantillaOfertaWS.insertarPlantilla(PortalDesafiliacionWeb.ServicioWS.insertarPlantillaRequest request) {
+            return base.Channel.insertarPlantilla(request);
+        }
+        
+        public int insertarPlantilla(PortalDesafiliacionWeb.ServicioWS.plantillaOferta plantilla) {
+            PortalDesafiliacionWeb.ServicioWS.insertarPlantillaRequest inValue = new PortalDesafiliacionWeb.ServicioWS.insertarPlantillaRequest();
+            inValue.plantilla = plantilla;
+            PortalDesafiliacionWeb.ServicioWS.insertarPlantillaResponse retVal = ((PortalDesafiliacionWeb.ServicioWS.PlantillaOfertaWS)(this)).insertarPlantilla(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.insertarPlantillaResponse> PortalDesafiliacionWeb.ServicioWS.PlantillaOfertaWS.insertarPlantillaAsync(PortalDesafiliacionWeb.ServicioWS.insertarPlantillaRequest request) {
+            return base.Channel.insertarPlantillaAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.insertarPlantillaResponse> insertarPlantillaAsync(PortalDesafiliacionWeb.ServicioWS.plantillaOferta plantilla) {
+            PortalDesafiliacionWeb.ServicioWS.insertarPlantillaRequest inValue = new PortalDesafiliacionWeb.ServicioWS.insertarPlantillaRequest();
+            inValue.plantilla = plantilla;
+            return ((PortalDesafiliacionWeb.ServicioWS.PlantillaOfertaWS)(this)).insertarPlantillaAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         PortalDesafiliacionWeb.ServicioWS.eliminarPlantillaResponse PortalDesafiliacionWeb.ServicioWS.PlantillaOfertaWS.eliminarPlantilla(PortalDesafiliacionWeb.ServicioWS.eliminarPlantillaRequest request) {
             return base.Channel.eliminarPlantilla(request);
         }
@@ -2814,26 +3199,110 @@ namespace PortalDesafiliacionWeb.ServicioWS {
             inValue.idPlantilla = idPlantilla;
             return ((PortalDesafiliacionWeb.ServicioWS.PlantillaOfertaWS)(this)).eliminarPlantillaAsync(inValue);
         }
+    }
+    
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ServiceModel.ServiceContractAttribute(Namespace="http://ws.pdm.pucp.edu.pe/", ConfigurationName="ServicioWS.PlantillaOfertaModalidadWS")]
+    public interface PlantillaOfertaModalidadWS {
         
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        PortalDesafiliacionWeb.ServicioWS.listarPlantillasOfertasResponse PortalDesafiliacionWeb.ServicioWS.PlantillaOfertaWS.listarPlantillasOfertas(PortalDesafiliacionWeb.ServicioWS.listarPlantillasOfertasRequest request) {
-            return base.Channel.listarPlantillasOfertas(request);
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://ws.pdm.pucp.edu.pe/PlantillaOfertaModalidadWS/listarModalidadesPorPlantill" +
+            "aRequest", ReplyAction="http://ws.pdm.pucp.edu.pe/PlantillaOfertaModalidadWS/listarModalidadesPorPlantill" +
+            "aResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        PortalDesafiliacionWeb.ServicioWS.listarModalidadesPorPlantillaResponse listarModalidadesPorPlantilla(PortalDesafiliacionWeb.ServicioWS.listarModalidadesPorPlantillaRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://ws.pdm.pucp.edu.pe/PlantillaOfertaModalidadWS/listarModalidadesPorPlantill" +
+            "aRequest", ReplyAction="http://ws.pdm.pucp.edu.pe/PlantillaOfertaModalidadWS/listarModalidadesPorPlantill" +
+            "aResponse")]
+        System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.listarModalidadesPorPlantillaResponse> listarModalidadesPorPlantillaAsync(PortalDesafiliacionWeb.ServicioWS.listarModalidadesPorPlantillaRequest request);
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarModalidadesPorPlantilla", WrapperNamespace="http://ws.pdm.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarModalidadesPorPlantillaRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.pdm.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int idPlantilla;
+        
+        public listarModalidadesPorPlantillaRequest() {
         }
         
-        public PortalDesafiliacionWeb.ServicioWS.plantillaOferta[] listarPlantillasOfertas() {
-            PortalDesafiliacionWeb.ServicioWS.listarPlantillasOfertasRequest inValue = new PortalDesafiliacionWeb.ServicioWS.listarPlantillasOfertasRequest();
-            PortalDesafiliacionWeb.ServicioWS.listarPlantillasOfertasResponse retVal = ((PortalDesafiliacionWeb.ServicioWS.PlantillaOfertaWS)(this)).listarPlantillasOfertas(inValue);
+        public listarModalidadesPorPlantillaRequest(int idPlantilla) {
+            this.idPlantilla = idPlantilla;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarModalidadesPorPlantillaResponse", WrapperNamespace="http://ws.pdm.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarModalidadesPorPlantillaResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.pdm.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public PortalDesafiliacionWeb.ServicioWS.modalidad[] @return;
+        
+        public listarModalidadesPorPlantillaResponse() {
+        }
+        
+        public listarModalidadesPorPlantillaResponse(PortalDesafiliacionWeb.ServicioWS.modalidad[] @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    public interface PlantillaOfertaModalidadWSChannel : PortalDesafiliacionWeb.ServicioWS.PlantillaOfertaModalidadWS, System.ServiceModel.IClientChannel {
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    public partial class PlantillaOfertaModalidadWSClient : System.ServiceModel.ClientBase<PortalDesafiliacionWeb.ServicioWS.PlantillaOfertaModalidadWS>, PortalDesafiliacionWeb.ServicioWS.PlantillaOfertaModalidadWS {
+        
+        public PlantillaOfertaModalidadWSClient() {
+        }
+        
+        public PlantillaOfertaModalidadWSClient(string endpointConfigurationName) : 
+                base(endpointConfigurationName) {
+        }
+        
+        public PlantillaOfertaModalidadWSClient(string endpointConfigurationName, string remoteAddress) : 
+                base(endpointConfigurationName, remoteAddress) {
+        }
+        
+        public PlantillaOfertaModalidadWSClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
+                base(endpointConfigurationName, remoteAddress) {
+        }
+        
+        public PlantillaOfertaModalidadWSClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
+                base(binding, remoteAddress) {
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        PortalDesafiliacionWeb.ServicioWS.listarModalidadesPorPlantillaResponse PortalDesafiliacionWeb.ServicioWS.PlantillaOfertaModalidadWS.listarModalidadesPorPlantilla(PortalDesafiliacionWeb.ServicioWS.listarModalidadesPorPlantillaRequest request) {
+            return base.Channel.listarModalidadesPorPlantilla(request);
+        }
+        
+        public PortalDesafiliacionWeb.ServicioWS.modalidad[] listarModalidadesPorPlantilla(int idPlantilla) {
+            PortalDesafiliacionWeb.ServicioWS.listarModalidadesPorPlantillaRequest inValue = new PortalDesafiliacionWeb.ServicioWS.listarModalidadesPorPlantillaRequest();
+            inValue.idPlantilla = idPlantilla;
+            PortalDesafiliacionWeb.ServicioWS.listarModalidadesPorPlantillaResponse retVal = ((PortalDesafiliacionWeb.ServicioWS.PlantillaOfertaModalidadWS)(this)).listarModalidadesPorPlantilla(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.listarPlantillasOfertasResponse> PortalDesafiliacionWeb.ServicioWS.PlantillaOfertaWS.listarPlantillasOfertasAsync(PortalDesafiliacionWeb.ServicioWS.listarPlantillasOfertasRequest request) {
-            return base.Channel.listarPlantillasOfertasAsync(request);
+        System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.listarModalidadesPorPlantillaResponse> PortalDesafiliacionWeb.ServicioWS.PlantillaOfertaModalidadWS.listarModalidadesPorPlantillaAsync(PortalDesafiliacionWeb.ServicioWS.listarModalidadesPorPlantillaRequest request) {
+            return base.Channel.listarModalidadesPorPlantillaAsync(request);
         }
         
-        public System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.listarPlantillasOfertasResponse> listarPlantillasOfertasAsync() {
-            PortalDesafiliacionWeb.ServicioWS.listarPlantillasOfertasRequest inValue = new PortalDesafiliacionWeb.ServicioWS.listarPlantillasOfertasRequest();
-            return ((PortalDesafiliacionWeb.ServicioWS.PlantillaOfertaWS)(this)).listarPlantillasOfertasAsync(inValue);
+        public System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.listarModalidadesPorPlantillaResponse> listarModalidadesPorPlantillaAsync(int idPlantilla) {
+            PortalDesafiliacionWeb.ServicioWS.listarModalidadesPorPlantillaRequest inValue = new PortalDesafiliacionWeb.ServicioWS.listarModalidadesPorPlantillaRequest();
+            inValue.idPlantilla = idPlantilla;
+            return ((PortalDesafiliacionWeb.ServicioWS.PlantillaOfertaModalidadWS)(this)).listarModalidadesPorPlantillaAsync(inValue);
         }
     }
     
@@ -2842,30 +3311,69 @@ namespace PortalDesafiliacionWeb.ServicioWS {
     public interface SolicitudDesafiliacionWS {
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/enviarCodigoSMSRequ" +
-            "est", ReplyAction="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/enviarCodigoSMSResp" +
-            "onse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/modificarSolicitudR" +
+            "equest", ReplyAction="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/modificarSolicitudR" +
+            "esponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        PortalDesafiliacionWeb.ServicioWS.enviarCodigoSMSResponse enviarCodigoSMS(PortalDesafiliacionWeb.ServicioWS.enviarCodigoSMSRequest request);
+        PortalDesafiliacionWeb.ServicioWS.modificarSolicitudResponse modificarSolicitud(PortalDesafiliacionWeb.ServicioWS.modificarSolicitudRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/enviarCodigoSMSRequ" +
-            "est", ReplyAction="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/enviarCodigoSMSResp" +
-            "onse")]
-        System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.enviarCodigoSMSResponse> enviarCodigoSMSAsync(PortalDesafiliacionWeb.ServicioWS.enviarCodigoSMSRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/modificarSolicitudR" +
+            "equest", ReplyAction="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/modificarSolicitudR" +
+            "esponse")]
+        System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.modificarSolicitudResponse> modificarSolicitudAsync(PortalDesafiliacionWeb.ServicioWS.modificarSolicitudRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/validarCodigoSMSReq" +
-            "uest", ReplyAction="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/validarCodigoSMSRes" +
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/eliminarSolicitudRe" +
+            "quest", ReplyAction="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/eliminarSolicitudRe" +
+            "sponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        PortalDesafiliacionWeb.ServicioWS.eliminarSolicitudResponse eliminarSolicitud(PortalDesafiliacionWeb.ServicioWS.eliminarSolicitudRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/eliminarSolicitudRe" +
+            "quest", ReplyAction="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/eliminarSolicitudRe" +
+            "sponse")]
+        System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.eliminarSolicitudResponse> eliminarSolicitudAsync(PortalDesafiliacionWeb.ServicioWS.eliminarSolicitudRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/listarSolicitudesRe" +
+            "quest", ReplyAction="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/listarSolicitudesRe" +
+            "sponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        PortalDesafiliacionWeb.ServicioWS.listarSolicitudesResponse listarSolicitudes(PortalDesafiliacionWeb.ServicioWS.listarSolicitudesRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/listarSolicitudesRe" +
+            "quest", ReplyAction="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/listarSolicitudesRe" +
+            "sponse")]
+        System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.listarSolicitudesResponse> listarSolicitudesAsync(PortalDesafiliacionWeb.ServicioWS.listarSolicitudesRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/insertarSolicitudRe" +
+            "quest", ReplyAction="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/insertarSolicitudRe" +
+            "sponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        PortalDesafiliacionWeb.ServicioWS.insertarSolicitudResponse insertarSolicitud(PortalDesafiliacionWeb.ServicioWS.insertarSolicitudRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/insertarSolicitudRe" +
+            "quest", ReplyAction="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/insertarSolicitudRe" +
+            "sponse")]
+        System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.insertarSolicitudResponse> insertarSolicitudAsync(PortalDesafiliacionWeb.ServicioWS.insertarSolicitudRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/obtenerSolicitudReq" +
+            "uest", ReplyAction="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/obtenerSolicitudRes" +
             "ponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        PortalDesafiliacionWeb.ServicioWS.validarCodigoSMSResponse validarCodigoSMS(PortalDesafiliacionWeb.ServicioWS.validarCodigoSMSRequest request);
+        PortalDesafiliacionWeb.ServicioWS.obtenerSolicitudResponse obtenerSolicitud(PortalDesafiliacionWeb.ServicioWS.obtenerSolicitudRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/validarCodigoSMSReq" +
-            "uest", ReplyAction="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/validarCodigoSMSRes" +
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/obtenerSolicitudReq" +
+            "uest", ReplyAction="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/obtenerSolicitudRes" +
             "ponse")]
-        System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.validarCodigoSMSResponse> validarCodigoSMSAsync(PortalDesafiliacionWeb.ServicioWS.validarCodigoSMSRequest request);
+        System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.obtenerSolicitudResponse> obtenerSolicitudAsync(PortalDesafiliacionWeb.ServicioWS.obtenerSolicitudRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/exportToExcelPorCli" +
@@ -2898,82 +3406,30 @@ namespace PortalDesafiliacionWeb.ServicioWS {
         System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.exportToCsvPorClienteResponse> exportToCsvPorClienteAsync(PortalDesafiliacionWeb.ServicioWS.exportToCsvPorClienteRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/modificarSolicitudR" +
-            "equest", ReplyAction="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/modificarSolicitudR" +
-            "esponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        PortalDesafiliacionWeb.ServicioWS.modificarSolicitudResponse modificarSolicitud(PortalDesafiliacionWeb.ServicioWS.modificarSolicitudRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/modificarSolicitudR" +
-            "equest", ReplyAction="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/modificarSolicitudR" +
-            "esponse")]
-        System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.modificarSolicitudResponse> modificarSolicitudAsync(PortalDesafiliacionWeb.ServicioWS.modificarSolicitudRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/obtenerSolicitudReq" +
-            "uest", ReplyAction="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/obtenerSolicitudRes" +
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/validarCodigoSMSReq" +
+            "uest", ReplyAction="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/validarCodigoSMSRes" +
             "ponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        PortalDesafiliacionWeb.ServicioWS.obtenerSolicitudResponse obtenerSolicitud(PortalDesafiliacionWeb.ServicioWS.obtenerSolicitudRequest request);
+        PortalDesafiliacionWeb.ServicioWS.validarCodigoSMSResponse validarCodigoSMS(PortalDesafiliacionWeb.ServicioWS.validarCodigoSMSRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/obtenerSolicitudReq" +
-            "uest", ReplyAction="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/obtenerSolicitudRes" +
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/validarCodigoSMSReq" +
+            "uest", ReplyAction="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/validarCodigoSMSRes" +
             "ponse")]
-        System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.obtenerSolicitudResponse> obtenerSolicitudAsync(PortalDesafiliacionWeb.ServicioWS.obtenerSolicitudRequest request);
+        System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.validarCodigoSMSResponse> validarCodigoSMSAsync(PortalDesafiliacionWeb.ServicioWS.validarCodigoSMSRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/eliminarSolicitudRe" +
-            "quest", ReplyAction="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/eliminarSolicitudRe" +
-            "sponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/enviarCodigoSMSRequ" +
+            "est", ReplyAction="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/enviarCodigoSMSResp" +
+            "onse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        PortalDesafiliacionWeb.ServicioWS.eliminarSolicitudResponse eliminarSolicitud(PortalDesafiliacionWeb.ServicioWS.eliminarSolicitudRequest request);
+        PortalDesafiliacionWeb.ServicioWS.enviarCodigoSMSResponse enviarCodigoSMS(PortalDesafiliacionWeb.ServicioWS.enviarCodigoSMSRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/eliminarSolicitudRe" +
-            "quest", ReplyAction="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/eliminarSolicitudRe" +
-            "sponse")]
-        System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.eliminarSolicitudResponse> eliminarSolicitudAsync(PortalDesafiliacionWeb.ServicioWS.eliminarSolicitudRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/insertarSolicitudRe" +
-            "quest", ReplyAction="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/insertarSolicitudRe" +
-            "sponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        PortalDesafiliacionWeb.ServicioWS.insertarSolicitudResponse insertarSolicitud(PortalDesafiliacionWeb.ServicioWS.insertarSolicitudRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/insertarSolicitudRe" +
-            "quest", ReplyAction="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/insertarSolicitudRe" +
-            "sponse")]
-        System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.insertarSolicitudResponse> insertarSolicitudAsync(PortalDesafiliacionWeb.ServicioWS.insertarSolicitudRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/listarSolicitudesRe" +
-            "quest", ReplyAction="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/listarSolicitudesRe" +
-            "sponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        PortalDesafiliacionWeb.ServicioWS.listarSolicitudesResponse listarSolicitudes(PortalDesafiliacionWeb.ServicioWS.listarSolicitudesRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/listarSolicitudesRe" +
-            "quest", ReplyAction="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/listarSolicitudesRe" +
-            "sponse")]
-        System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.listarSolicitudesResponse> listarSolicitudesAsync(PortalDesafiliacionWeb.ServicioWS.listarSolicitudesRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/listarSolicitudesPo" +
-            "rClienteRequest", ReplyAction="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/listarSolicitudesPo" +
-            "rClienteResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        PortalDesafiliacionWeb.ServicioWS.listarSolicitudesPorClienteResponse listarSolicitudesPorCliente(PortalDesafiliacionWeb.ServicioWS.listarSolicitudesPorClienteRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/listarSolicitudesPo" +
-            "rClienteRequest", ReplyAction="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/listarSolicitudesPo" +
-            "rClienteResponse")]
-        System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.listarSolicitudesPorClienteResponse> listarSolicitudesPorClienteAsync(PortalDesafiliacionWeb.ServicioWS.listarSolicitudesPorClienteRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/enviarCodigoSMSRequ" +
+            "est", ReplyAction="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/enviarCodigoSMSResp" +
+            "onse")]
+        System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.enviarCodigoSMSResponse> enviarCodigoSMSAsync(PortalDesafiliacionWeb.ServicioWS.enviarCodigoSMSRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/actualizarResultado" +
@@ -2987,40 +3443,53 @@ namespace PortalDesafiliacionWeb.ServicioWS {
             "DesafiliacionRequest", ReplyAction="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/actualizarResultado" +
             "DesafiliacionResponse")]
         System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.actualizarResultadoDesafiliacionResponse> actualizarResultadoDesafiliacionAsync(PortalDesafiliacionWeb.ServicioWS.actualizarResultadoDesafiliacionRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/listarSolicitudesPo" +
+            "rClienteRequest", ReplyAction="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/listarSolicitudesPo" +
+            "rClienteResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        PortalDesafiliacionWeb.ServicioWS.listarSolicitudesPorClienteResponse listarSolicitudesPorCliente(PortalDesafiliacionWeb.ServicioWS.listarSolicitudesPorClienteRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/listarSolicitudesPo" +
+            "rClienteRequest", ReplyAction="http://services.softprog.pucp.edu.pe/SolicitudDesafiliacionWS/listarSolicitudesPo" +
+            "rClienteResponse")]
+        System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.listarSolicitudesPorClienteResponse> listarSolicitudesPorClienteAsync(PortalDesafiliacionWeb.ServicioWS.listarSolicitudesPorClienteRequest request);
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="enviarCodigoSMS", WrapperNamespace="http://services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class enviarCodigoSMSRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="modificarSolicitud", WrapperNamespace="http://services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class modificarSolicitudRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softprog.pucp.edu.pe/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int idLinea;
+        public PortalDesafiliacionWeb.ServicioWS.solicitudDesafiliacion arg0;
         
-        public enviarCodigoSMSRequest() {
+        public modificarSolicitudRequest() {
         }
         
-        public enviarCodigoSMSRequest(int idLinea) {
-            this.idLinea = idLinea;
+        public modificarSolicitudRequest(PortalDesafiliacionWeb.ServicioWS.solicitudDesafiliacion arg0) {
+            this.arg0 = arg0;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="enviarCodigoSMSResponse", WrapperNamespace="http://services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class enviarCodigoSMSResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="modificarSolicitudResponse", WrapperNamespace="http://services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class modificarSolicitudResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softprog.pucp.edu.pe/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public string @return;
+        public bool @return;
         
-        public enviarCodigoSMSResponse() {
+        public modificarSolicitudResponse() {
         }
         
-        public enviarCodigoSMSResponse(string @return) {
+        public modificarSolicitudResponse(bool @return) {
             this.@return = @return;
         }
     }
@@ -3028,8 +3497,72 @@ namespace PortalDesafiliacionWeb.ServicioWS {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="validarCodigoSMS", WrapperNamespace="http://services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class validarCodigoSMSRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarSolicitud", WrapperNamespace="http://services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class eliminarSolicitudRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int arg0;
+        
+        public eliminarSolicitudRequest() {
+        }
+        
+        public eliminarSolicitudRequest(int arg0) {
+            this.arg0 = arg0;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarSolicitudResponse", WrapperNamespace="http://services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class eliminarSolicitudResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public bool @return;
+        
+        public eliminarSolicitudResponse() {
+        }
+        
+        public eliminarSolicitudResponse(bool @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarSolicitudes", WrapperNamespace="http://services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarSolicitudesRequest {
+        
+        public listarSolicitudesRequest() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarSolicitudesResponse", WrapperNamespace="http://services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarSolicitudesResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public PortalDesafiliacionWeb.ServicioWS.solicitudDesafiliacion[] @return;
+        
+        public listarSolicitudesResponse() {
+        }
+        
+        public listarSolicitudesResponse(PortalDesafiliacionWeb.ServicioWS.solicitudDesafiliacion[] @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarSolicitud", WrapperNamespace="http://services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class insertarSolicitudRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softprog.pucp.edu.pe/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
@@ -3037,31 +3570,82 @@ namespace PortalDesafiliacionWeb.ServicioWS {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softprog.pucp.edu.pe/", Order=1)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public string codigoIngresado;
+        public int idCliente;
         
-        public validarCodigoSMSRequest() {
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softprog.pucp.edu.pe/", Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public System.DateTime fechaSolicitud;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softprog.pucp.edu.pe/", Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public PortalDesafiliacionWeb.ServicioWS.resultado resultado;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softprog.pucp.edu.pe/", Order=4)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string observacionAgente;
+        
+        public insertarSolicitudRequest() {
         }
         
-        public validarCodigoSMSRequest(int idLinea, string codigoIngresado) {
+        public insertarSolicitudRequest(int idLinea, int idCliente, System.DateTime fechaSolicitud, PortalDesafiliacionWeb.ServicioWS.resultado resultado, string observacionAgente) {
             this.idLinea = idLinea;
-            this.codigoIngresado = codigoIngresado;
+            this.idCliente = idCliente;
+            this.fechaSolicitud = fechaSolicitud;
+            this.resultado = resultado;
+            this.observacionAgente = observacionAgente;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="validarCodigoSMSResponse", WrapperNamespace="http://services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class validarCodigoSMSResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarSolicitudResponse", WrapperNamespace="http://services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class insertarSolicitudResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softprog.pucp.edu.pe/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public bool @return;
+        public int @return;
         
-        public validarCodigoSMSResponse() {
+        public insertarSolicitudResponse() {
         }
         
-        public validarCodigoSMSResponse(bool @return) {
+        public insertarSolicitudResponse(int @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="obtenerSolicitud", WrapperNamespace="http://services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class obtenerSolicitudRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int arg0;
+        
+        public obtenerSolicitudRequest() {
+        }
+        
+        public obtenerSolicitudRequest(int arg0) {
+            this.arg0 = arg0;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="obtenerSolicitudResponse", WrapperNamespace="http://services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class obtenerSolicitudResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public PortalDesafiliacionWeb.ServicioWS.solicitudDesafiliacion @return;
+        
+        public obtenerSolicitudResponse() {
+        }
+        
+        public obtenerSolicitudResponse(PortalDesafiliacionWeb.ServicioWS.solicitudDesafiliacion @return) {
             this.@return = @return;
         }
     }
@@ -3138,469 +3722,11 @@ namespace PortalDesafiliacionWeb.ServicioWS {
         }
     }
     
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://services.softprog.pucp.edu.pe/")]
-    public partial class solicitudDesafiliacion : object, System.ComponentModel.INotifyPropertyChanged {
-        
-        private encuesta encuestaField;
-        
-        private System.DateTime fechaSolicitudField;
-        
-        private bool fechaSolicitudFieldSpecified;
-        
-        private int idClienteField;
-        
-        private int idLineaField;
-        
-        private int idOfertaField;
-        
-        private bool idOfertaFieldSpecified;
-        
-        private int idSolicitudField;
-        
-        private string observacionAgenteField;
-        
-        private resultado resultadoField;
-        
-        private bool resultadoFieldSpecified;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public encuesta encuesta {
-            get {
-                return this.encuestaField;
-            }
-            set {
-                this.encuestaField = value;
-                this.RaisePropertyChanged("encuesta");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
-        public System.DateTime fechaSolicitud {
-            get {
-                return this.fechaSolicitudField;
-            }
-            set {
-                this.fechaSolicitudField = value;
-                this.RaisePropertyChanged("fechaSolicitud");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool fechaSolicitudSpecified {
-            get {
-                return this.fechaSolicitudFieldSpecified;
-            }
-            set {
-                this.fechaSolicitudFieldSpecified = value;
-                this.RaisePropertyChanged("fechaSolicitudSpecified");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
-        public int idCliente {
-            get {
-                return this.idClienteField;
-            }
-            set {
-                this.idClienteField = value;
-                this.RaisePropertyChanged("idCliente");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
-        public int idLinea {
-            get {
-                return this.idLineaField;
-            }
-            set {
-                this.idLineaField = value;
-                this.RaisePropertyChanged("idLinea");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
-        public int idOferta {
-            get {
-                return this.idOfertaField;
-            }
-            set {
-                this.idOfertaField = value;
-                this.RaisePropertyChanged("idOferta");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool idOfertaSpecified {
-            get {
-                return this.idOfertaFieldSpecified;
-            }
-            set {
-                this.idOfertaFieldSpecified = value;
-                this.RaisePropertyChanged("idOfertaSpecified");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=5)]
-        public int idSolicitud {
-            get {
-                return this.idSolicitudField;
-            }
-            set {
-                this.idSolicitudField = value;
-                this.RaisePropertyChanged("idSolicitud");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=6)]
-        public string observacionAgente {
-            get {
-                return this.observacionAgenteField;
-            }
-            set {
-                this.observacionAgenteField = value;
-                this.RaisePropertyChanged("observacionAgente");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=7)]
-        public resultado resultado {
-            get {
-                return this.resultadoField;
-            }
-            set {
-                this.resultadoField = value;
-                this.RaisePropertyChanged("resultado");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool resultadoSpecified {
-            get {
-                return this.resultadoFieldSpecified;
-            }
-            set {
-                this.resultadoFieldSpecified = value;
-                this.RaisePropertyChanged("resultadoSpecified");
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://services.softprog.pucp.edu.pe/")]
-    public partial class encuesta : object, System.ComponentModel.INotifyPropertyChanged {
-        
-        private int calificacionField;
-        
-        private System.DateTime fechaEncuestaField;
-        
-        private bool fechaEncuestaFieldSpecified;
-        
-        private int idEncuestaField;
-        
-        private tipoMotivo motivoField;
-        
-        private string opinionField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public int calificacion {
-            get {
-                return this.calificacionField;
-            }
-            set {
-                this.calificacionField = value;
-                this.RaisePropertyChanged("calificacion");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
-        public System.DateTime fechaEncuesta {
-            get {
-                return this.fechaEncuestaField;
-            }
-            set {
-                this.fechaEncuestaField = value;
-                this.RaisePropertyChanged("fechaEncuesta");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool fechaEncuestaSpecified {
-            get {
-                return this.fechaEncuestaFieldSpecified;
-            }
-            set {
-                this.fechaEncuestaFieldSpecified = value;
-                this.RaisePropertyChanged("fechaEncuestaSpecified");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
-        public int idEncuesta {
-            get {
-                return this.idEncuestaField;
-            }
-            set {
-                this.idEncuestaField = value;
-                this.RaisePropertyChanged("idEncuesta");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
-        public tipoMotivo motivo {
-            get {
-                return this.motivoField;
-            }
-            set {
-                this.motivoField = value;
-                this.RaisePropertyChanged("motivo");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
-        public string opinion {
-            get {
-                return this.opinionField;
-            }
-            set {
-                this.opinionField = value;
-                this.RaisePropertyChanged("opinion");
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://services.softprog.pucp.edu.pe/")]
-    public partial class tipoMotivo : object, System.ComponentModel.INotifyPropertyChanged {
-        
-        private string descripcionField;
-        
-        private int idMotivoField;
-        
-        private string nombreField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public string descripcion {
-            get {
-                return this.descripcionField;
-            }
-            set {
-                this.descripcionField = value;
-                this.RaisePropertyChanged("descripcion");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
-        public int idMotivo {
-            get {
-                return this.idMotivoField;
-            }
-            set {
-                this.idMotivoField = value;
-                this.RaisePropertyChanged("idMotivo");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
-        public string nombre {
-            get {
-                return this.nombreField;
-            }
-            set {
-                this.nombreField = value;
-                this.RaisePropertyChanged("nombre");
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
-    [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://services.softprog.pucp.edu.pe/")]
-    public enum resultado {
-        
-        /// <remarks/>
-        DESAFILIADO,
-        
-        /// <remarks/>
-        NO_DESAFILIADO,
-        
-        /// <remarks/>
-        OFERTA_ACEPTADA,
-    }
-    
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="modificarSolicitud", WrapperNamespace="http://services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class modificarSolicitudRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public PortalDesafiliacionWeb.ServicioWS.solicitudDesafiliacion arg0;
-        
-        public modificarSolicitudRequest() {
-        }
-        
-        public modificarSolicitudRequest(PortalDesafiliacionWeb.ServicioWS.solicitudDesafiliacion arg0) {
-            this.arg0 = arg0;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="modificarSolicitudResponse", WrapperNamespace="http://services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class modificarSolicitudResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public bool @return;
-        
-        public modificarSolicitudResponse() {
-        }
-        
-        public modificarSolicitudResponse(bool @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="obtenerSolicitud", WrapperNamespace="http://services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class obtenerSolicitudRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int arg0;
-        
-        public obtenerSolicitudRequest() {
-        }
-        
-        public obtenerSolicitudRequest(int arg0) {
-            this.arg0 = arg0;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="obtenerSolicitudResponse", WrapperNamespace="http://services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class obtenerSolicitudResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public PortalDesafiliacionWeb.ServicioWS.solicitudDesafiliacion @return;
-        
-        public obtenerSolicitudResponse() {
-        }
-        
-        public obtenerSolicitudResponse(PortalDesafiliacionWeb.ServicioWS.solicitudDesafiliacion @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarSolicitud", WrapperNamespace="http://services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class eliminarSolicitudRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int arg0;
-        
-        public eliminarSolicitudRequest() {
-        }
-        
-        public eliminarSolicitudRequest(int arg0) {
-            this.arg0 = arg0;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarSolicitudResponse", WrapperNamespace="http://services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class eliminarSolicitudResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public bool @return;
-        
-        public eliminarSolicitudResponse() {
-        }
-        
-        public eliminarSolicitudResponse(bool @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarSolicitud", WrapperNamespace="http://services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class insertarSolicitudRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="validarCodigoSMS", WrapperNamespace="http://services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class validarCodigoSMSRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softprog.pucp.edu.pe/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
@@ -3608,46 +3734,31 @@ namespace PortalDesafiliacionWeb.ServicioWS {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softprog.pucp.edu.pe/", Order=1)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int idCliente;
+        public string codigoIngresado;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softprog.pucp.edu.pe/", Order=2)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public System.DateTime fechaSolicitud;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softprog.pucp.edu.pe/", Order=3)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public PortalDesafiliacionWeb.ServicioWS.resultado resultado;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softprog.pucp.edu.pe/", Order=4)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public string observacionAgente;
-        
-        public insertarSolicitudRequest() {
+        public validarCodigoSMSRequest() {
         }
         
-        public insertarSolicitudRequest(int idLinea, int idCliente, System.DateTime fechaSolicitud, PortalDesafiliacionWeb.ServicioWS.resultado resultado, string observacionAgente) {
+        public validarCodigoSMSRequest(int idLinea, string codigoIngresado) {
             this.idLinea = idLinea;
-            this.idCliente = idCliente;
-            this.fechaSolicitud = fechaSolicitud;
-            this.resultado = resultado;
-            this.observacionAgente = observacionAgente;
+            this.codigoIngresado = codigoIngresado;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarSolicitudResponse", WrapperNamespace="http://services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class insertarSolicitudResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="validarCodigoSMSResponse", WrapperNamespace="http://services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class validarCodigoSMSResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softprog.pucp.edu.pe/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int @return;
+        public bool @return;
         
-        public insertarSolicitudResponse() {
+        public validarCodigoSMSResponse() {
         }
         
-        public insertarSolicitudResponse(int @return) {
+        public validarCodigoSMSResponse(bool @return) {
             this.@return = @return;
         }
     }
@@ -3655,63 +3766,35 @@ namespace PortalDesafiliacionWeb.ServicioWS {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarSolicitudes", WrapperNamespace="http://services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarSolicitudesRequest {
-        
-        public listarSolicitudesRequest() {
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarSolicitudesResponse", WrapperNamespace="http://services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarSolicitudesResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public PortalDesafiliacionWeb.ServicioWS.solicitudDesafiliacion[] @return;
-        
-        public listarSolicitudesResponse() {
-        }
-        
-        public listarSolicitudesResponse(PortalDesafiliacionWeb.ServicioWS.solicitudDesafiliacion[] @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarSolicitudesPorCliente", WrapperNamespace="http://services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarSolicitudesPorClienteRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="enviarCodigoSMS", WrapperNamespace="http://services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class enviarCodigoSMSRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softprog.pucp.edu.pe/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int arg0;
+        public int idLinea;
         
-        public listarSolicitudesPorClienteRequest() {
+        public enviarCodigoSMSRequest() {
         }
         
-        public listarSolicitudesPorClienteRequest(int arg0) {
-            this.arg0 = arg0;
+        public enviarCodigoSMSRequest(int idLinea) {
+            this.idLinea = idLinea;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarSolicitudesPorClienteResponse", WrapperNamespace="http://services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarSolicitudesPorClienteResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="enviarCodigoSMSResponse", WrapperNamespace="http://services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class enviarCodigoSMSResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public PortalDesafiliacionWeb.ServicioWS.solicitudDesafiliacion[] @return;
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string @return;
         
-        public listarSolicitudesPorClienteResponse() {
+        public enviarCodigoSMSResponse() {
         }
         
-        public listarSolicitudesPorClienteResponse(PortalDesafiliacionWeb.ServicioWS.solicitudDesafiliacion[] @return) {
+        public enviarCodigoSMSResponse(string @return) {
             this.@return = @return;
         }
     }
@@ -3752,6 +3835,42 @@ namespace PortalDesafiliacionWeb.ServicioWS {
         }
     }
     
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarSolicitudesPorCliente", WrapperNamespace="http://services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarSolicitudesPorClienteRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int arg0;
+        
+        public listarSolicitudesPorClienteRequest() {
+        }
+        
+        public listarSolicitudesPorClienteRequest(int arg0) {
+            this.arg0 = arg0;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarSolicitudesPorClienteResponse", WrapperNamespace="http://services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarSolicitudesPorClienteResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public PortalDesafiliacionWeb.ServicioWS.solicitudDesafiliacion[] @return;
+        
+        public listarSolicitudesPorClienteResponse() {
+        }
+        
+        public listarSolicitudesPorClienteResponse(PortalDesafiliacionWeb.ServicioWS.solicitudDesafiliacion[] @return) {
+            this.@return = @return;
+        }
+    }
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     public interface SolicitudDesafiliacionWSChannel : PortalDesafiliacionWeb.ServicioWS.SolicitudDesafiliacionWS, System.ServiceModel.IClientChannel {
     }
@@ -3780,51 +3899,124 @@ namespace PortalDesafiliacionWeb.ServicioWS {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        PortalDesafiliacionWeb.ServicioWS.enviarCodigoSMSResponse PortalDesafiliacionWeb.ServicioWS.SolicitudDesafiliacionWS.enviarCodigoSMS(PortalDesafiliacionWeb.ServicioWS.enviarCodigoSMSRequest request) {
-            return base.Channel.enviarCodigoSMS(request);
+        PortalDesafiliacionWeb.ServicioWS.modificarSolicitudResponse PortalDesafiliacionWeb.ServicioWS.SolicitudDesafiliacionWS.modificarSolicitud(PortalDesafiliacionWeb.ServicioWS.modificarSolicitudRequest request) {
+            return base.Channel.modificarSolicitud(request);
         }
         
-        public string enviarCodigoSMS(int idLinea) {
-            PortalDesafiliacionWeb.ServicioWS.enviarCodigoSMSRequest inValue = new PortalDesafiliacionWeb.ServicioWS.enviarCodigoSMSRequest();
-            inValue.idLinea = idLinea;
-            PortalDesafiliacionWeb.ServicioWS.enviarCodigoSMSResponse retVal = ((PortalDesafiliacionWeb.ServicioWS.SolicitudDesafiliacionWS)(this)).enviarCodigoSMS(inValue);
+        public bool modificarSolicitud(PortalDesafiliacionWeb.ServicioWS.solicitudDesafiliacion arg0) {
+            PortalDesafiliacionWeb.ServicioWS.modificarSolicitudRequest inValue = new PortalDesafiliacionWeb.ServicioWS.modificarSolicitudRequest();
+            inValue.arg0 = arg0;
+            PortalDesafiliacionWeb.ServicioWS.modificarSolicitudResponse retVal = ((PortalDesafiliacionWeb.ServicioWS.SolicitudDesafiliacionWS)(this)).modificarSolicitud(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.enviarCodigoSMSResponse> PortalDesafiliacionWeb.ServicioWS.SolicitudDesafiliacionWS.enviarCodigoSMSAsync(PortalDesafiliacionWeb.ServicioWS.enviarCodigoSMSRequest request) {
-            return base.Channel.enviarCodigoSMSAsync(request);
+        System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.modificarSolicitudResponse> PortalDesafiliacionWeb.ServicioWS.SolicitudDesafiliacionWS.modificarSolicitudAsync(PortalDesafiliacionWeb.ServicioWS.modificarSolicitudRequest request) {
+            return base.Channel.modificarSolicitudAsync(request);
         }
         
-        public System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.enviarCodigoSMSResponse> enviarCodigoSMSAsync(int idLinea) {
-            PortalDesafiliacionWeb.ServicioWS.enviarCodigoSMSRequest inValue = new PortalDesafiliacionWeb.ServicioWS.enviarCodigoSMSRequest();
-            inValue.idLinea = idLinea;
-            return ((PortalDesafiliacionWeb.ServicioWS.SolicitudDesafiliacionWS)(this)).enviarCodigoSMSAsync(inValue);
+        public System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.modificarSolicitudResponse> modificarSolicitudAsync(PortalDesafiliacionWeb.ServicioWS.solicitudDesafiliacion arg0) {
+            PortalDesafiliacionWeb.ServicioWS.modificarSolicitudRequest inValue = new PortalDesafiliacionWeb.ServicioWS.modificarSolicitudRequest();
+            inValue.arg0 = arg0;
+            return ((PortalDesafiliacionWeb.ServicioWS.SolicitudDesafiliacionWS)(this)).modificarSolicitudAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        PortalDesafiliacionWeb.ServicioWS.validarCodigoSMSResponse PortalDesafiliacionWeb.ServicioWS.SolicitudDesafiliacionWS.validarCodigoSMS(PortalDesafiliacionWeb.ServicioWS.validarCodigoSMSRequest request) {
-            return base.Channel.validarCodigoSMS(request);
+        PortalDesafiliacionWeb.ServicioWS.eliminarSolicitudResponse PortalDesafiliacionWeb.ServicioWS.SolicitudDesafiliacionWS.eliminarSolicitud(PortalDesafiliacionWeb.ServicioWS.eliminarSolicitudRequest request) {
+            return base.Channel.eliminarSolicitud(request);
         }
         
-        public bool validarCodigoSMS(int idLinea, string codigoIngresado) {
-            PortalDesafiliacionWeb.ServicioWS.validarCodigoSMSRequest inValue = new PortalDesafiliacionWeb.ServicioWS.validarCodigoSMSRequest();
-            inValue.idLinea = idLinea;
-            inValue.codigoIngresado = codigoIngresado;
-            PortalDesafiliacionWeb.ServicioWS.validarCodigoSMSResponse retVal = ((PortalDesafiliacionWeb.ServicioWS.SolicitudDesafiliacionWS)(this)).validarCodigoSMS(inValue);
+        public bool eliminarSolicitud(int arg0) {
+            PortalDesafiliacionWeb.ServicioWS.eliminarSolicitudRequest inValue = new PortalDesafiliacionWeb.ServicioWS.eliminarSolicitudRequest();
+            inValue.arg0 = arg0;
+            PortalDesafiliacionWeb.ServicioWS.eliminarSolicitudResponse retVal = ((PortalDesafiliacionWeb.ServicioWS.SolicitudDesafiliacionWS)(this)).eliminarSolicitud(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.validarCodigoSMSResponse> PortalDesafiliacionWeb.ServicioWS.SolicitudDesafiliacionWS.validarCodigoSMSAsync(PortalDesafiliacionWeb.ServicioWS.validarCodigoSMSRequest request) {
-            return base.Channel.validarCodigoSMSAsync(request);
+        System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.eliminarSolicitudResponse> PortalDesafiliacionWeb.ServicioWS.SolicitudDesafiliacionWS.eliminarSolicitudAsync(PortalDesafiliacionWeb.ServicioWS.eliminarSolicitudRequest request) {
+            return base.Channel.eliminarSolicitudAsync(request);
         }
         
-        public System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.validarCodigoSMSResponse> validarCodigoSMSAsync(int idLinea, string codigoIngresado) {
-            PortalDesafiliacionWeb.ServicioWS.validarCodigoSMSRequest inValue = new PortalDesafiliacionWeb.ServicioWS.validarCodigoSMSRequest();
+        public System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.eliminarSolicitudResponse> eliminarSolicitudAsync(int arg0) {
+            PortalDesafiliacionWeb.ServicioWS.eliminarSolicitudRequest inValue = new PortalDesafiliacionWeb.ServicioWS.eliminarSolicitudRequest();
+            inValue.arg0 = arg0;
+            return ((PortalDesafiliacionWeb.ServicioWS.SolicitudDesafiliacionWS)(this)).eliminarSolicitudAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        PortalDesafiliacionWeb.ServicioWS.listarSolicitudesResponse PortalDesafiliacionWeb.ServicioWS.SolicitudDesafiliacionWS.listarSolicitudes(PortalDesafiliacionWeb.ServicioWS.listarSolicitudesRequest request) {
+            return base.Channel.listarSolicitudes(request);
+        }
+        
+        public PortalDesafiliacionWeb.ServicioWS.solicitudDesafiliacion[] listarSolicitudes() {
+            PortalDesafiliacionWeb.ServicioWS.listarSolicitudesRequest inValue = new PortalDesafiliacionWeb.ServicioWS.listarSolicitudesRequest();
+            PortalDesafiliacionWeb.ServicioWS.listarSolicitudesResponse retVal = ((PortalDesafiliacionWeb.ServicioWS.SolicitudDesafiliacionWS)(this)).listarSolicitudes(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.listarSolicitudesResponse> PortalDesafiliacionWeb.ServicioWS.SolicitudDesafiliacionWS.listarSolicitudesAsync(PortalDesafiliacionWeb.ServicioWS.listarSolicitudesRequest request) {
+            return base.Channel.listarSolicitudesAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.listarSolicitudesResponse> listarSolicitudesAsync() {
+            PortalDesafiliacionWeb.ServicioWS.listarSolicitudesRequest inValue = new PortalDesafiliacionWeb.ServicioWS.listarSolicitudesRequest();
+            return ((PortalDesafiliacionWeb.ServicioWS.SolicitudDesafiliacionWS)(this)).listarSolicitudesAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        PortalDesafiliacionWeb.ServicioWS.insertarSolicitudResponse PortalDesafiliacionWeb.ServicioWS.SolicitudDesafiliacionWS.insertarSolicitud(PortalDesafiliacionWeb.ServicioWS.insertarSolicitudRequest request) {
+            return base.Channel.insertarSolicitud(request);
+        }
+        
+        public int insertarSolicitud(int idLinea, int idCliente, System.DateTime fechaSolicitud, PortalDesafiliacionWeb.ServicioWS.resultado resultado, string observacionAgente) {
+            PortalDesafiliacionWeb.ServicioWS.insertarSolicitudRequest inValue = new PortalDesafiliacionWeb.ServicioWS.insertarSolicitudRequest();
             inValue.idLinea = idLinea;
-            inValue.codigoIngresado = codigoIngresado;
-            return ((PortalDesafiliacionWeb.ServicioWS.SolicitudDesafiliacionWS)(this)).validarCodigoSMSAsync(inValue);
+            inValue.idCliente = idCliente;
+            inValue.fechaSolicitud = fechaSolicitud;
+            inValue.resultado = resultado;
+            inValue.observacionAgente = observacionAgente;
+            PortalDesafiliacionWeb.ServicioWS.insertarSolicitudResponse retVal = ((PortalDesafiliacionWeb.ServicioWS.SolicitudDesafiliacionWS)(this)).insertarSolicitud(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.insertarSolicitudResponse> PortalDesafiliacionWeb.ServicioWS.SolicitudDesafiliacionWS.insertarSolicitudAsync(PortalDesafiliacionWeb.ServicioWS.insertarSolicitudRequest request) {
+            return base.Channel.insertarSolicitudAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.insertarSolicitudResponse> insertarSolicitudAsync(int idLinea, int idCliente, System.DateTime fechaSolicitud, PortalDesafiliacionWeb.ServicioWS.resultado resultado, string observacionAgente) {
+            PortalDesafiliacionWeb.ServicioWS.insertarSolicitudRequest inValue = new PortalDesafiliacionWeb.ServicioWS.insertarSolicitudRequest();
+            inValue.idLinea = idLinea;
+            inValue.idCliente = idCliente;
+            inValue.fechaSolicitud = fechaSolicitud;
+            inValue.resultado = resultado;
+            inValue.observacionAgente = observacionAgente;
+            return ((PortalDesafiliacionWeb.ServicioWS.SolicitudDesafiliacionWS)(this)).insertarSolicitudAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        PortalDesafiliacionWeb.ServicioWS.obtenerSolicitudResponse PortalDesafiliacionWeb.ServicioWS.SolicitudDesafiliacionWS.obtenerSolicitud(PortalDesafiliacionWeb.ServicioWS.obtenerSolicitudRequest request) {
+            return base.Channel.obtenerSolicitud(request);
+        }
+        
+        public PortalDesafiliacionWeb.ServicioWS.solicitudDesafiliacion obtenerSolicitud(int arg0) {
+            PortalDesafiliacionWeb.ServicioWS.obtenerSolicitudRequest inValue = new PortalDesafiliacionWeb.ServicioWS.obtenerSolicitudRequest();
+            inValue.arg0 = arg0;
+            PortalDesafiliacionWeb.ServicioWS.obtenerSolicitudResponse retVal = ((PortalDesafiliacionWeb.ServicioWS.SolicitudDesafiliacionWS)(this)).obtenerSolicitud(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.obtenerSolicitudResponse> PortalDesafiliacionWeb.ServicioWS.SolicitudDesafiliacionWS.obtenerSolicitudAsync(PortalDesafiliacionWeb.ServicioWS.obtenerSolicitudRequest request) {
+            return base.Channel.obtenerSolicitudAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.obtenerSolicitudResponse> obtenerSolicitudAsync(int arg0) {
+            PortalDesafiliacionWeb.ServicioWS.obtenerSolicitudRequest inValue = new PortalDesafiliacionWeb.ServicioWS.obtenerSolicitudRequest();
+            inValue.arg0 = arg0;
+            return ((PortalDesafiliacionWeb.ServicioWS.SolicitudDesafiliacionWS)(this)).obtenerSolicitudAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -3874,147 +4066,51 @@ namespace PortalDesafiliacionWeb.ServicioWS {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        PortalDesafiliacionWeb.ServicioWS.modificarSolicitudResponse PortalDesafiliacionWeb.ServicioWS.SolicitudDesafiliacionWS.modificarSolicitud(PortalDesafiliacionWeb.ServicioWS.modificarSolicitudRequest request) {
-            return base.Channel.modificarSolicitud(request);
+        PortalDesafiliacionWeb.ServicioWS.validarCodigoSMSResponse PortalDesafiliacionWeb.ServicioWS.SolicitudDesafiliacionWS.validarCodigoSMS(PortalDesafiliacionWeb.ServicioWS.validarCodigoSMSRequest request) {
+            return base.Channel.validarCodigoSMS(request);
         }
         
-        public bool modificarSolicitud(PortalDesafiliacionWeb.ServicioWS.solicitudDesafiliacion arg0) {
-            PortalDesafiliacionWeb.ServicioWS.modificarSolicitudRequest inValue = new PortalDesafiliacionWeb.ServicioWS.modificarSolicitudRequest();
-            inValue.arg0 = arg0;
-            PortalDesafiliacionWeb.ServicioWS.modificarSolicitudResponse retVal = ((PortalDesafiliacionWeb.ServicioWS.SolicitudDesafiliacionWS)(this)).modificarSolicitud(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.modificarSolicitudResponse> PortalDesafiliacionWeb.ServicioWS.SolicitudDesafiliacionWS.modificarSolicitudAsync(PortalDesafiliacionWeb.ServicioWS.modificarSolicitudRequest request) {
-            return base.Channel.modificarSolicitudAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.modificarSolicitudResponse> modificarSolicitudAsync(PortalDesafiliacionWeb.ServicioWS.solicitudDesafiliacion arg0) {
-            PortalDesafiliacionWeb.ServicioWS.modificarSolicitudRequest inValue = new PortalDesafiliacionWeb.ServicioWS.modificarSolicitudRequest();
-            inValue.arg0 = arg0;
-            return ((PortalDesafiliacionWeb.ServicioWS.SolicitudDesafiliacionWS)(this)).modificarSolicitudAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        PortalDesafiliacionWeb.ServicioWS.obtenerSolicitudResponse PortalDesafiliacionWeb.ServicioWS.SolicitudDesafiliacionWS.obtenerSolicitud(PortalDesafiliacionWeb.ServicioWS.obtenerSolicitudRequest request) {
-            return base.Channel.obtenerSolicitud(request);
-        }
-        
-        public PortalDesafiliacionWeb.ServicioWS.solicitudDesafiliacion obtenerSolicitud(int arg0) {
-            PortalDesafiliacionWeb.ServicioWS.obtenerSolicitudRequest inValue = new PortalDesafiliacionWeb.ServicioWS.obtenerSolicitudRequest();
-            inValue.arg0 = arg0;
-            PortalDesafiliacionWeb.ServicioWS.obtenerSolicitudResponse retVal = ((PortalDesafiliacionWeb.ServicioWS.SolicitudDesafiliacionWS)(this)).obtenerSolicitud(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.obtenerSolicitudResponse> PortalDesafiliacionWeb.ServicioWS.SolicitudDesafiliacionWS.obtenerSolicitudAsync(PortalDesafiliacionWeb.ServicioWS.obtenerSolicitudRequest request) {
-            return base.Channel.obtenerSolicitudAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.obtenerSolicitudResponse> obtenerSolicitudAsync(int arg0) {
-            PortalDesafiliacionWeb.ServicioWS.obtenerSolicitudRequest inValue = new PortalDesafiliacionWeb.ServicioWS.obtenerSolicitudRequest();
-            inValue.arg0 = arg0;
-            return ((PortalDesafiliacionWeb.ServicioWS.SolicitudDesafiliacionWS)(this)).obtenerSolicitudAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        PortalDesafiliacionWeb.ServicioWS.eliminarSolicitudResponse PortalDesafiliacionWeb.ServicioWS.SolicitudDesafiliacionWS.eliminarSolicitud(PortalDesafiliacionWeb.ServicioWS.eliminarSolicitudRequest request) {
-            return base.Channel.eliminarSolicitud(request);
-        }
-        
-        public bool eliminarSolicitud(int arg0) {
-            PortalDesafiliacionWeb.ServicioWS.eliminarSolicitudRequest inValue = new PortalDesafiliacionWeb.ServicioWS.eliminarSolicitudRequest();
-            inValue.arg0 = arg0;
-            PortalDesafiliacionWeb.ServicioWS.eliminarSolicitudResponse retVal = ((PortalDesafiliacionWeb.ServicioWS.SolicitudDesafiliacionWS)(this)).eliminarSolicitud(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.eliminarSolicitudResponse> PortalDesafiliacionWeb.ServicioWS.SolicitudDesafiliacionWS.eliminarSolicitudAsync(PortalDesafiliacionWeb.ServicioWS.eliminarSolicitudRequest request) {
-            return base.Channel.eliminarSolicitudAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.eliminarSolicitudResponse> eliminarSolicitudAsync(int arg0) {
-            PortalDesafiliacionWeb.ServicioWS.eliminarSolicitudRequest inValue = new PortalDesafiliacionWeb.ServicioWS.eliminarSolicitudRequest();
-            inValue.arg0 = arg0;
-            return ((PortalDesafiliacionWeb.ServicioWS.SolicitudDesafiliacionWS)(this)).eliminarSolicitudAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        PortalDesafiliacionWeb.ServicioWS.insertarSolicitudResponse PortalDesafiliacionWeb.ServicioWS.SolicitudDesafiliacionWS.insertarSolicitud(PortalDesafiliacionWeb.ServicioWS.insertarSolicitudRequest request) {
-            return base.Channel.insertarSolicitud(request);
-        }
-        
-        public int insertarSolicitud(int idLinea, int idCliente, System.DateTime fechaSolicitud, PortalDesafiliacionWeb.ServicioWS.resultado resultado, string observacionAgente) {
-            PortalDesafiliacionWeb.ServicioWS.insertarSolicitudRequest inValue = new PortalDesafiliacionWeb.ServicioWS.insertarSolicitudRequest();
+        public bool validarCodigoSMS(int idLinea, string codigoIngresado) {
+            PortalDesafiliacionWeb.ServicioWS.validarCodigoSMSRequest inValue = new PortalDesafiliacionWeb.ServicioWS.validarCodigoSMSRequest();
             inValue.idLinea = idLinea;
-            inValue.idCliente = idCliente;
-            inValue.fechaSolicitud = fechaSolicitud;
-            inValue.resultado = resultado;
-            inValue.observacionAgente = observacionAgente;
-            PortalDesafiliacionWeb.ServicioWS.insertarSolicitudResponse retVal = ((PortalDesafiliacionWeb.ServicioWS.SolicitudDesafiliacionWS)(this)).insertarSolicitud(inValue);
+            inValue.codigoIngresado = codigoIngresado;
+            PortalDesafiliacionWeb.ServicioWS.validarCodigoSMSResponse retVal = ((PortalDesafiliacionWeb.ServicioWS.SolicitudDesafiliacionWS)(this)).validarCodigoSMS(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.insertarSolicitudResponse> PortalDesafiliacionWeb.ServicioWS.SolicitudDesafiliacionWS.insertarSolicitudAsync(PortalDesafiliacionWeb.ServicioWS.insertarSolicitudRequest request) {
-            return base.Channel.insertarSolicitudAsync(request);
+        System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.validarCodigoSMSResponse> PortalDesafiliacionWeb.ServicioWS.SolicitudDesafiliacionWS.validarCodigoSMSAsync(PortalDesafiliacionWeb.ServicioWS.validarCodigoSMSRequest request) {
+            return base.Channel.validarCodigoSMSAsync(request);
         }
         
-        public System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.insertarSolicitudResponse> insertarSolicitudAsync(int idLinea, int idCliente, System.DateTime fechaSolicitud, PortalDesafiliacionWeb.ServicioWS.resultado resultado, string observacionAgente) {
-            PortalDesafiliacionWeb.ServicioWS.insertarSolicitudRequest inValue = new PortalDesafiliacionWeb.ServicioWS.insertarSolicitudRequest();
+        public System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.validarCodigoSMSResponse> validarCodigoSMSAsync(int idLinea, string codigoIngresado) {
+            PortalDesafiliacionWeb.ServicioWS.validarCodigoSMSRequest inValue = new PortalDesafiliacionWeb.ServicioWS.validarCodigoSMSRequest();
             inValue.idLinea = idLinea;
-            inValue.idCliente = idCliente;
-            inValue.fechaSolicitud = fechaSolicitud;
-            inValue.resultado = resultado;
-            inValue.observacionAgente = observacionAgente;
-            return ((PortalDesafiliacionWeb.ServicioWS.SolicitudDesafiliacionWS)(this)).insertarSolicitudAsync(inValue);
+            inValue.codigoIngresado = codigoIngresado;
+            return ((PortalDesafiliacionWeb.ServicioWS.SolicitudDesafiliacionWS)(this)).validarCodigoSMSAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        PortalDesafiliacionWeb.ServicioWS.listarSolicitudesResponse PortalDesafiliacionWeb.ServicioWS.SolicitudDesafiliacionWS.listarSolicitudes(PortalDesafiliacionWeb.ServicioWS.listarSolicitudesRequest request) {
-            return base.Channel.listarSolicitudes(request);
+        PortalDesafiliacionWeb.ServicioWS.enviarCodigoSMSResponse PortalDesafiliacionWeb.ServicioWS.SolicitudDesafiliacionWS.enviarCodigoSMS(PortalDesafiliacionWeb.ServicioWS.enviarCodigoSMSRequest request) {
+            return base.Channel.enviarCodigoSMS(request);
         }
         
-        public PortalDesafiliacionWeb.ServicioWS.solicitudDesafiliacion[] listarSolicitudes() {
-            PortalDesafiliacionWeb.ServicioWS.listarSolicitudesRequest inValue = new PortalDesafiliacionWeb.ServicioWS.listarSolicitudesRequest();
-            PortalDesafiliacionWeb.ServicioWS.listarSolicitudesResponse retVal = ((PortalDesafiliacionWeb.ServicioWS.SolicitudDesafiliacionWS)(this)).listarSolicitudes(inValue);
+        public string enviarCodigoSMS(int idLinea) {
+            PortalDesafiliacionWeb.ServicioWS.enviarCodigoSMSRequest inValue = new PortalDesafiliacionWeb.ServicioWS.enviarCodigoSMSRequest();
+            inValue.idLinea = idLinea;
+            PortalDesafiliacionWeb.ServicioWS.enviarCodigoSMSResponse retVal = ((PortalDesafiliacionWeb.ServicioWS.SolicitudDesafiliacionWS)(this)).enviarCodigoSMS(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.listarSolicitudesResponse> PortalDesafiliacionWeb.ServicioWS.SolicitudDesafiliacionWS.listarSolicitudesAsync(PortalDesafiliacionWeb.ServicioWS.listarSolicitudesRequest request) {
-            return base.Channel.listarSolicitudesAsync(request);
+        System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.enviarCodigoSMSResponse> PortalDesafiliacionWeb.ServicioWS.SolicitudDesafiliacionWS.enviarCodigoSMSAsync(PortalDesafiliacionWeb.ServicioWS.enviarCodigoSMSRequest request) {
+            return base.Channel.enviarCodigoSMSAsync(request);
         }
         
-        public System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.listarSolicitudesResponse> listarSolicitudesAsync() {
-            PortalDesafiliacionWeb.ServicioWS.listarSolicitudesRequest inValue = new PortalDesafiliacionWeb.ServicioWS.listarSolicitudesRequest();
-            return ((PortalDesafiliacionWeb.ServicioWS.SolicitudDesafiliacionWS)(this)).listarSolicitudesAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        PortalDesafiliacionWeb.ServicioWS.listarSolicitudesPorClienteResponse PortalDesafiliacionWeb.ServicioWS.SolicitudDesafiliacionWS.listarSolicitudesPorCliente(PortalDesafiliacionWeb.ServicioWS.listarSolicitudesPorClienteRequest request) {
-            return base.Channel.listarSolicitudesPorCliente(request);
-        }
-        
-        public PortalDesafiliacionWeb.ServicioWS.solicitudDesafiliacion[] listarSolicitudesPorCliente(int arg0) {
-            PortalDesafiliacionWeb.ServicioWS.listarSolicitudesPorClienteRequest inValue = new PortalDesafiliacionWeb.ServicioWS.listarSolicitudesPorClienteRequest();
-            inValue.arg0 = arg0;
-            PortalDesafiliacionWeb.ServicioWS.listarSolicitudesPorClienteResponse retVal = ((PortalDesafiliacionWeb.ServicioWS.SolicitudDesafiliacionWS)(this)).listarSolicitudesPorCliente(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.listarSolicitudesPorClienteResponse> PortalDesafiliacionWeb.ServicioWS.SolicitudDesafiliacionWS.listarSolicitudesPorClienteAsync(PortalDesafiliacionWeb.ServicioWS.listarSolicitudesPorClienteRequest request) {
-            return base.Channel.listarSolicitudesPorClienteAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.listarSolicitudesPorClienteResponse> listarSolicitudesPorClienteAsync(int arg0) {
-            PortalDesafiliacionWeb.ServicioWS.listarSolicitudesPorClienteRequest inValue = new PortalDesafiliacionWeb.ServicioWS.listarSolicitudesPorClienteRequest();
-            inValue.arg0 = arg0;
-            return ((PortalDesafiliacionWeb.ServicioWS.SolicitudDesafiliacionWS)(this)).listarSolicitudesPorClienteAsync(inValue);
+        public System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.enviarCodigoSMSResponse> enviarCodigoSMSAsync(int idLinea) {
+            PortalDesafiliacionWeb.ServicioWS.enviarCodigoSMSRequest inValue = new PortalDesafiliacionWeb.ServicioWS.enviarCodigoSMSRequest();
+            inValue.idLinea = idLinea;
+            return ((PortalDesafiliacionWeb.ServicioWS.SolicitudDesafiliacionWS)(this)).enviarCodigoSMSAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -4039,19 +4135,34 @@ namespace PortalDesafiliacionWeb.ServicioWS {
             inValue.idLinea = idLinea;
             return ((PortalDesafiliacionWeb.ServicioWS.SolicitudDesafiliacionWS)(this)).actualizarResultadoDesafiliacionAsync(inValue);
         }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        PortalDesafiliacionWeb.ServicioWS.listarSolicitudesPorClienteResponse PortalDesafiliacionWeb.ServicioWS.SolicitudDesafiliacionWS.listarSolicitudesPorCliente(PortalDesafiliacionWeb.ServicioWS.listarSolicitudesPorClienteRequest request) {
+            return base.Channel.listarSolicitudesPorCliente(request);
+        }
+        
+        public PortalDesafiliacionWeb.ServicioWS.solicitudDesafiliacion[] listarSolicitudesPorCliente(int arg0) {
+            PortalDesafiliacionWeb.ServicioWS.listarSolicitudesPorClienteRequest inValue = new PortalDesafiliacionWeb.ServicioWS.listarSolicitudesPorClienteRequest();
+            inValue.arg0 = arg0;
+            PortalDesafiliacionWeb.ServicioWS.listarSolicitudesPorClienteResponse retVal = ((PortalDesafiliacionWeb.ServicioWS.SolicitudDesafiliacionWS)(this)).listarSolicitudesPorCliente(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.listarSolicitudesPorClienteResponse> PortalDesafiliacionWeb.ServicioWS.SolicitudDesafiliacionWS.listarSolicitudesPorClienteAsync(PortalDesafiliacionWeb.ServicioWS.listarSolicitudesPorClienteRequest request) {
+            return base.Channel.listarSolicitudesPorClienteAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.listarSolicitudesPorClienteResponse> listarSolicitudesPorClienteAsync(int arg0) {
+            PortalDesafiliacionWeb.ServicioWS.listarSolicitudesPorClienteRequest inValue = new PortalDesafiliacionWeb.ServicioWS.listarSolicitudesPorClienteRequest();
+            inValue.arg0 = arg0;
+            return ((PortalDesafiliacionWeb.ServicioWS.SolicitudDesafiliacionWS)(this)).listarSolicitudesPorClienteAsync(inValue);
+        }
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ServiceModel.ServiceContractAttribute(Namespace="http://ws.pdm.pucp.edu.pe/", ConfigurationName="ServicioWS.PrepagoWS")]
     public interface PrepagoWS {
-        
-        // CODEGEN: Se está generando un contrato de mensaje, ya que el espacio de nombres de partes de mensaje () no coincide con el valor predeterminado (http://ws.pdm.pucp.edu.pe/).
-        [System.ServiceModel.OperationContractAttribute(Action="http://ws.pdm.pucp.edu.pe/PrepagoWS/eliminarPrepagoRequest", ReplyAction="http://ws.pdm.pucp.edu.pe/PrepagoWS/eliminarPrepagoResponse")]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        PortalDesafiliacionWeb.ServicioWS.eliminarPrepagoResponse eliminarPrepago(PortalDesafiliacionWeb.ServicioWS.eliminarPrepagoRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://ws.pdm.pucp.edu.pe/PrepagoWS/eliminarPrepagoRequest", ReplyAction="http://ws.pdm.pucp.edu.pe/PrepagoWS/eliminarPrepagoResponse")]
-        System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.eliminarPrepagoResponse> eliminarPrepagoAsync(PortalDesafiliacionWeb.ServicioWS.eliminarPrepagoRequest request);
         
         // CODEGEN: Se está generando un contrato de mensaje, ya que el espacio de nombres de partes de mensaje () no coincide con el valor predeterminado (http://ws.pdm.pucp.edu.pe/).
         [System.ServiceModel.OperationContractAttribute(Action="http://ws.pdm.pucp.edu.pe/PrepagoWS/migracionPrepagoAPostpagoRequest", ReplyAction="http://ws.pdm.pucp.edu.pe/PrepagoWS/migracionPrepagoAPostpagoResponse")]
@@ -4060,40 +4171,14 @@ namespace PortalDesafiliacionWeb.ServicioWS {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://ws.pdm.pucp.edu.pe/PrepagoWS/migracionPrepagoAPostpagoRequest", ReplyAction="http://ws.pdm.pucp.edu.pe/PrepagoWS/migracionPrepagoAPostpagoResponse")]
         System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.migracionPrepagoAPostpagoResponse> migracionPrepagoAPostpagoAsync(PortalDesafiliacionWeb.ServicioWS.migracionPrepagoAPostpagoRequest request);
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarPrepago", WrapperNamespace="http://ws.pdm.pucp.edu.pe/", IsWrapped=true)]
-    public partial class eliminarPrepagoRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public int idLinea;
+        // CODEGEN: Se está generando un contrato de mensaje, ya que el espacio de nombres de partes de mensaje () no coincide con el valor predeterminado (http://ws.pdm.pucp.edu.pe/).
+        [System.ServiceModel.OperationContractAttribute(Action="http://ws.pdm.pucp.edu.pe/PrepagoWS/eliminarPrepagoRequest", ReplyAction="http://ws.pdm.pucp.edu.pe/PrepagoWS/eliminarPrepagoResponse")]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        PortalDesafiliacionWeb.ServicioWS.eliminarPrepagoResponse eliminarPrepago(PortalDesafiliacionWeb.ServicioWS.eliminarPrepagoRequest request);
         
-        public eliminarPrepagoRequest() {
-        }
-        
-        public eliminarPrepagoRequest(int idLinea) {
-            this.idLinea = idLinea;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarPrepagoResponse", WrapperNamespace="http://ws.pdm.pucp.edu.pe/", IsWrapped=true)]
-    public partial class eliminarPrepagoResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public bool @return;
-        
-        public eliminarPrepagoResponse() {
-        }
-        
-        public eliminarPrepagoResponse(bool @return) {
-            this.@return = @return;
-        }
+        [System.ServiceModel.OperationContractAttribute(Action="http://ws.pdm.pucp.edu.pe/PrepagoWS/eliminarPrepagoRequest", ReplyAction="http://ws.pdm.pucp.edu.pe/PrepagoWS/eliminarPrepagoResponse")]
+        System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.eliminarPrepagoResponse> eliminarPrepagoAsync(PortalDesafiliacionWeb.ServicioWS.eliminarPrepagoRequest request);
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -4138,6 +4223,40 @@ namespace PortalDesafiliacionWeb.ServicioWS {
         }
     }
     
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarPrepago", WrapperNamespace="http://ws.pdm.pucp.edu.pe/", IsWrapped=true)]
+    public partial class eliminarPrepagoRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
+        public int idLinea;
+        
+        public eliminarPrepagoRequest() {
+        }
+        
+        public eliminarPrepagoRequest(int idLinea) {
+            this.idLinea = idLinea;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarPrepagoResponse", WrapperNamespace="http://ws.pdm.pucp.edu.pe/", IsWrapped=true)]
+    public partial class eliminarPrepagoResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
+        public bool @return;
+        
+        public eliminarPrepagoResponse() {
+        }
+        
+        public eliminarPrepagoResponse(bool @return) {
+            this.@return = @return;
+        }
+    }
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     public interface PrepagoWSChannel : PortalDesafiliacionWeb.ServicioWS.PrepagoWS, System.ServiceModel.IClientChannel {
     }
@@ -4166,29 +4285,6 @@ namespace PortalDesafiliacionWeb.ServicioWS {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        PortalDesafiliacionWeb.ServicioWS.eliminarPrepagoResponse PortalDesafiliacionWeb.ServicioWS.PrepagoWS.eliminarPrepago(PortalDesafiliacionWeb.ServicioWS.eliminarPrepagoRequest request) {
-            return base.Channel.eliminarPrepago(request);
-        }
-        
-        public bool eliminarPrepago(int idLinea) {
-            PortalDesafiliacionWeb.ServicioWS.eliminarPrepagoRequest inValue = new PortalDesafiliacionWeb.ServicioWS.eliminarPrepagoRequest();
-            inValue.idLinea = idLinea;
-            PortalDesafiliacionWeb.ServicioWS.eliminarPrepagoResponse retVal = ((PortalDesafiliacionWeb.ServicioWS.PrepagoWS)(this)).eliminarPrepago(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.eliminarPrepagoResponse> PortalDesafiliacionWeb.ServicioWS.PrepagoWS.eliminarPrepagoAsync(PortalDesafiliacionWeb.ServicioWS.eliminarPrepagoRequest request) {
-            return base.Channel.eliminarPrepagoAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.eliminarPrepagoResponse> eliminarPrepagoAsync(int idLinea) {
-            PortalDesafiliacionWeb.ServicioWS.eliminarPrepagoRequest inValue = new PortalDesafiliacionWeb.ServicioWS.eliminarPrepagoRequest();
-            inValue.idLinea = idLinea;
-            return ((PortalDesafiliacionWeb.ServicioWS.PrepagoWS)(this)).eliminarPrepagoAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         PortalDesafiliacionWeb.ServicioWS.migracionPrepagoAPostpagoResponse PortalDesafiliacionWeb.ServicioWS.PrepagoWS.migracionPrepagoAPostpago(PortalDesafiliacionWeb.ServicioWS.migracionPrepagoAPostpagoRequest request) {
             return base.Channel.migracionPrepagoAPostpago(request);
         }
@@ -4213,6 +4309,29 @@ namespace PortalDesafiliacionWeb.ServicioWS {
             inValue.idPlan = idPlan;
             inValue.diaCicloFacturacion = diaCicloFacturacion;
             return ((PortalDesafiliacionWeb.ServicioWS.PrepagoWS)(this)).migracionPrepagoAPostpagoAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        PortalDesafiliacionWeb.ServicioWS.eliminarPrepagoResponse PortalDesafiliacionWeb.ServicioWS.PrepagoWS.eliminarPrepago(PortalDesafiliacionWeb.ServicioWS.eliminarPrepagoRequest request) {
+            return base.Channel.eliminarPrepago(request);
+        }
+        
+        public bool eliminarPrepago(int idLinea) {
+            PortalDesafiliacionWeb.ServicioWS.eliminarPrepagoRequest inValue = new PortalDesafiliacionWeb.ServicioWS.eliminarPrepagoRequest();
+            inValue.idLinea = idLinea;
+            PortalDesafiliacionWeb.ServicioWS.eliminarPrepagoResponse retVal = ((PortalDesafiliacionWeb.ServicioWS.PrepagoWS)(this)).eliminarPrepago(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.eliminarPrepagoResponse> PortalDesafiliacionWeb.ServicioWS.PrepagoWS.eliminarPrepagoAsync(PortalDesafiliacionWeb.ServicioWS.eliminarPrepagoRequest request) {
+            return base.Channel.eliminarPrepagoAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<PortalDesafiliacionWeb.ServicioWS.eliminarPrepagoResponse> eliminarPrepagoAsync(int idLinea) {
+            PortalDesafiliacionWeb.ServicioWS.eliminarPrepagoRequest inValue = new PortalDesafiliacionWeb.ServicioWS.eliminarPrepagoRequest();
+            inValue.idLinea = idLinea;
+            return ((PortalDesafiliacionWeb.ServicioWS.PrepagoWS)(this)).eliminarPrepagoAsync(inValue);
         }
     }
 }

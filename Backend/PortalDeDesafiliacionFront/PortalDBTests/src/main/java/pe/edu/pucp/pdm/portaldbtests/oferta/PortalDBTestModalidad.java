@@ -13,7 +13,7 @@ public class PortalDBTestModalidad {
         int idM = modalidadDao.insertar(modalidad);
         System.out.println("La modalidad con id: " + idM + " ha sido insertada correctamente");
         // modificar
-        modalidad.setNombreModalidad("Postpago");
+        modalidad.setNombre("Postpago");
         boolean modificado = modalidadDao.modificar(modalidad);
         if (modificado == true) System.out.println("El modalidad con id: " + idM + " ha sido modificado");
         // eliminar

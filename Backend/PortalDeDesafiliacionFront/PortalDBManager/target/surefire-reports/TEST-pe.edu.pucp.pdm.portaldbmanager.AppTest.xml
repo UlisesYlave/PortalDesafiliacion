@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.1" name="pe.edu.pucp.pdm.portaldbmanager.AppTest" time="0.088" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.1" name="pe.edu.pucp.pdm.portaldbmanager.AppTest" time="0.057" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="24"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="user.country" value="ES"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-24\bin"/>
-    <property name="sun.java.command" value="C:\Users\BRAULIO\AppData\Local\Temp\surefire5494723046883227859\surefirebooter-20250623102624713_6.jar C:\Users\BRAULIO\AppData\Local\Temp\surefire5494723046883227859 2025-06-23T10-26-21_963-jvmRun1 surefire-20250623102624713_4tmp surefire_1-20250623102624713_5tmp"/>
+    <property name="sun.java.command" value="C:\Users\BRAULIO\AppData\Local\Temp\surefire14783939382503394423\surefirebooter-20250623120726815_6.jar C:\Users\BRAULIO\AppData\Local\Temp\surefire14783939382503394423 2025-06-23T12-07-25_276-jvmRun1 surefire-20250623120726815_4tmp surefire_1-20250623120726815_5tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\BRAULIO\Desktop\PUCP\CICLO 9\PROGRAMACION 3\PortalDeDesafiliacionWeb\Entrega_7\Backend\PortalDeDesafiliacionFront\PortalDBManager\target\test-classes;C:\Users\BRAULIO\Desktop\PUCP\CICLO 9\PROGRAMACION 3\PortalDeDesafiliacionWeb\Entrega_7\Backend\PortalDeDesafiliacionFront\PortalDBManager\target\classes;C:\Users\BRAULIO\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.11.0\junit-jupiter-api-5.11.0.jar;C:\Users\BRAULIO\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\BRAULIO\.m2\repository\org\junit\platform\junit-platform-commons\1.11.0\junit-platform-commons-1.11.0.jar;C:\Users\BRAULIO\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\BRAULIO\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.11.0\junit-jupiter-params-5.11.0.jar;C:\Users\BRAULIO\.m2\repository\com\mysql\mysql-connector-j\9.2.0\mysql-connector-j-9.2.0.jar;C:\Users\BRAULIO\.m2\repository\com\google\protobuf\protobuf-java\4.29.0\protobuf-java-4.29.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\BRAULIO\AppData\Local\Temp\surefire5494723046883227859\surefirebooter-20250623102624713_6.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\BRAULIO\AppData\Local\Temp\surefire14783939382503394423\surefirebooter-20250623120726815_6.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="24+36-3646"/>
@@ -59,5 +59,5 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="68.0"/>
   </properties>
-  <testcase name="shouldAnswerWithTrue" classname="pe.edu.pucp.pdm.portaldbmanager.AppTest" time="0.045"/>
+  <testcase name="shouldAnswerWithTrue" classname="pe.edu.pucp.pdm.portaldbmanager.AppTest" time="0.03"/>
 </testsuite>

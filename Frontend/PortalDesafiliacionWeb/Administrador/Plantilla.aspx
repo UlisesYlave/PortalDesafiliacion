@@ -337,9 +337,12 @@
                             <i class="fas fa-tags"></i> Modalidades aplicables
                         </div>
                         <div class="modalidades-list">
-                            <asp:Repeater ID="rptModalidades" runat="server" DataSource='<%# Eval("modalidades") %>'>
+                            <asp:Repeater ID="rptModalidades" runat="server" 
+                                DataSource='<%# CargarModalidades(Convert.ToInt32(Eval("idPlantilla"))) %>'>
                                 <ItemTemplate>
-                                    <span class="modalidad-tag"><%# Eval("nombre") %></span>
+                                    <span class="modalidad-tag">
+                                        <%# Eval("nombre") %>  <!-- Nombre de la modalidad -->
+                                    </span>
                                 </ItemTemplate>
                             </asp:Repeater>
                         </div>

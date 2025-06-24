@@ -11,10 +11,11 @@ namespace PortalDesafiliacionWeb.Administrador
     public partial class Plantilla : System.Web.UI.Page
     {
         private PlantillaOfertaWSClient plantillaWS;
-
+        private PlantillaOfertaModalidadWSClient plantillaOfertaModalidadWS;
         protected void Page_Load(object sender, EventArgs e)
         {
             plantillaWS = new PlantillaOfertaWSClient();
+            plantillaOfertaModalidadWS = new PlantillaOfertaModalidadWSClient();
             if (!IsPostBack)
             {
                 CargarPlantillas();
@@ -82,6 +83,19 @@ namespace PortalDesafiliacionWeb.Administrador
             {
                 int idPlantilla = Convert.ToInt32(e.CommandArgument);
                 // Lógica para eliminar
+            }
+        }
+
+        protected List<modalidad> CargarModalidades(int idPlantilla)
+        {
+            try
+            {
+                return plantillaOfertaModalidadWS.listarModalidadesPorPlantilla(idPlantilla)?.ToList();
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine("Error al cargar modalidades: " + ex.Message);
+                return new List<modalidad>();  // Retorna lista vacía para evitar null
             }
         }
 

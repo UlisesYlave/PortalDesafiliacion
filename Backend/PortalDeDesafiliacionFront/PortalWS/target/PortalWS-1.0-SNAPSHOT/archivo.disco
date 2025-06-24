@@ -15,4 +15,6 @@ ref="http://localhost:8080/PortalWS/SolicitudDesafiliacionWS?WSDL"/>
 ref="http://localhost:8080/PortalWS/PlantillaOfertaWS?WSDL"/>
 <contractRef xmlns="http://schemas.xmlsoap.org/disco/scl/"
 ref="http://localhost:8080/PortalWS/EquipoWS?WSDL"/>
+<contractRef xmlns="http://schemas.xmlsoap.org/disco/scl/"
+ref="http://localhost:8080/PortalWS/PlantillaOfertaModalidadWS?WSDL"/>
 </discovery>

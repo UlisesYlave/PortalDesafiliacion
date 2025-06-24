@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="e891db1e-f750-4002-b337-0256fb7bd790" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="d4b83b69-6ebd-48f0-b32f-9e54d73a07e1" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -22,23 +22,25 @@
     <MetadataSource Address="http://localhost:8080/PortalWS/archivo.disco" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="PostpagoWS.wsdl" MetadataType="Wsdl" ID="34c62b10-20ce-4e3f-9432-e2c8225a9942" SourceId="1" SourceUrl="http://localhost:8080/PortalWS/PostpagoWS?WSDL" />
-    <MetadataFile FileName="LineaWS.wsdl" MetadataType="Wsdl" ID="f9b4557e-649f-49c9-b307-19fa1ed7c584" SourceId="1" SourceUrl="http://localhost:8080/PortalWS/LineaWS?WSDL" />
-    <MetadataFile FileName="EquipoWS.wsdl" MetadataType="Wsdl" ID="54433224-227c-42bc-ac71-774bca497679" SourceId="1" SourceUrl="http://localhost:8080/PortalWS/EquipoWS?WSDL" />
-    <MetadataFile FileName="UsuarioWS.xsd" MetadataType="Schema" ID="0b51dd1f-6cad-49a4-a75c-725cfe840a88" SourceId="1" SourceUrl="http://localhost:8080/PortalWS/UsuarioWS?xsd=1" />
-    <MetadataFile FileName="PostpagoWS.xsd" MetadataType="Schema" ID="10c46f5a-b276-4a45-8122-aaee29ebc517" SourceId="1" SourceUrl="http://localhost:8080/PortalWS/PostpagoWS?xsd=1" />
-    <MetadataFile FileName="EquipoWS.xsd" MetadataType="Schema" ID="0f002fd5-55fa-4fa0-872c-0c6a9103950f" SourceId="1" SourceUrl="http://localhost:8080/PortalWS/EquipoWS?xsd=1" />
-    <MetadataFile FileName="LineaWS.xsd" MetadataType="Schema" ID="f6649d6b-7eec-4c15-b534-2d4e40167c1a" SourceId="1" SourceUrl="http://localhost:8080/PortalWS/LineaWS?xsd=1" />
-    <MetadataFile FileName="PlantillaOfertaWS.xsd" MetadataType="Schema" ID="8165053f-42ad-4a1e-b5e9-142610a8c09f" SourceId="1" SourceUrl="http://localhost:8080/PortalWS/PlantillaOfertaWS?xsd=1" />
-    <MetadataFile FileName="ClienteWS.xsd" MetadataType="Schema" ID="ce56a0ce-0022-4520-aff4-0cd6444714e4" SourceId="1" SourceUrl="http://localhost:8080/PortalWS/ClienteWS?xsd=1" />
-    <MetadataFile FileName="SolicitudDesafiliacionWS.xsd" MetadataType="Schema" ID="4c472767-13ce-4833-a49c-d5c258c77b7d" SourceId="1" SourceUrl="http://localhost:8080/PortalWS/SolicitudDesafiliacionWS?xsd=1" />
-    <MetadataFile FileName="UsuarioWS.wsdl" MetadataType="Wsdl" ID="447a4b33-f418-4734-9326-2e2f31c47d2b" SourceId="1" SourceUrl="http://localhost:8080/PortalWS/UsuarioWS?WSDL" />
-    <MetadataFile FileName="ClienteWS.wsdl" MetadataType="Wsdl" ID="12baa143-b5eb-42d9-958f-4c229ccb9fc5" SourceId="1" SourceUrl="http://localhost:8080/PortalWS/ClienteWS?WSDL" />
-    <MetadataFile FileName="PlantillaOfertaWS.wsdl" MetadataType="Wsdl" ID="7f34e60d-f741-457a-a6bd-1425c8bdca08" SourceId="1" SourceUrl="http://localhost:8080/PortalWS/PlantillaOfertaWS?WSDL" />
-    <MetadataFile FileName="archivo.disco" MetadataType="Disco" ID="fa6e21f7-85ee-4fcc-9b76-a6f252f3d6e3" SourceId="1" SourceUrl="http://localhost:8080/PortalWS/archivo.disco" />
-    <MetadataFile FileName="SolicitudDesafiliacionWS.wsdl" MetadataType="Wsdl" ID="e12242a4-dd6c-47e8-b67c-8459343fd988" SourceId="1" SourceUrl="http://localhost:8080/PortalWS/SolicitudDesafiliacionWS?WSDL" />
-    <MetadataFile FileName="PrepagoWS.wsdl" MetadataType="Wsdl" ID="a0703d76-13fe-468e-802b-da5d81f6db6f" SourceId="1" SourceUrl="http://localhost:8080/PortalWS/PrepagoWS?WSDL" />
-    <MetadataFile FileName="PrepagoWS.xsd" MetadataType="Schema" ID="e6b8a6e1-5a0d-4e03-ae3a-40dad0ad44af" SourceId="1" SourceUrl="http://localhost:8080/PortalWS/PrepagoWS?xsd=1" />
+    <MetadataFile FileName="PostpagoWS.wsdl" MetadataType="Wsdl" ID="72185262-4ca9-462a-bb6a-110bf0a3909b" SourceId="1" SourceUrl="http://localhost:8080/PortalWS/PostpagoWS?WSDL" />
+    <MetadataFile FileName="LineaWS.wsdl" MetadataType="Wsdl" ID="b97eacf0-3951-4266-a08f-91126acfd6bf" SourceId="1" SourceUrl="http://localhost:8080/PortalWS/LineaWS?WSDL" />
+    <MetadataFile FileName="EquipoWS.wsdl" MetadataType="Wsdl" ID="68491ede-5dd3-45b7-8f37-aa9c5e439a2a" SourceId="1" SourceUrl="http://localhost:8080/PortalWS/EquipoWS?WSDL" />
+    <MetadataFile FileName="UsuarioWS.xsd" MetadataType="Schema" ID="c8062a98-a211-457c-9fef-ac35b342ad46" SourceId="1" SourceUrl="http://localhost:8080/PortalWS/UsuarioWS?xsd=1" />
+    <MetadataFile FileName="PostpagoWS.xsd" MetadataType="Schema" ID="9c2bdf0b-dc63-40fe-899e-2264ca9ccfc7" SourceId="1" SourceUrl="http://localhost:8080/PortalWS/PostpagoWS?xsd=1" />
+    <MetadataFile FileName="EquipoWS.xsd" MetadataType="Schema" ID="074528ac-19ca-4a3b-b726-28aeebea44b0" SourceId="1" SourceUrl="http://localhost:8080/PortalWS/EquipoWS?xsd=1" />
+    <MetadataFile FileName="LineaWS.xsd" MetadataType="Schema" ID="fdad002a-e950-4210-949d-51332775737c" SourceId="1" SourceUrl="http://localhost:8080/PortalWS/LineaWS?xsd=1" />
+    <MetadataFile FileName="PlantillaOfertaWS.xsd" MetadataType="Schema" ID="b4c97286-cefc-4fde-9926-c1d735f9d40c" SourceId="1" SourceUrl="http://localhost:8080/PortalWS/PlantillaOfertaWS?xsd=1" />
+    <MetadataFile FileName="ClienteWS.xsd" MetadataType="Schema" ID="20fca827-ecd3-45b5-a521-bf65eeb1771b" SourceId="1" SourceUrl="http://localhost:8080/PortalWS/ClienteWS?xsd=1" />
+    <MetadataFile FileName="PlantillaOfertaModalidadWS.xsd" MetadataType="Schema" ID="55ba5607-ab22-4f51-a1b0-d6e15930f160" SourceId="1" SourceUrl="http://localhost:8080/PortalWS/PlantillaOfertaModalidadWS?xsd=1" />
+    <MetadataFile FileName="UsuarioWS.wsdl" MetadataType="Wsdl" ID="1922dabf-1e41-41f7-9c34-5e7a9e4f370e" SourceId="1" SourceUrl="http://localhost:8080/PortalWS/UsuarioWS?WSDL" />
+    <MetadataFile FileName="ClienteWS.wsdl" MetadataType="Wsdl" ID="5dfd2627-5778-48da-93a2-8dc346a511aa" SourceId="1" SourceUrl="http://localhost:8080/PortalWS/ClienteWS?WSDL" />
+    <MetadataFile FileName="PlantillaOfertaWS.wsdl" MetadataType="Wsdl" ID="c5553cde-9ecf-4108-a772-92b70c2d3aef" SourceId="1" SourceUrl="http://localhost:8080/PortalWS/PlantillaOfertaWS?WSDL" />
+    <MetadataFile FileName="PlantillaOfertaModalidadWS.wsdl" MetadataType="Wsdl" ID="9f8cc9a1-48e3-48af-b22c-cb1316ed20f1" SourceId="1" SourceUrl="http://localhost:8080/PortalWS/PlantillaOfertaModalidadWS?WSDL" />
+    <MetadataFile FileName="archivo.disco" MetadataType="Disco" ID="83c404f4-1a4b-4c0b-8516-26a342094586" SourceId="1" SourceUrl="http://localhost:8080/PortalWS/archivo.disco" />
+    <MetadataFile FileName="SolicitudDesafiliacionWS.wsdl" MetadataType="Wsdl" ID="a8ea4419-9943-4803-a59d-50f2e417b8ca" SourceId="1" SourceUrl="http://localhost:8080/PortalWS/SolicitudDesafiliacionWS?WSDL" />
+    <MetadataFile FileName="PrepagoWS.wsdl" MetadataType="Wsdl" ID="16181ce1-76a3-4b2f-bfaa-fdacbad688a3" SourceId="1" SourceUrl="http://localhost:8080/PortalWS/PrepagoWS?WSDL" />
+    <MetadataFile FileName="SolicitudDesafiliacionWS.xsd" MetadataType="Schema" ID="9280244f-3e3b-4d3c-b08b-1de01ec61b15" SourceId="1" SourceUrl="http://localhost:8080/PortalWS/SolicitudDesafiliacionWS?xsd=1" />
+    <MetadataFile FileName="PrepagoWS.xsd" MetadataType="Schema" ID="4ac14a1e-3270-4dd8-b036-59044abd3086" SourceId="1" SourceUrl="http://localhost:8080/PortalWS/PrepagoWS?xsd=1" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

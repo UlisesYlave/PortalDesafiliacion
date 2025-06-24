@@ -5,17 +5,11 @@
       <xsd:import schemaLocation="http://localhost:8080/PortalWS/EquipoWS?xsd=1" namespace="http://ws.pdm.pucp.edu.pe/" />
     </xsd:schema>
   </types>
-  <message name="modificarEquipo">
-    <part name="parameters" element="tns:modificarEquipo" />
+  <message name="listarEquipos">
+    <part name="parameters" element="tns:listarEquipos" />
   </message>
-  <message name="modificarEquipoResponse">
-    <part name="parameters" element="tns:modificarEquipoResponse" />
-  </message>
-  <message name="insertarEquipo">
-    <part name="parameters" element="tns:insertarEquipo" />
-  </message>
-  <message name="insertarEquipoResponse">
-    <part name="parameters" element="tns:insertarEquipoResponse" />
+  <message name="listarEquiposResponse">
+    <part name="parameters" element="tns:listarEquiposResponse" />
   </message>
   <message name="buscarEquipoPorId">
     <part name="parameters" element="tns:buscarEquipoPorId" />
@@ -23,52 +17,49 @@
   <message name="buscarEquipoPorIdResponse">
     <part name="parameters" element="tns:buscarEquipoPorIdResponse" />
   </message>
+  <message name="insertarEquipo">
+    <part name="parameters" element="tns:insertarEquipo" />
+  </message>
+  <message name="insertarEquipoResponse">
+    <part name="parameters" element="tns:insertarEquipoResponse" />
+  </message>
+  <message name="modificarEquipo">
+    <part name="parameters" element="tns:modificarEquipo" />
+  </message>
+  <message name="modificarEquipoResponse">
+    <part name="parameters" element="tns:modificarEquipoResponse" />
+  </message>
   <message name="eliminarEquipo">
     <part name="parameters" element="tns:eliminarEquipo" />
   </message>
   <message name="eliminarEquipoResponse">
     <part name="parameters" element="tns:eliminarEquipoResponse" />
   </message>
-  <message name="listarEquipos">
-    <part name="parameters" element="tns:listarEquipos" />
-  </message>
-  <message name="listarEquiposResponse">
-    <part name="parameters" element="tns:listarEquiposResponse" />
-  </message>
   <portType name="EquipoWS">
-    <operation name="modificarEquipo">
-      <input wsam:Action="http://ws.pdm.pucp.edu.pe/EquipoWS/modificarEquipoRequest" message="tns:modificarEquipo" />
-      <output wsam:Action="http://ws.pdm.pucp.edu.pe/EquipoWS/modificarEquipoResponse" message="tns:modificarEquipoResponse" />
-    </operation>
-    <operation name="insertarEquipo">
-      <input wsam:Action="http://ws.pdm.pucp.edu.pe/EquipoWS/insertarEquipoRequest" message="tns:insertarEquipo" />
-      <output wsam:Action="http://ws.pdm.pucp.edu.pe/EquipoWS/insertarEquipoResponse" message="tns:insertarEquipoResponse" />
+    <operation name="listarEquipos">
+      <input wsam:Action="http://ws.pdm.pucp.edu.pe/EquipoWS/listarEquiposRequest" message="tns:listarEquipos" />
+      <output wsam:Action="http://ws.pdm.pucp.edu.pe/EquipoWS/listarEquiposResponse" message="tns:listarEquiposResponse" />
     </operation>
     <operation name="buscarEquipoPorId">
       <input wsam:Action="http://ws.pdm.pucp.edu.pe/EquipoWS/buscarEquipoPorIdRequest" message="tns:buscarEquipoPorId" />
       <output wsam:Action="http://ws.pdm.pucp.edu.pe/EquipoWS/buscarEquipoPorIdResponse" message="tns:buscarEquipoPorIdResponse" />
     </operation>
+    <operation name="insertarEquipo">
+      <input wsam:Action="http://ws.pdm.pucp.edu.pe/EquipoWS/insertarEquipoRequest" message="tns:insertarEquipo" />
+      <output wsam:Action="http://ws.pdm.pucp.edu.pe/EquipoWS/insertarEquipoResponse" message="tns:insertarEquipoResponse" />
+    </operation>
+    <operation name="modificarEquipo">
+      <input wsam:Action="http://ws.pdm.pucp.edu.pe/EquipoWS/modificarEquipoRequest" message="tns:modificarEquipo" />
+      <output wsam:Action="http://ws.pdm.pucp.edu.pe/EquipoWS/modificarEquipoResponse" message="tns:modificarEquipoResponse" />
+    </operation>
     <operation name="eliminarEquipo">
       <input wsam:Action="http://ws.pdm.pucp.edu.pe/EquipoWS/eliminarEquipoRequest" message="tns:eliminarEquipo" />
       <output wsam:Action="http://ws.pdm.pucp.edu.pe/EquipoWS/eliminarEquipoResponse" message="tns:eliminarEquipoResponse" />
     </operation>
-    <operation name="listarEquipos">
-      <input wsam:Action="http://ws.pdm.pucp.edu.pe/EquipoWS/listarEquiposRequest" message="tns:listarEquipos" />
-      <output wsam:Action="http://ws.pdm.pucp.edu.pe/EquipoWS/listarEquiposResponse" message="tns:listarEquiposResponse" />
-    </operation>
   </portType>
   <binding name="EquipoWSPortBinding" type="tns:EquipoWS">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
-    <operation name="modificarEquipo">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="insertarEquipo">
+    <operation name="listarEquipos">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -86,7 +77,7 @@
         <soap:body use="literal" />
       </output>
     </operation>
-    <operation name="eliminarEquipo">
+    <operation name="insertarEquipo">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -95,7 +86,16 @@
         <soap:body use="literal" />
       </output>
     </operation>
-    <operation name="listarEquipos">
+    <operation name="modificarEquipo">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="eliminarEquipo">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />

@@ -120,16 +120,6 @@
       <xs:element minOccurs="0" name="return" type="xs:string" />
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="listarSolicitudesPorCliente">
-    <xs:sequence>
-      <xs:element name="arg0" type="xs:int" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="listarSolicitudesPorClienteResponse">
-    <xs:sequence>
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:solicitudDesafiliacion" />
-    </xs:sequence>
-  </xs:complexType>
   <xs:complexType name="actualizarResultadoDesafiliacion">
     <xs:sequence>
       <xs:element name="idLinea" type="xs:int" />
@@ -138,6 +128,16 @@
   <xs:complexType name="actualizarResultadoDesafiliacionResponse">
     <xs:sequence>
       <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarSolicitudesPorCliente">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarSolicitudesPorClienteResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:solicitudDesafiliacion" />
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="listarSolicitudes">

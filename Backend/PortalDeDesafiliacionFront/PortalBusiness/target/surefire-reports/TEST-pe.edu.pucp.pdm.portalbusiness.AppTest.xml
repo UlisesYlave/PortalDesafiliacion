@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.1" name="pe.edu.pucp.pdm.portalbusiness.AppTest" time="0.09" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.1" name="pe.edu.pucp.pdm.portalbusiness.AppTest" time="0.047" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="24"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="user.country" value="ES"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-24\bin"/>
-    <property name="sun.java.command" value="C:\Users\BRAULIO\AppData\Local\Temp\surefire9564172681889200075\surefirebooter-20250623102630222_12.jar C:\Users\BRAULIO\AppData\Local\Temp\surefire9564172681889200075 2025-06-23T10-26-21_963-jvmRun1 surefire-20250623102630222_10tmp surefire_3-20250623102630222_11tmp"/>
+    <property name="sun.java.command" value="C:\Users\BRAULIO\AppData\Local\Temp\surefire3864161419681607467\surefirebooter-20250623120730100_12.jar C:\Users\BRAULIO\AppData\Local\Temp\surefire3864161419681607467 2025-06-23T12-07-25_276-jvmRun1 surefire-20250623120730100_10tmp surefire_3-20250623120730100_11tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\BRAULIO\Desktop\PUCP\CICLO 9\PROGRAMACION 3\PortalDeDesafiliacionWeb\Entrega_7\Backend\PortalDeDesafiliacionFront\PortalBusiness\target\test-classes;C:\Users\BRAULIO\Desktop\PUCP\CICLO 9\PROGRAMACION 3\PortalDeDesafiliacionWeb\Entrega_7\Backend\PortalDeDesafiliacionFront\PortalBusiness\target\classes;C:\Users\BRAULIO\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.11.0\junit-jupiter-api-5.11.0.jar;C:\Users\BRAULIO\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\BRAULIO\.m2\repository\org\junit\platform\junit-platform-commons\1.11.0\junit-platform-commons-1.11.0.jar;C:\Users\BRAULIO\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\BRAULIO\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.11.0\junit-jupiter-params-5.11.0.jar;C:\Users\BRAULIO\Desktop\PUCP\CICLO 9\PROGRAMACION 3\PortalDeDesafiliacionWeb\Entrega_7\Backend\PortalDeDesafiliacionFront\PortalModel\target\PortalModel-1.0-SNAPSHOT.jar;C:\Users\BRAULIO\Desktop\PUCP\CICLO 9\PROGRAMACION 3\PortalDeDesafiliacionWeb\Entrega_7\Backend\PortalDeDesafiliacionFront\PortalPersistencia\target\PortalPersistencia-1.0-SNAPSHOT.jar;C:\Users\BRAULIO\Desktop\PUCP\CICLO 9\PROGRAMACION 3\PortalDeDesafiliacionWeb\Entrega_7\Backend\PortalDeDesafiliacionFront\PortalDBManager\target\PortalDBManager-1.0-SNAPSHOT.jar;C:\Users\BRAULIO\.m2\repository\com\mysql\mysql-connector-j\9.2.0\mysql-connector-j-9.2.0.jar;C:\Users\BRAULIO\.m2\repository\com\google\protobuf\protobuf-java\4.29.0\protobuf-java-4.29.0.jar;C:\Users\BRAULIO\.m2\repository\org\apache\poi\poi\5.2.3\poi-5.2.3.jar;C:\Users\BRAULIO\.m2\repository\commons-codec\commons-codec\1.15\commons-codec-1.15.jar;C:\Users\BRAULIO\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\BRAULIO\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\BRAULIO\.m2\repository\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar;C:\Users\BRAULIO\.m2\repository\com\zaxxer\SparseBitSet\1.2\SparseBitSet-1.2.jar;C:\Users\BRAULIO\.m2\repository\org\apache\logging\log4j\log4j-api\2.18.0\log4j-api-2.18.0.jar;C:\Users\BRAULIO\.m2\repository\org\apache\poi\poi-ooxml\5.2.3\poi-ooxml-5.2.3.jar;C:\Users\BRAULIO\.m2\repository\org\apache\poi\poi-ooxml-lite\5.2.3\poi-ooxml-lite-5.2.3.jar;C:\Users\BRAULIO\.m2\repository\org\apache\xmlbeans\xmlbeans\5.1.1\xmlbeans-5.1.1.jar;C:\Users\BRAULIO\.m2\repository\org\apache\commons\commons-compress\1.21\commons-compress-1.21.jar;C:\Users\BRAULIO\.m2\repository\com\github\virtuald\curvesapi\1.07\curvesapi-1.07.jar;C:\Users\BRAULIO\.m2\repository\org\apache\logging\log4j\log4j-core\2.20.0\log4j-core-2.20.0.jar;C:\Users\BRAULIO\.m2\repository\com\opencsv\opencsv\5.7.1\opencsv-5.7.1.jar;C:\Users\BRAULIO\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\BRAULIO\.m2\repository\org\apache\commons\commons-text\1.10.0\commons-text-1.10.0.jar;C:\Users\BRAULIO\.m2\repository\commons-beanutils\commons-beanutils\1.9.4\commons-beanutils-1.9.4.jar;C:\Users\BRAULIO\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\BRAULIO\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\BRAULIO\.m2\repository\com\itextpdf\itextpdf\5.5.13.3\itextpdf-5.5.13.3.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\BRAULIO\AppData\Local\Temp\surefire9564172681889200075\surefirebooter-20250623102630222_12.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\BRAULIO\AppData\Local\Temp\surefire3864161419681607467\surefirebooter-20250623120730100_12.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="24+36-3646"/>
@@ -59,5 +59,5 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="68.0"/>
   </properties>
-  <testcase name="shouldAnswerWithTrue" classname="pe.edu.pucp.pdm.portalbusiness.AppTest" time="0.039"/>
+  <testcase name="shouldAnswerWithTrue" classname="pe.edu.pucp.pdm.portalbusiness.AppTest" time="0.022"/>
 </testsuite>

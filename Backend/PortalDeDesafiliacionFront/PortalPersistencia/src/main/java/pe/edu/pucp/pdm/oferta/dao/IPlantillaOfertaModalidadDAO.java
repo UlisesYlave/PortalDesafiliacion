@@ -4,7 +4,9 @@
  */
 package pe.edu.pucp.pdm.oferta.dao;
 
+import java.util.List;
 import pe.edu.pucp.pdm.dao.ICrud;
+import pe.edu.pucp.pdm.ofertamodel.Modalidad;
 import pe.edu.pucp.pdm.ofertamodel.PlantillaOfertaModalidad;
 
 /**
@@ -12,5 +14,5 @@ import pe.edu.pucp.pdm.ofertamodel.PlantillaOfertaModalidad;
  * @author BRAULIO
  */
 public interface IPlantillaOfertaModalidadDAO extends ICrud<PlantillaOfertaModalidad>{
-    
+    List<Modalidad> listarModalidadesPorPlantilla(int id);
 }

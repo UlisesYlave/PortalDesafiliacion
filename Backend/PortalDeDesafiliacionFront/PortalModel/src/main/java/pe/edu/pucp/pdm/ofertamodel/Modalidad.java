@@ -21,7 +21,7 @@ public class Modalidad {
         return nombre;
     }
 
-    public void setNombreModalidad(String nombreModalidad) {
-        this.nombre = nombreModalidad;
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 }

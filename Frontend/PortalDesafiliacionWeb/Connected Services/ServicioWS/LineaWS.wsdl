@@ -5,31 +5,31 @@
       <xsd:import schemaLocation="http://localhost:8080/PortalWS/LineaWS?xsd=1" namespace="http://ws.pdm.pucp.edu.pe/" />
     </xsd:schema>
   </types>
-  <message name="desafiliarLinea">
-    <part name="parameters" element="tns:desafiliarLinea" />
-  </message>
-  <message name="desafiliarLineaResponse">
-    <part name="parameters" element="tns:desafiliarLineaResponse" />
-  </message>
   <message name="listarLineasPorCliente">
     <part name="parameters" element="tns:listarLineasPorCliente" />
   </message>
   <message name="listarLineasPorClienteResponse">
     <part name="parameters" element="tns:listarLineasPorClienteResponse" />
   </message>
+  <message name="desafiliarLinea">
+    <part name="parameters" element="tns:desafiliarLinea" />
+  </message>
+  <message name="desafiliarLineaResponse">
+    <part name="parameters" element="tns:desafiliarLineaResponse" />
+  </message>
   <portType name="LineaWS">
-    <operation name="desafiliarLinea">
-      <input wsam:Action="http://ws.pdm.pucp.edu.pe/LineaWS/desafiliarLineaRequest" message="tns:desafiliarLinea" />
-      <output wsam:Action="http://ws.pdm.pucp.edu.pe/LineaWS/desafiliarLineaResponse" message="tns:desafiliarLineaResponse" />
-    </operation>
     <operation name="listarLineasPorCliente">
       <input wsam:Action="http://ws.pdm.pucp.edu.pe/LineaWS/listarLineasPorClienteRequest" message="tns:listarLineasPorCliente" />
       <output wsam:Action="http://ws.pdm.pucp.edu.pe/LineaWS/listarLineasPorClienteResponse" message="tns:listarLineasPorClienteResponse" />
     </operation>
+    <operation name="desafiliarLinea">
+      <input wsam:Action="http://ws.pdm.pucp.edu.pe/LineaWS/desafiliarLineaRequest" message="tns:desafiliarLinea" />
+      <output wsam:Action="http://ws.pdm.pucp.edu.pe/LineaWS/desafiliarLineaResponse" message="tns:desafiliarLineaResponse" />
+    </operation>
   </portType>
   <binding name="LineaWSPortBinding" type="tns:LineaWS">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
-    <operation name="desafiliarLinea">
+    <operation name="listarLineasPorCliente">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -38,7 +38,7 @@
         <soap:body use="literal" />
       </output>
     </operation>
-    <operation name="listarLineasPorCliente">
+    <operation name="desafiliarLinea">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />

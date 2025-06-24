@@ -154,6 +154,9 @@
     <Content Include="Connected Services\ServicioWS\PortalDesafiliacionWeb.ServicioWS.listarLineasPorClienteResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
+    <Content Include="Connected Services\ServicioWS\PortalDesafiliacionWeb.ServicioWS.listarModalidadesPorPlantillaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
     <Content Include="Connected Services\ServicioWS\PortalDesafiliacionWeb.ServicioWS.listarPlantillasOfertasResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
@@ -167,6 +170,9 @@
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
     <Content Include="Connected Services\ServicioWS\PortalDesafiliacionWeb.ServicioWS.migracionPrepagoAPostpagoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServicioWS\PortalDesafiliacionWeb.ServicioWS.modalidad.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
     <Content Include="Connected Services\ServicioWS\PortalDesafiliacionWeb.ServicioWS.modificarEquipoResponse.datasource">
@@ -402,6 +408,10 @@
     </None>
     <None Include="Connected Services\ServicioWS\LineaWS.wsdl" />
     <None Include="Connected Services\ServicioWS\LineaWS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServicioWS\PlantillaOfertaModalidadWS.wsdl" />
+    <None Include="Connected Services\ServicioWS\PlantillaOfertaModalidadWS.xsd">
       <SubType>Designer</SubType>
     </None>
     <None Include="Connected Services\ServicioWS\PlantillaOfertaWS.wsdl" />
