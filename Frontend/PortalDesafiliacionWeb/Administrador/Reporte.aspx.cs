@@ -17,21 +17,28 @@ namespace PortalDesafiliacionWeb.Administrador
         protected void btnGenerar_Click(object sender, EventArgs e)
         {
             string tipo = ddlTipoReporte.SelectedValue;
-            DataTable dt = new DataTable();
 
-            // Simula columnas y datos según el tipo de reporte
+            if (tipo == "BajasServicios")
+            {
+                string fi = txtFechaInicio.Text;  // yyyy-MM-dd
+                string ff = txtFechaFin.Text;
+
+                // Cambia aquí:
+                // - 8080 por el puerto de GlassFish
+                // - PortalReportes por el context path de tu WAR
+                string javaBase = "http://localhost:8080/PortalReportes";
+                string url = $"{javaBase}/ReporteBajas?fechaInicio={fi}&fechaFin={ff}";
+
+                Response.Redirect(url);
+                return;
+
+
+            }
+
+            // Si no es BajasServicios, entonces llenas el GridView:
+            DataTable dt = new DataTable();
             switch (tipo)
             {
-                case "BajasServicios":
-                    dt.Columns.Add("Col1", typeof(string));
-                    dt.Columns.Add("Col2", typeof(string));
-                    dt.Columns.Add("Col3", typeof(string));
-                    dt.Rows.Add("123", "Cliente A", "01/06/2025");
-                    dt.Rows.Add("456", "Cliente B", "02/06/2025");
-                    gvReporte.Columns[0].HeaderText = "ID Servicio";
-                    gvReporte.Columns[1].HeaderText = "Cliente";
-                    gvReporte.Columns[2].HeaderText = "Fecha Baja";
-                    break;
                 case "EfectividadOfertas":
                     dt.Columns.Add("Col1", typeof(string));
                     dt.Columns.Add("Col2", typeof(string));
@@ -42,6 +49,7 @@ namespace PortalDesafiliacionWeb.Administrador
                     gvReporte.Columns[1].HeaderText = "Estado";
                     gvReporte.Columns[2].HeaderText = "Cantidad";
                     break;
+
                 case "MotivosBaja":
                     dt.Columns.Add("Col1", typeof(string));
                     dt.Columns.Add("Col2", typeof(string));
@@ -52,11 +60,13 @@ namespace PortalDesafiliacionWeb.Administrador
                     gvReporte.Columns[1].HeaderText = "Cantidad";
                     gvReporte.Columns[2].HeaderText = "Observación";
                     break;
+
                 default:
                     gvReporte.Visible = false;
                     return;
             }
 
+            // Bind solo para esos dos casos:
             gvReporte.DataSource = dt;
             gvReporte.DataBind();
             gvReporte.Visible = true;

@@ -1,16 +1,16 @@
-C:\Users\BRAULIO\Desktop\PUCP\CICLO 9\PROGRAMACION 3\PortalDeDesafiliacionWeb\Entrega_7\Backend\PortalDeDesafiliacionFront\PortalDBTests\src\main\java\pe\edu\pucp\pdm\portaldbtests\oferta\PortalDBTestEquipo.java
-C:\Users\BRAULIO\Desktop\PUCP\CICLO 9\PROGRAMACION 3\PortalDeDesafiliacionWeb\Entrega_7\Backend\PortalDeDesafiliacionFront\PortalDBTests\src\main\java\pe\edu\pucp\pdm\portaldbtests\oferta\PortalDBTestModalidad.java
-C:\Users\BRAULIO\Desktop\PUCP\CICLO 9\PROGRAMACION 3\PortalDeDesafiliacionWeb\Entrega_7\Backend\PortalDeDesafiliacionFront\PortalDBTests\src\main\java\pe\edu\pucp\pdm\portaldbtests\oferta\PortalDBTestOferta.java
-C:\Users\BRAULIO\Desktop\PUCP\CICLO 9\PROGRAMACION 3\PortalDeDesafiliacionWeb\Entrega_7\Backend\PortalDeDesafiliacionFront\PortalDBTests\src\main\java\pe\edu\pucp\pdm\portaldbtests\oferta\PortalDBTestParametro.java
-C:\Users\BRAULIO\Desktop\PUCP\CICLO 9\PROGRAMACION 3\PortalDeDesafiliacionWeb\Entrega_7\Backend\PortalDeDesafiliacionFront\PortalDBTests\src\main\java\pe\edu\pucp\pdm\portaldbtests\oferta\PortalDBTestPlantillaOferta.java
-C:\Users\BRAULIO\Desktop\PUCP\CICLO 9\PROGRAMACION 3\PortalDeDesafiliacionWeb\Entrega_7\Backend\PortalDeDesafiliacionFront\PortalDBTests\src\main\java\pe\edu\pucp\pdm\portaldbtests\servicio\PortalDBTestPaquete.java
-C:\Users\BRAULIO\Desktop\PUCP\CICLO 9\PROGRAMACION 3\PortalDeDesafiliacionWeb\Entrega_7\Backend\PortalDeDesafiliacionFront\PortalDBTests\src\main\java\pe\edu\pucp\pdm\portaldbtests\servicio\PortalDBTestPlan.java
-C:\Users\BRAULIO\Desktop\PUCP\CICLO 9\PROGRAMACION 3\PortalDeDesafiliacionWeb\Entrega_7\Backend\PortalDeDesafiliacionFront\PortalDBTests\src\main\java\pe\edu\pucp\pdm\portaldbtests\servicio\PortalDBTestPostpago.java
-C:\Users\BRAULIO\Desktop\PUCP\CICLO 9\PROGRAMACION 3\PortalDeDesafiliacionWeb\Entrega_7\Backend\PortalDeDesafiliacionFront\PortalDBTests\src\main\java\pe\edu\pucp\pdm\portaldbtests\servicio\PortalDBTestPrepago.java
-C:\Users\BRAULIO\Desktop\PUCP\CICLO 9\PROGRAMACION 3\PortalDeDesafiliacionWeb\Entrega_7\Backend\PortalDeDesafiliacionFront\PortalDBTests\src\main\java\pe\edu\pucp\pdm\portaldbtests\servicio\PortalDBTestSolicitudDesafiliacion.java
-C:\Users\BRAULIO\Desktop\PUCP\CICLO 9\PROGRAMACION 3\PortalDeDesafiliacionWeb\Entrega_7\Backend\PortalDeDesafiliacionFront\PortalDBTests\src\main\java\pe\edu\pucp\pdm\portaldbtests\usuario\PortalDBTestAdministrador.java
-C:\Users\BRAULIO\Desktop\PUCP\CICLO 9\PROGRAMACION 3\PortalDeDesafiliacionWeb\Entrega_7\Backend\PortalDeDesafiliacionFront\PortalDBTests\src\main\java\pe\edu\pucp\pdm\portaldbtests\usuario\PortalDBTestCliente.java
-C:\Users\BRAULIO\Desktop\PUCP\CICLO 9\PROGRAMACION 3\PortalDeDesafiliacionWeb\Entrega_7\Backend\PortalDeDesafiliacionFront\PortalDBTests\src\main\java\pe\edu\pucp\pdm\portaldbtests\usuario\PortalDBTestEncuesta.java
-C:\Users\BRAULIO\Desktop\PUCP\CICLO 9\PROGRAMACION 3\PortalDeDesafiliacionWeb\Entrega_7\Backend\PortalDeDesafiliacionFront\PortalDBTests\src\main\java\pe\edu\pucp\pdm\portaldbtests\usuario\PortalDBTestPrioridad.java
-C:\Users\BRAULIO\Desktop\PUCP\CICLO 9\PROGRAMACION 3\PortalDeDesafiliacionWeb\Entrega_7\Backend\PortalDeDesafiliacionFront\PortalDBTests\src\main\java\pe\edu\pucp\pdm\portaldbtests\usuario\PortalDBTestRegion.java
-C:\Users\BRAULIO\Desktop\PUCP\CICLO 9\PROGRAMACION 3\PortalDeDesafiliacionWeb\Entrega_7\Backend\PortalDeDesafiliacionFront\PortalDBTests\src\main\java\pe\edu\pucp\pdm\portaldbtests\usuario\PortalDBTestTipoMotivo.java
+C:\Users\User\Desktop\GitPROG3TA\PortalDesafiliacion\Backend\PortalDeDesafiliacionFront\PortalDBTests\src\main\java\pe\edu\pucp\pdm\portaldbtests\oferta\PortalDBTestEquipo.java
+C:\Users\User\Desktop\GitPROG3TA\PortalDesafiliacion\Backend\PortalDeDesafiliacionFront\PortalDBTests\src\main\java\pe\edu\pucp\pdm\portaldbtests\oferta\PortalDBTestModalidad.java
+C:\Users\User\Desktop\GitPROG3TA\PortalDesafiliacion\Backend\PortalDeDesafiliacionFront\PortalDBTests\src\main\java\pe\edu\pucp\pdm\portaldbtests\oferta\PortalDBTestOferta.java
+C:\Users\User\Desktop\GitPROG3TA\PortalDesafiliacion\Backend\PortalDeDesafiliacionFront\PortalDBTests\src\main\java\pe\edu\pucp\pdm\portaldbtests\oferta\PortalDBTestParametro.java
+C:\Users\User\Desktop\GitPROG3TA\PortalDesafiliacion\Backend\PortalDeDesafiliacionFront\PortalDBTests\src\main\java\pe\edu\pucp\pdm\portaldbtests\oferta\PortalDBTestPlantillaOferta.java
+C:\Users\User\Desktop\GitPROG3TA\PortalDesafiliacion\Backend\PortalDeDesafiliacionFront\PortalDBTests\src\main\java\pe\edu\pucp\pdm\portaldbtests\servicio\PortalDBTestPaquete.java
+C:\Users\User\Desktop\GitPROG3TA\PortalDesafiliacion\Backend\PortalDeDesafiliacionFront\PortalDBTests\src\main\java\pe\edu\pucp\pdm\portaldbtests\servicio\PortalDBTestPlan.java
+C:\Users\User\Desktop\GitPROG3TA\PortalDesafiliacion\Backend\PortalDeDesafiliacionFront\PortalDBTests\src\main\java\pe\edu\pucp\pdm\portaldbtests\servicio\PortalDBTestPostpago.java
+C:\Users\User\Desktop\GitPROG3TA\PortalDesafiliacion\Backend\PortalDeDesafiliacionFront\PortalDBTests\src\main\java\pe\edu\pucp\pdm\portaldbtests\servicio\PortalDBTestPrepago.java
+C:\Users\User\Desktop\GitPROG3TA\PortalDesafiliacion\Backend\PortalDeDesafiliacionFront\PortalDBTests\src\main\java\pe\edu\pucp\pdm\portaldbtests\servicio\PortalDBTestSolicitudDesafiliacion.java
+C:\Users\User\Desktop\GitPROG3TA\PortalDesafiliacion\Backend\PortalDeDesafiliacionFront\PortalDBTests\src\main\java\pe\edu\pucp\pdm\portaldbtests\usuario\PortalDBTestAdministrador.java
+C:\Users\User\Desktop\GitPROG3TA\PortalDesafiliacion\Backend\PortalDeDesafiliacionFront\PortalDBTests\src\main\java\pe\edu\pucp\pdm\portaldbtests\usuario\PortalDBTestCliente.java
+C:\Users\User\Desktop\GitPROG3TA\PortalDesafiliacion\Backend\PortalDeDesafiliacionFront\PortalDBTests\src\main\java\pe\edu\pucp\pdm\portaldbtests\usuario\PortalDBTestEncuesta.java
+C:\Users\User\Desktop\GitPROG3TA\PortalDesafiliacion\Backend\PortalDeDesafiliacionFront\PortalDBTests\src\main\java\pe\edu\pucp\pdm\portaldbtests\usuario\PortalDBTestPrioridad.java
+C:\Users\User\Desktop\GitPROG3TA\PortalDesafiliacion\Backend\PortalDeDesafiliacionFront\PortalDBTests\src\main\java\pe\edu\pucp\pdm\portaldbtests\usuario\PortalDBTestRegion.java
+C:\Users\User\Desktop\GitPROG3TA\PortalDesafiliacion\Backend\PortalDeDesafiliacionFront\PortalDBTests\src\main\java\pe\edu\pucp\pdm\portaldbtests\usuario\PortalDBTestTipoMotivo.java

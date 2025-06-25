@@ -8,6 +8,7 @@ pe\pucp\edu\pdm\portalbusiness\servicioimpl\PrepagoBOImpl.class
 pe\pucp\edu\pdm\portalbusiness\serviciobo\ILineaBO.class
 pe\pucp\edu\pdm\portalbusiness\servicioimpl\PostpagoBOImpl.class
 pe\pucp\edu\pdm\portalbusiness\ofertabo\IPlantillaOfertaModalidadBO.class
+pe\pucp\edu\pdm\portalbusiness\servicioimpl\SolicitudDesafiliacionBOImpl$1.class
 pe\pucp\edu\pdm\portalbusiness\usuariobo\IClienteBO.class
 pe\pucp\edu\pdm\portalbusiness\ofertaimpl\EquipoBOImpl.class
 pe\edu\pucp\pdm\portalbusiness\OfertaGenerator.class

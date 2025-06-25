@@ -1,44 +1,44 @@
-C:\Users\BRAULIO\Desktop\PUCP\CICLO 9\PROGRAMACION 3\PortalDeDesafiliacionWeb\Entrega_7\Backend\PortalDeDesafiliacionFront\PortalPersistencia\src\main\java\pe\edu\pucp\pdm\dao\BaseDAOImpl.java
-C:\Users\BRAULIO\Desktop\PUCP\CICLO 9\PROGRAMACION 3\PortalDeDesafiliacionWeb\Entrega_7\Backend\PortalDeDesafiliacionFront\PortalPersistencia\src\main\java\pe\edu\pucp\pdm\dao\ICrud.java
-C:\Users\BRAULIO\Desktop\PUCP\CICLO 9\PROGRAMACION 3\PortalDeDesafiliacionWeb\Entrega_7\Backend\PortalDeDesafiliacionFront\PortalPersistencia\src\main\java\pe\edu\pucp\pdm\oferta\dao\IEquipoDAO.java
-C:\Users\BRAULIO\Desktop\PUCP\CICLO 9\PROGRAMACION 3\PortalDeDesafiliacionWeb\Entrega_7\Backend\PortalDeDesafiliacionFront\PortalPersistencia\src\main\java\pe\edu\pucp\pdm\oferta\dao\IModalidadDAO.java
-C:\Users\BRAULIO\Desktop\PUCP\CICLO 9\PROGRAMACION 3\PortalDeDesafiliacionWeb\Entrega_7\Backend\PortalDeDesafiliacionFront\PortalPersistencia\src\main\java\pe\edu\pucp\pdm\oferta\dao\IOfertaDAO.java
-C:\Users\BRAULIO\Desktop\PUCP\CICLO 9\PROGRAMACION 3\PortalDeDesafiliacionWeb\Entrega_7\Backend\PortalDeDesafiliacionFront\PortalPersistencia\src\main\java\pe\edu\pucp\pdm\oferta\dao\IParametroDAO.java
-C:\Users\BRAULIO\Desktop\PUCP\CICLO 9\PROGRAMACION 3\PortalDeDesafiliacionWeb\Entrega_7\Backend\PortalDeDesafiliacionFront\PortalPersistencia\src\main\java\pe\edu\pucp\pdm\oferta\dao\IPlantillaOfertaDAO.java
-C:\Users\BRAULIO\Desktop\PUCP\CICLO 9\PROGRAMACION 3\PortalDeDesafiliacionWeb\Entrega_7\Backend\PortalDeDesafiliacionFront\PortalPersistencia\src\main\java\pe\edu\pucp\pdm\oferta\dao\IPlantillaOfertaModalidadDAO.java
-C:\Users\BRAULIO\Desktop\PUCP\CICLO 9\PROGRAMACION 3\PortalDeDesafiliacionWeb\Entrega_7\Backend\PortalDeDesafiliacionFront\PortalPersistencia\src\main\java\pe\edu\pucp\pdm\oferta\dao\IPlantillaOfertaParametroDAO.java
-C:\Users\BRAULIO\Desktop\PUCP\CICLO 9\PROGRAMACION 3\PortalDeDesafiliacionWeb\Entrega_7\Backend\PortalDeDesafiliacionFront\PortalPersistencia\src\main\java\pe\edu\pucp\pdm\oferta\impl\EquipoDAOImpl.java
-C:\Users\BRAULIO\Desktop\PUCP\CICLO 9\PROGRAMACION 3\PortalDeDesafiliacionWeb\Entrega_7\Backend\PortalDeDesafiliacionFront\PortalPersistencia\src\main\java\pe\edu\pucp\pdm\oferta\impl\ModalidadDAOImpl.java
-C:\Users\BRAULIO\Desktop\PUCP\CICLO 9\PROGRAMACION 3\PortalDeDesafiliacionWeb\Entrega_7\Backend\PortalDeDesafiliacionFront\PortalPersistencia\src\main\java\pe\edu\pucp\pdm\oferta\impl\OfertaDAOImpl.java
-C:\Users\BRAULIO\Desktop\PUCP\CICLO 9\PROGRAMACION 3\PortalDeDesafiliacionWeb\Entrega_7\Backend\PortalDeDesafiliacionFront\PortalPersistencia\src\main\java\pe\edu\pucp\pdm\oferta\impl\ParametroDAOImpl.java
-C:\Users\BRAULIO\Desktop\PUCP\CICLO 9\PROGRAMACION 3\PortalDeDesafiliacionWeb\Entrega_7\Backend\PortalDeDesafiliacionFront\PortalPersistencia\src\main\java\pe\edu\pucp\pdm\oferta\impl\PlantillaOfertaDAOImpl.java
-C:\Users\BRAULIO\Desktop\PUCP\CICLO 9\PROGRAMACION 3\PortalDeDesafiliacionWeb\Entrega_7\Backend\PortalDeDesafiliacionFront\PortalPersistencia\src\main\java\pe\edu\pucp\pdm\oferta\impl\PlantillaOfertaModalidadDAOImpl.java
-C:\Users\BRAULIO\Desktop\PUCP\CICLO 9\PROGRAMACION 3\PortalDeDesafiliacionWeb\Entrega_7\Backend\PortalDeDesafiliacionFront\PortalPersistencia\src\main\java\pe\edu\pucp\pdm\oferta\impl\PlantillaOfertaParametroDAOImpl.java
-C:\Users\BRAULIO\Desktop\PUCP\CICLO 9\PROGRAMACION 3\PortalDeDesafiliacionWeb\Entrega_7\Backend\PortalDeDesafiliacionFront\PortalPersistencia\src\main\java\pe\edu\pucp\pdm\servicio\dao\ILineaDAO.java
-C:\Users\BRAULIO\Desktop\PUCP\CICLO 9\PROGRAMACION 3\PortalDeDesafiliacionWeb\Entrega_7\Backend\PortalDeDesafiliacionFront\PortalPersistencia\src\main\java\pe\edu\pucp\pdm\servicio\dao\ILineaOfertaDAO.java
-C:\Users\BRAULIO\Desktop\PUCP\CICLO 9\PROGRAMACION 3\PortalDeDesafiliacionWeb\Entrega_7\Backend\PortalDeDesafiliacionFront\PortalPersistencia\src\main\java\pe\edu\pucp\pdm\servicio\dao\IPaqueteDAO.java
-C:\Users\BRAULIO\Desktop\PUCP\CICLO 9\PROGRAMACION 3\PortalDeDesafiliacionWeb\Entrega_7\Backend\PortalDeDesafiliacionFront\PortalPersistencia\src\main\java\pe\edu\pucp\pdm\servicio\dao\IPlanDAO.java
-C:\Users\BRAULIO\Desktop\PUCP\CICLO 9\PROGRAMACION 3\PortalDeDesafiliacionWeb\Entrega_7\Backend\PortalDeDesafiliacionFront\PortalPersistencia\src\main\java\pe\edu\pucp\pdm\servicio\dao\IPostpagoDAO.java
-C:\Users\BRAULIO\Desktop\PUCP\CICLO 9\PROGRAMACION 3\PortalDeDesafiliacionWeb\Entrega_7\Backend\PortalDeDesafiliacionFront\PortalPersistencia\src\main\java\pe\edu\pucp\pdm\servicio\dao\IPrepagoDAO.java
-C:\Users\BRAULIO\Desktop\PUCP\CICLO 9\PROGRAMACION 3\PortalDeDesafiliacionWeb\Entrega_7\Backend\PortalDeDesafiliacionFront\PortalPersistencia\src\main\java\pe\edu\pucp\pdm\servicio\dao\ISolicitudDesafiliacionDAO.java
-C:\Users\BRAULIO\Desktop\PUCP\CICLO 9\PROGRAMACION 3\PortalDeDesafiliacionWeb\Entrega_7\Backend\PortalDeDesafiliacionFront\PortalPersistencia\src\main\java\pe\edu\pucp\pdm\servicio\impl\LineaDAOImpl.java
-C:\Users\BRAULIO\Desktop\PUCP\CICLO 9\PROGRAMACION 3\PortalDeDesafiliacionWeb\Entrega_7\Backend\PortalDeDesafiliacionFront\PortalPersistencia\src\main\java\pe\edu\pucp\pdm\servicio\impl\LineaOfertaDAOImpl.java
-C:\Users\BRAULIO\Desktop\PUCP\CICLO 9\PROGRAMACION 3\PortalDeDesafiliacionWeb\Entrega_7\Backend\PortalDeDesafiliacionFront\PortalPersistencia\src\main\java\pe\edu\pucp\pdm\servicio\impl\PaqueteDAOImpl.java
-C:\Users\BRAULIO\Desktop\PUCP\CICLO 9\PROGRAMACION 3\PortalDeDesafiliacionWeb\Entrega_7\Backend\PortalDeDesafiliacionFront\PortalPersistencia\src\main\java\pe\edu\pucp\pdm\servicio\impl\PlanDAOImpl.java
-C:\Users\BRAULIO\Desktop\PUCP\CICLO 9\PROGRAMACION 3\PortalDeDesafiliacionWeb\Entrega_7\Backend\PortalDeDesafiliacionFront\PortalPersistencia\src\main\java\pe\edu\pucp\pdm\servicio\impl\PostpagoDAOImpl.java
-C:\Users\BRAULIO\Desktop\PUCP\CICLO 9\PROGRAMACION 3\PortalDeDesafiliacionWeb\Entrega_7\Backend\PortalDeDesafiliacionFront\PortalPersistencia\src\main\java\pe\edu\pucp\pdm\servicio\impl\PrepagoDAOImpl.java
-C:\Users\BRAULIO\Desktop\PUCP\CICLO 9\PROGRAMACION 3\PortalDeDesafiliacionWeb\Entrega_7\Backend\PortalDeDesafiliacionFront\PortalPersistencia\src\main\java\pe\edu\pucp\pdm\servicio\impl\SolicitudDesafiliacionDAOImpl.java
-C:\Users\BRAULIO\Desktop\PUCP\CICLO 9\PROGRAMACION 3\PortalDeDesafiliacionWeb\Entrega_7\Backend\PortalDeDesafiliacionFront\PortalPersistencia\src\main\java\pe\edu\pucp\pdm\usuario\dao\IAdministradorDAO.java
-C:\Users\BRAULIO\Desktop\PUCP\CICLO 9\PROGRAMACION 3\PortalDeDesafiliacionWeb\Entrega_7\Backend\PortalDeDesafiliacionFront\PortalPersistencia\src\main\java\pe\edu\pucp\pdm\usuario\dao\IClienteDAO.java
-C:\Users\BRAULIO\Desktop\PUCP\CICLO 9\PROGRAMACION 3\PortalDeDesafiliacionWeb\Entrega_7\Backend\PortalDeDesafiliacionFront\PortalPersistencia\src\main\java\pe\edu\pucp\pdm\usuario\dao\IEncuestaDAO.java
-C:\Users\BRAULIO\Desktop\PUCP\CICLO 9\PROGRAMACION 3\PortalDeDesafiliacionWeb\Entrega_7\Backend\PortalDeDesafiliacionFront\PortalPersistencia\src\main\java\pe\edu\pucp\pdm\usuario\dao\IPrioridadDAO.java
-C:\Users\BRAULIO\Desktop\PUCP\CICLO 9\PROGRAMACION 3\PortalDeDesafiliacionWeb\Entrega_7\Backend\PortalDeDesafiliacionFront\PortalPersistencia\src\main\java\pe\edu\pucp\pdm\usuario\dao\IRegionDAO.java
-C:\Users\BRAULIO\Desktop\PUCP\CICLO 9\PROGRAMACION 3\PortalDeDesafiliacionWeb\Entrega_7\Backend\PortalDeDesafiliacionFront\PortalPersistencia\src\main\java\pe\edu\pucp\pdm\usuario\dao\ITipoMotivoDAO.java
-C:\Users\BRAULIO\Desktop\PUCP\CICLO 9\PROGRAMACION 3\PortalDeDesafiliacionWeb\Entrega_7\Backend\PortalDeDesafiliacionFront\PortalPersistencia\src\main\java\pe\edu\pucp\pdm\usuario\dao\IUsuarioDAO.java
-C:\Users\BRAULIO\Desktop\PUCP\CICLO 9\PROGRAMACION 3\PortalDeDesafiliacionWeb\Entrega_7\Backend\PortalDeDesafiliacionFront\PortalPersistencia\src\main\java\pe\edu\pucp\pdm\usuario\impl\AdministradorDAOImpl.java
-C:\Users\BRAULIO\Desktop\PUCP\CICLO 9\PROGRAMACION 3\PortalDeDesafiliacionWeb\Entrega_7\Backend\PortalDeDesafiliacionFront\PortalPersistencia\src\main\java\pe\edu\pucp\pdm\usuario\impl\ClienteDAOImpl.java
-C:\Users\BRAULIO\Desktop\PUCP\CICLO 9\PROGRAMACION 3\PortalDeDesafiliacionWeb\Entrega_7\Backend\PortalDeDesafiliacionFront\PortalPersistencia\src\main\java\pe\edu\pucp\pdm\usuario\impl\EncuestaDAOImpl.java
-C:\Users\BRAULIO\Desktop\PUCP\CICLO 9\PROGRAMACION 3\PortalDeDesafiliacionWeb\Entrega_7\Backend\PortalDeDesafiliacionFront\PortalPersistencia\src\main\java\pe\edu\pucp\pdm\usuario\impl\PrioridadDAOImpl.java
-C:\Users\BRAULIO\Desktop\PUCP\CICLO 9\PROGRAMACION 3\PortalDeDesafiliacionWeb\Entrega_7\Backend\PortalDeDesafiliacionFront\PortalPersistencia\src\main\java\pe\edu\pucp\pdm\usuario\impl\RegionDAOImpl.java
-C:\Users\BRAULIO\Desktop\PUCP\CICLO 9\PROGRAMACION 3\PortalDeDesafiliacionWeb\Entrega_7\Backend\PortalDeDesafiliacionFront\PortalPersistencia\src\main\java\pe\edu\pucp\pdm\usuario\impl\TipoMotivoDAOImpl.java
-C:\Users\BRAULIO\Desktop\PUCP\CICLO 9\PROGRAMACION 3\PortalDeDesafiliacionWeb\Entrega_7\Backend\PortalDeDesafiliacionFront\PortalPersistencia\src\main\java\pe\edu\pucp\pdm\usuario\impl\UsuarioDAOImpl.java
+C:\Users\User\Desktop\GitPROG3TA\PortalDesafiliacion\Backend\PortalDeDesafiliacionFront\PortalPersistencia\src\main\java\pe\edu\pucp\pdm\dao\BaseDAOImpl.java
+C:\Users\User\Desktop\GitPROG3TA\PortalDesafiliacion\Backend\PortalDeDesafiliacionFront\PortalPersistencia\src\main\java\pe\edu\pucp\pdm\dao\ICrud.java
+C:\Users\User\Desktop\GitPROG3TA\PortalDesafiliacion\Backend\PortalDeDesafiliacionFront\PortalPersistencia\src\main\java\pe\edu\pucp\pdm\oferta\dao\IEquipoDAO.java
+C:\Users\User\Desktop\GitPROG3TA\PortalDesafiliacion\Backend\PortalDeDesafiliacionFront\PortalPersistencia\src\main\java\pe\edu\pucp\pdm\oferta\dao\IModalidadDAO.java
+C:\Users\User\Desktop\GitPROG3TA\PortalDesafiliacion\Backend\PortalDeDesafiliacionFront\PortalPersistencia\src\main\java\pe\edu\pucp\pdm\oferta\dao\IOfertaDAO.java
+C:\Users\User\Desktop\GitPROG3TA\PortalDesafiliacion\Backend\PortalDeDesafiliacionFront\PortalPersistencia\src\main\java\pe\edu\pucp\pdm\oferta\dao\IParametroDAO.java
+C:\Users\User\Desktop\GitPROG3TA\PortalDesafiliacion\Backend\PortalDeDesafiliacionFront\PortalPersistencia\src\main\java\pe\edu\pucp\pdm\oferta\dao\IPlantillaOfertaDAO.java
+C:\Users\User\Desktop\GitPROG3TA\PortalDesafiliacion\Backend\PortalDeDesafiliacionFront\PortalPersistencia\src\main\java\pe\edu\pucp\pdm\oferta\dao\IPlantillaOfertaModalidadDAO.java
+C:\Users\User\Desktop\GitPROG3TA\PortalDesafiliacion\Backend\PortalDeDesafiliacionFront\PortalPersistencia\src\main\java\pe\edu\pucp\pdm\oferta\dao\IPlantillaOfertaParametroDAO.java
+C:\Users\User\Desktop\GitPROG3TA\PortalDesafiliacion\Backend\PortalDeDesafiliacionFront\PortalPersistencia\src\main\java\pe\edu\pucp\pdm\oferta\impl\EquipoDAOImpl.java
+C:\Users\User\Desktop\GitPROG3TA\PortalDesafiliacion\Backend\PortalDeDesafiliacionFront\PortalPersistencia\src\main\java\pe\edu\pucp\pdm\oferta\impl\ModalidadDAOImpl.java
+C:\Users\User\Desktop\GitPROG3TA\PortalDesafiliacion\Backend\PortalDeDesafiliacionFront\PortalPersistencia\src\main\java\pe\edu\pucp\pdm\oferta\impl\OfertaDAOImpl.java
+C:\Users\User\Desktop\GitPROG3TA\PortalDesafiliacion\Backend\PortalDeDesafiliacionFront\PortalPersistencia\src\main\java\pe\edu\pucp\pdm\oferta\impl\ParametroDAOImpl.java
+C:\Users\User\Desktop\GitPROG3TA\PortalDesafiliacion\Backend\PortalDeDesafiliacionFront\PortalPersistencia\src\main\java\pe\edu\pucp\pdm\oferta\impl\PlantillaOfertaDAOImpl.java
+C:\Users\User\Desktop\GitPROG3TA\PortalDesafiliacion\Backend\PortalDeDesafiliacionFront\PortalPersistencia\src\main\java\pe\edu\pucp\pdm\oferta\impl\PlantillaOfertaModalidadDAOImpl.java
+C:\Users\User\Desktop\GitPROG3TA\PortalDesafiliacion\Backend\PortalDeDesafiliacionFront\PortalPersistencia\src\main\java\pe\edu\pucp\pdm\oferta\impl\PlantillaOfertaParametroDAOImpl.java
+C:\Users\User\Desktop\GitPROG3TA\PortalDesafiliacion\Backend\PortalDeDesafiliacionFront\PortalPersistencia\src\main\java\pe\edu\pucp\pdm\servicio\dao\ILineaDAO.java
+C:\Users\User\Desktop\GitPROG3TA\PortalDesafiliacion\Backend\PortalDeDesafiliacionFront\PortalPersistencia\src\main\java\pe\edu\pucp\pdm\servicio\dao\ILineaOfertaDAO.java
+C:\Users\User\Desktop\GitPROG3TA\PortalDesafiliacion\Backend\PortalDeDesafiliacionFront\PortalPersistencia\src\main\java\pe\edu\pucp\pdm\servicio\dao\IPaqueteDAO.java
+C:\Users\User\Desktop\GitPROG3TA\PortalDesafiliacion\Backend\PortalDeDesafiliacionFront\PortalPersistencia\src\main\java\pe\edu\pucp\pdm\servicio\dao\IPlanDAO.java
+C:\Users\User\Desktop\GitPROG3TA\PortalDesafiliacion\Backend\PortalDeDesafiliacionFront\PortalPersistencia\src\main\java\pe\edu\pucp\pdm\servicio\dao\IPostpagoDAO.java
+C:\Users\User\Desktop\GitPROG3TA\PortalDesafiliacion\Backend\PortalDeDesafiliacionFront\PortalPersistencia\src\main\java\pe\edu\pucp\pdm\servicio\dao\IPrepagoDAO.java
+C:\Users\User\Desktop\GitPROG3TA\PortalDesafiliacion\Backend\PortalDeDesafiliacionFront\PortalPersistencia\src\main\java\pe\edu\pucp\pdm\servicio\dao\ISolicitudDesafiliacionDAO.java
+C:\Users\User\Desktop\GitPROG3TA\PortalDesafiliacion\Backend\PortalDeDesafiliacionFront\PortalPersistencia\src\main\java\pe\edu\pucp\pdm\servicio\impl\LineaDAOImpl.java
+C:\Users\User\Desktop\GitPROG3TA\PortalDesafiliacion\Backend\PortalDeDesafiliacionFront\PortalPersistencia\src\main\java\pe\edu\pucp\pdm\servicio\impl\LineaOfertaDAOImpl.java
+C:\Users\User\Desktop\GitPROG3TA\PortalDesafiliacion\Backend\PortalDeDesafiliacionFront\PortalPersistencia\src\main\java\pe\edu\pucp\pdm\servicio\impl\PaqueteDAOImpl.java
+C:\Users\User\Desktop\GitPROG3TA\PortalDesafiliacion\Backend\PortalDeDesafiliacionFront\PortalPersistencia\src\main\java\pe\edu\pucp\pdm\servicio\impl\PlanDAOImpl.java
+C:\Users\User\Desktop\GitPROG3TA\PortalDesafiliacion\Backend\PortalDeDesafiliacionFront\PortalPersistencia\src\main\java\pe\edu\pucp\pdm\servicio\impl\PostpagoDAOImpl.java
+C:\Users\User\Desktop\GitPROG3TA\PortalDesafiliacion\Backend\PortalDeDesafiliacionFront\PortalPersistencia\src\main\java\pe\edu\pucp\pdm\servicio\impl\PrepagoDAOImpl.java
+C:\Users\User\Desktop\GitPROG3TA\PortalDesafiliacion\Backend\PortalDeDesafiliacionFront\PortalPersistencia\src\main\java\pe\edu\pucp\pdm\servicio\impl\SolicitudDesafiliacionDAOImpl.java
+C:\Users\User\Desktop\GitPROG3TA\PortalDesafiliacion\Backend\PortalDeDesafiliacionFront\PortalPersistencia\src\main\java\pe\edu\pucp\pdm\usuario\dao\IAdministradorDAO.java
+C:\Users\User\Desktop\GitPROG3TA\PortalDesafiliacion\Backend\PortalDeDesafiliacionFront\PortalPersistencia\src\main\java\pe\edu\pucp\pdm\usuario\dao\IClienteDAO.java
+C:\Users\User\Desktop\GitPROG3TA\PortalDesafiliacion\Backend\PortalDeDesafiliacionFront\PortalPersistencia\src\main\java\pe\edu\pucp\pdm\usuario\dao\IEncuestaDAO.java
+C:\Users\User\Desktop\GitPROG3TA\PortalDesafiliacion\Backend\PortalDeDesafiliacionFront\PortalPersistencia\src\main\java\pe\edu\pucp\pdm\usuario\dao\IPrioridadDAO.java
+C:\Users\User\Desktop\GitPROG3TA\PortalDesafiliacion\Backend\PortalDeDesafiliacionFront\PortalPersistencia\src\main\java\pe\edu\pucp\pdm\usuario\dao\IRegionDAO.java
+C:\Users\User\Desktop\GitPROG3TA\PortalDesafiliacion\Backend\PortalDeDesafiliacionFront\PortalPersistencia\src\main\java\pe\edu\pucp\pdm\usuario\dao\ITipoMotivoDAO.java
+C:\Users\User\Desktop\GitPROG3TA\PortalDesafiliacion\Backend\PortalDeDesafiliacionFront\PortalPersistencia\src\main\java\pe\edu\pucp\pdm\usuario\dao\IUsuarioDAO.java
+C:\Users\User\Desktop\GitPROG3TA\PortalDesafiliacion\Backend\PortalDeDesafiliacionFront\PortalPersistencia\src\main\java\pe\edu\pucp\pdm\usuario\impl\AdministradorDAOImpl.java
+C:\Users\User\Desktop\GitPROG3TA\PortalDesafiliacion\Backend\PortalDeDesafiliacionFront\PortalPersistencia\src\main\java\pe\edu\pucp\pdm\usuario\impl\ClienteDAOImpl.java
+C:\Users\User\Desktop\GitPROG3TA\PortalDesafiliacion\Backend\PortalDeDesafiliacionFront\PortalPersistencia\src\main\java\pe\edu\pucp\pdm\usuario\impl\EncuestaDAOImpl.java
+C:\Users\User\Desktop\GitPROG3TA\PortalDesafiliacion\Backend\PortalDeDesafiliacionFront\PortalPersistencia\src\main\java\pe\edu\pucp\pdm\usuario\impl\PrioridadDAOImpl.java
+C:\Users\User\Desktop\GitPROG3TA\PortalDesafiliacion\Backend\PortalDeDesafiliacionFront\PortalPersistencia\src\main\java\pe\edu\pucp\pdm\usuario\impl\RegionDAOImpl.java
+C:\Users\User\Desktop\GitPROG3TA\PortalDesafiliacion\Backend\PortalDeDesafiliacionFront\PortalPersistencia\src\main\java\pe\edu\pucp\pdm\usuario\impl\TipoMotivoDAOImpl.java
+C:\Users\User\Desktop\GitPROG3TA\PortalDesafiliacion\Backend\PortalDeDesafiliacionFront\PortalPersistencia\src\main\java\pe\edu\pucp\pdm\usuario\impl\UsuarioDAOImpl.java

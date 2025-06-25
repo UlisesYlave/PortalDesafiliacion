@@ -1,40 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.1" name="pe.edu.pucp.pdm.portalmodel.AppTest" time="0.047" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.1" name="pe.edu.pucp.pdm.portalmodel.AppTest" time="0.142" tests="1" errors="0" skipped="0" failures="0">
   <properties>
-    <property name="java.specification.version" value="24"/>
+    <property name="java.specification.version" value="21"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.class.path" value="C:\Users\BRAULIO\Desktop\PUCP\CICLO 9\PROGRAMACION 3\PortalDeDesafiliacionWeb\Entrega_7\Backend\PortalDeDesafiliacionFront\PortalModel\target\test-classes;C:\Users\BRAULIO\Desktop\PUCP\CICLO 9\PROGRAMACION 3\PortalDeDesafiliacionWeb\Entrega_7\Backend\PortalDeDesafiliacionFront\PortalModel\target\classes;C:\Users\BRAULIO\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.11.0\junit-jupiter-api-5.11.0.jar;C:\Users\BRAULIO\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\BRAULIO\.m2\repository\org\junit\platform\junit-platform-commons\1.11.0\junit-platform-commons-1.11.0.jar;C:\Users\BRAULIO\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\BRAULIO\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.11.0\junit-jupiter-params-5.11.0.jar;"/>
+    <property name="java.class.path" value="C:\Users\User\Desktop\GitPROG3TA\PortalDesafiliacion\Backend\PortalDeDesafiliacionFront\PortalModel\target\test-classes;C:\Users\User\Desktop\GitPROG3TA\PortalDesafiliacion\Backend\PortalDeDesafiliacionFront\PortalModel\target\classes;C:\Users\User\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.11.0\junit-jupiter-api-5.11.0.jar;C:\Users\User\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\User\.m2\repository\org\junit\platform\junit-platform-commons\1.11.0\junit-platform-commons-1.11.0.jar;C:\Users\User\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\User\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.11.0\junit-jupiter-params-5.11.0.jar;"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
     <property name="java.vendor.url" value="https://java.oracle.com/"/>
-    <property name="user.timezone" value="America/Chicago"/>
+    <property name="user.timezone" value="America/Lima"/>
     <property name="os.name" value="Windows 11"/>
-    <property name="java.vm.specification.version" value="24"/>
-    <property name="user.country" value="ES"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="user.country" value="PE"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
-    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-24\bin"/>
-    <property name="sun.java.command" value="C:\Users\BRAULIO\AppData\Local\Temp\surefire10746459721378115096\surefirebooter-20250623120725418_3.jar C:\Users\BRAULIO\AppData\Local\Temp\surefire10746459721378115096 2025-06-23T12-07-25_276-jvmRun1 surefire-20250623120725418_1tmp surefire_0-20250623120725418_2tmp"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-21\bin"/>
+    <property name="sun.java.command" value="C:\Users\User\AppData\Local\Temp\surefire2568271969902316502\surefirebooter-20250625014102653_3.jar C:\Users\User\AppData\Local\Temp\surefire2568271969902316502 2025-06-25T01-41-02_262-jvmRun1 surefire-20250625014102653_1tmp surefire_0-20250625014102653_2tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="C:\Users\BRAULIO\Desktop\PUCP\CICLO 9\PROGRAMACION 3\PortalDeDesafiliacionWeb\Entrega_7\Backend\PortalDeDesafiliacionFront\PortalModel\target\test-classes;C:\Users\BRAULIO\Desktop\PUCP\CICLO 9\PROGRAMACION 3\PortalDeDesafiliacionWeb\Entrega_7\Backend\PortalDeDesafiliacionFront\PortalModel\target\classes;C:\Users\BRAULIO\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.11.0\junit-jupiter-api-5.11.0.jar;C:\Users\BRAULIO\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\BRAULIO\.m2\repository\org\junit\platform\junit-platform-commons\1.11.0\junit-platform-commons-1.11.0.jar;C:\Users\BRAULIO\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\BRAULIO\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.11.0\junit-jupiter-params-5.11.0.jar;"/>
+    <property name="surefire.test.class.path" value="C:\Users\User\Desktop\GitPROG3TA\PortalDesafiliacion\Backend\PortalDeDesafiliacionFront\PortalModel\target\test-classes;C:\Users\User\Desktop\GitPROG3TA\PortalDesafiliacion\Backend\PortalDeDesafiliacionFront\PortalModel\target\classes;C:\Users\User\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.11.0\junit-jupiter-api-5.11.0.jar;C:\Users\User\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\User\.m2\repository\org\junit\platform\junit-platform-commons\1.11.0\junit-platform-commons-1.11.0.jar;C:\Users\User\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\User\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.11.0\junit-jupiter-params-5.11.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
-    <property name="user.home" value="C:\Users\BRAULIO"/>
+    <property name="user.home" value="C:\Users\User"/>
     <property name="user.language" value="es"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
-    <property name="java.version.date" value="2025-03-18"/>
-    <property name="java.home" value="C:\Program Files\Java\jdk-24"/>
+    <property name="java.version.date" value="2025-01-21"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-21"/>
     <property name="file.separator" value="\"/>
-    <property name="basedir" value="C:\Users\BRAULIO\Desktop\PUCP\CICLO 9\PROGRAMACION 3\PortalDeDesafiliacionWeb\Entrega_7\Backend\PortalDeDesafiliacionFront\PortalModel"/>
+    <property name="basedir" value="C:\Users\User\Desktop\GitPROG3TA\PortalDesafiliacion\Backend\PortalDeDesafiliacionFront\PortalModel"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\BRAULIO\AppData\Local\Temp\surefire10746459721378115096\surefirebooter-20250623120725418_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\User\AppData\Local\Temp\surefire2568271969902316502\surefirebooter-20250625014102653_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="java.runtime.version" value="24+36-3646"/>
-    <property name="user.name" value="BRAULIO"/>
+    <property name="java.runtime.version" value="21.0.6+8-LTS-188"/>
+    <property name="user.name" value="User"/>
     <property name="stdout.encoding" value="Cp1252"/>
     <property name="path.separator" value=";"/>
     <property name="os.version" value="10.0"/>
@@ -42,22 +42,22 @@
     <property name="file.encoding" value="UTF-8"/>
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
     <property name="maven.ext.class.path" value="C:\Program Files\NetBeans-25\netbeans\java\maven-nblib\netbeans-eventspy.jar"/>
-    <property name="localRepository" value="C:\Users\BRAULIO\.m2\repository"/>
+    <property name="localRepository" value="C:\Users\User\.m2\repository"/>
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
-    <property name="java.io.tmpdir" value="C:\Users\BRAULIO\AppData\Local\Temp\"/>
-    <property name="java.version" value="24"/>
-    <property name="user.dir" value="C:\Users\BRAULIO\Desktop\PUCP\CICLO 9\PROGRAMACION 3\PortalDeDesafiliacionWeb\Entrega_7\Backend\PortalDeDesafiliacionFront\PortalModel"/>
+    <property name="java.io.tmpdir" value="C:\Users\User\AppData\Local\Temp\"/>
+    <property name="java.version" value="21.0.6"/>
+    <property name="user.dir" value="C:\Users\User\Desktop\GitPROG3TA\PortalDesafiliacion\Backend\PortalDeDesafiliacionFront\PortalModel"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="native.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk-24\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Microsoft\jdk-11.0.16.101-hotspot\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Wolfram Research\WolframScript\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Azure Data Studio\bin;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files (x86)\dotnet\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;c:\MinGw\bin;c:\MinGW\MSYS\1.0\bin;C:\Program Files\Java\jdk11.0.20_9\bin;C:\Program Files\Git\cmd;C:\Program Files\MongoDB\Server\8.0\bin;C:\Windows\Microsoft.NET\Framework64\v4.0.30319;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\Go\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Users\BRAULIO\AppData\Local\nvm;C:\nvm4w\nodejs;C:\Users\BRAULIO\Desktop\Codes\flutter\bin;C:\Users\BRAULIO\AppData\Local\pnpm;C:\Users\BRAULIO\.cargo\bin;C:\Users\BRAULIO\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\BRAULIO\AppData\Local\Programs\Python\Python310\;C:\Users\BRAULIO\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\BRAULIO\AppData\Local\Programs\Python\Python39\;C:\Users\BRAULIO\AppData\Local\Microsoft\WindowsApps;C:\Users\BRAULIO\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\BRAULIO\.dotnet\tools;C:\Program Files\Azure Data Studio\bin;C:\MinGW\bin;C:\Users\BRAULIO\AppData\Local\Programs\oh-my-posh\bin;C:\Program Files\JetBrains\CLion 2024.2.0.1\bin;;C:\Users\BRAULIO\AppData\Roaming\npm;C:\Users\BRAULIO\Documents\Programas\apache-maven-3.9.9\bin;C:\Users\BRAULIO\go\bin;C:\Users\BRAULIO\AppData\Local\nvm;C:\nvm4w\nodejs;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-21\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\MinGW\bin;C:\MinGW\msys\1.0;C:\Windows\Microsoft.NET\Framework64\v4.0.30319;C:\Users\User\Desktop\apache-maven-3.9.9-bin\apache-maven-3.9.9\bin;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;C:\Users\User\AppData\Local\Programs\Python\Python313\Scripts\;C:\Users\User\AppData\Local\Programs\Python\Python313\;C:\Users\User\AppData\Local\Programs\Python\Launcher\;C:\Users\User\AppData\Local\Microsoft\WindowsApps;C:\Users\User\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\User\.dotnet\tools;."/>
     <property name="java.vm.info" value="mixed mode, sharing"/>
     <property name="stderr.encoding" value="Cp1252"/>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="java.vm.version" value="24+36-3646"/>
+    <property name="java.vm.version" value="21.0.6+8-LTS-188"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
-    <property name="java.class.version" value="68.0"/>
+    <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="shouldAnswerWithTrue" classname="pe.edu.pucp.pdm.portalmodel.AppTest" time="0.024"/>
+  <testcase name="shouldAnswerWithTrue" classname="pe.edu.pucp.pdm.portalmodel.AppTest" time="0.065"/>
 </testsuite>
