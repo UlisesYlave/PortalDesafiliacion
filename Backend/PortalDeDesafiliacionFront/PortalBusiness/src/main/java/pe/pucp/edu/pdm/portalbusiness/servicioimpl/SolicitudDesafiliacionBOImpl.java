@@ -1,17 +1,31 @@
 package pe.pucp.edu.pdm.portalbusiness.servicioimpl;
 
 import com.opencsv.CSVWriter;
+import java.io.BufferedReader;
 import java.io.ByteArrayOutputStream;
 import java.io.FileOutputStream;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.OutputStream;
 import java.io.OutputStreamWriter;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.net.URLEncoder;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.Paths;
 import java.text.SimpleDateFormat;
+import java.util.Base64;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Properties;
+import javax.net.ssl.HttpsURLConnection;
+import javax.net.ssl.SSLContext;
+import javax.net.ssl.TrustManager;
+import javax.net.ssl.X509TrustManager;
 import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
@@ -176,11 +190,69 @@ public class SolicitudDesafiliacionBOImpl implements ISolicitudDesafiliacionBO {
     }
 
     @Override
-    public String enviarCodigoSMS(int Linea) {
+    public String enviarCodigoSMS(int idLinea) {
+        try {
+        /*──────────────── 1. Leer el token y el número real ───────────────*/
+        Properties props = new Properties();
+        InputStream input = getClass().getClassLoader()
+                                     .getResourceAsStream("config.properties");
+        props.load(input);
+
+        String tokenEncoded   = props.getProperty("api.sms.token");
+        String tokenDecodificado = new String(Base64.getDecoder()
+                                                   .decode(tokenEncoded));
+
+        
+        String realNumberEncoded = props.getProperty("sms.real.receiver");
+        String numero = new String(Base64.getDecoder().decode(realNumberEncoded));
+
+        /*──────────────── 2. Generar código aleatorio ─────────────────────*/
         String codigo = String.valueOf((int) (Math.random() * 900000) + 100000);
-        System.out.println("Código generado para solicitud " + Linea + ": " + codigo);
-        codigosSMS.put(Linea, codigo);
-        return codigo;
+        codigosSMS.put(idLinea, codigo);      // Guardar para la validación
+        
+        TrustManager[] trustAll = { new X509TrustManager() {
+            public java.security.cert.X509Certificate[] getAcceptedIssuers(){ return null; }
+            public void checkClientTrusted (java.security.cert.X509Certificate[] c,String a){}
+            public void checkServerTrusted (java.security.cert.X509Certificate[] c,String a){}
+        }};
+        SSLContext sc = SSLContext.getInstance("SSL");
+        sc.init(null, trustAll, new java.security.SecureRandom());
+        HttpsURLConnection.setDefaultSSLSocketFactory(sc.getSocketFactory());
+        HttpsURLConnection.setDefaultHostnameVerifier((h, s) -> true);
+        
+        /*──────────────── 3. Preparar POST y enviar ──────────────────────*/
+        String mensaje = URLEncoder.encode("Tu código de verificación es: " + codigo, "UTF-8");
+        String parametros = "celular=" + numero +
+                            "&texto=" + mensaje +
+                            "&token="   + tokenDecodificado;      // según instructivo
+
+        URL url = new URL("http://cr.net.pe/enviar_sms.php");
+        HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+        conn.setRequestMethod("POST");
+        conn.setDoOutput(true);
+        conn.setRequestProperty("Content-Type", "application/x-www-form-urlencoded");
+
+        try (OutputStream os = conn.getOutputStream()) {
+            os.write(parametros.getBytes("UTF-8"));
+        }
+
+        /*──────────────── 4. Leer la respuesta ───────────────────────────*/
+        int responseCode = conn.getResponseCode();
+        String body;
+        try (BufferedReader br = new BufferedReader(
+                new InputStreamReader(
+                    responseCode < 400 ? conn.getInputStream()     // 2xx
+                                       : conn.getErrorStream(),    // 4xx/5xx
+                    "UTF-8"))) {
+            body = br.lines().reduce("", (a, b) -> a + b);
+        }
+        /*──────────────── 5. Retornar siempre un String no-nulo ───────────*/
+        return (responseCode == 200) ? codigo : "ERROR_HTTP_" + responseCode;
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            return "ERROR_EXCEP";
+        }
     }
 
     @Override
