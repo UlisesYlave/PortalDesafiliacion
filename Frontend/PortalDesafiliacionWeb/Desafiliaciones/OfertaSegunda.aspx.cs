@@ -25,10 +25,8 @@ namespace PortalDesafiliacionWeb.Desafiliaciones
                 {
                     int idLinea = (int)Session["idLinea"];
                     var client = new ServicioWS.SolicitudDesafiliacionWSClient();
-                    string codigo = client.enviarCodigoSMS(idLinea);
+                    client.enviarCodigoSMS(idLinea);
 
-                    lblCodigoGenerado.Text = "Código para pruebas: " + codigo;
-                    lblCodigoGenerado.Visible = true;
                 }
             }
         }
