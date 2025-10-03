@@ -2,6 +2,12 @@
 
 Portal de Desafiliacion Web que busca la retención de los usuarios mediante ofertas personalizadas.
 
+Se consideraron 2 stakeholders principales:
+* Usuario que quiere desvincularse o mejorar su plan actual.
+* Administradores que mantienen la página con plantilla de ofertas y revisan de stock para ofertas.
+
+Para poder usar el sistema deberá crear los dos tipos de usuarios en la base de datos. Se cuenta con el archivo sql para la ejecución de clases y comandos.
+
 ## Backend
 ### Herramientas usadas:
 * IDE: NetBeans 25
@@ -19,9 +25,7 @@ Para la comunicación entre Backend y Frontend usamos el protocolo SOAP
 * Bootstrap: Componentes visuales sencillos
 * Visualización: ASP .NET
 
-Se consideraron 2 stakeholders principales:
-* Usuario que quiere desvincularse o mejorar su plan actual.
-* Administradores que mantienen la página con plantilla de ofertas y revisan de stock para ofertas.
+Después de haber activado el backend, en Visual Studio en el barra principal está el botón de Run. Se ejecuta y te mandará a la pantalla de login. Dependiendo del usuario se mostrará 2 interfaces diferentes una para admin y otra para usuario regular.
 
 ## Desarrollo de Plantilla de Ofertas
 
